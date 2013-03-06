@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="OpenModelica r15468, Compliance Suite 3.2.2.1">
+   <testsuite name="builtin.math">
+      <testcase name="sin" /> <!-- builtin/math/sin.mo -->
+      <testcase name="cos" /> <!-- builtin/math/cos.mo -->
+   </testsuite>
+   <testsuite name="inheritance">
+      <testcase name="ABC" /> <!-- inheritance/ABC.mo -->
+      <testcase name="DEF" /> <!-- inheritance/DEF.mo -->
+   </testsuite>
+</testsuites>

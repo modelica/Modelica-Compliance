@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MTool XYZ, Compliance Suite 3.2.2.1">
+   <testsuite name="builtin.math">
+      <testcase name="sin" />
+      <testcase name="cos"><error /></testcase>
+   </testsuite>
+   <testsuite name="inheritance">
+      <testcase name="A.B.C"><error type="expected failure" message="abc
+def ghi" /></testcase>
+      <testcase name="D.E.F" />
+   </testsuite>
+</testsuites>
