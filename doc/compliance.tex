@@ -1,0 +1,241 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{calc}
+
+\begin{document}
+\input{codesettings.tex}
+
+\title{Modelica Compliance Library Guide}
+\maketitle
+
+\section{Test case structure}
+Each test case should consist of a separate file that contains one
+model marked as a test case. The test case model does not need to be the
+top-level class in the file, so a file can e.g. have a package with multiple
+classes defined in it, but each file should only contain one test case model.
+Models are marked as test cases by the test case annotation:
+\begin{lstlisting}[language=modelica]
+annotation(__ModelicaAssociation(TestCase(shouldPass=true|false)))
+\end{lstlisting}
+The shouldPass property defines whether the test case is expected to succeed or
+fail. Each test case should also extend the Icons.TestCase model which supplies
+a graphical icon annotation, a Documentation annotation with HTML documentation,
+and an experiment annotation for simulation properties. Given below is an
+example of a test case which is expected to succeed:
+\begin{lstlisting}[language=modelica]
+model SimpleDeclaration
+  extends Icons.TestCase;
+  Real x = 3;
+  Real y = x;
+  annotation(
+    __ModelicaAssociation(TestCase(shouldPass=true)),
+    experiment(StopTime=0.01),
+    Documentation(
+      info="<html>Tests simple component declarations.</html>"));
+end SimpleDeclaration;
+\end{lstlisting}
+And a test case which is expected to fail:
+\begin{lstlisting}[language=modelica]
+model DoubleDeclaration
+  extends Icons.TestCase;
+  Real x;
+  Real x "Double declaration of x.";
+  annotation(
+    __ModelicaAssociation(TestCase(shouldPass=false)),
+    experiment(StopTime=0.01),
+    Documentation(
+      info="<html>Tests that double declaration of elements is not allowed, according to section 4.2.</html>"));
+end DoubleDeclaration;
+\end{lstlisting}
+\section{Library structure}
+The compliance library uses a package hierarchy to divide the test cases into
+suitable categories, as defined by the table below. References are for the
+Modelica 3.3 specification (since I haven't seen the mythical 3.2rev2). Section
+references in the table uses intervals and wildcards, where 1.2-1.4 means from
+section 1.2 to 1.4 and 1.1.* means section 1.1 and its subsections. Section
+references does not otherwise include subsections, so section 1.1 means
+\emph{only} 1.1.
+%Chapter 6
+%Anything testable?
+%
+%Chapter 10
+%- 10.2 Flexible array sizes
+%
+%Chapter 19
+%Nothing to test?
+%
+
+\medskip
+\noindent
+\begin{tabular}{l l}
+  \textbf{Components} \\
+    \indent\textbf{Declarations}     & Section 4.2-4.4.2.1, 4.4.3. \\
+    \indent\textbf{Conditional}      & Conditional components, section 4.4.5. \\
+    \indent\textbf{Prefixes}         & Component prefixes, section 4.4.2.2, 4.4.4.*. \\
+    \indent\textbf{Variability}      & Variability prefixes, section 3.8.*, 4.4.4. \\
+    \indent\textbf{Time}             & The built-in variable time, section 3.6.7.  \\
+  \\
+  \textbf{Classes} \\
+    \indent\textbf{Declarations} \\
+    \indent\indent\textbf{Long}      & ``Long'' declarations, section 4.5, 4.5.2, 4.5.3. \\
+    \indent\indent\textbf{Short}     & ``Short'' declarations, section 4.5.1. \\
+    \indent\textbf{Specialized}      & Restrictions on specialized classes, section 4.6. \\
+    \indent\textbf{Prefixes}         & Class prefixes, section 4.4.2.2. \\
+    \indent\textbf{Balancing}        & Balance checking, section 4.7. \\
+    \indent\textbf{Predefined}       & The predefined types, section 4.8-4.8.4, 4.8.8.1. \\
+    \indent\textbf{Enumeration}      & Enumerations, section 4.8.5. \\
+  \\
+  \textbf{Scoping} \\
+    \indent\textbf{MemberAccess}     & The member access operator, section 3.6.6.  \\
+    \indent\textbf{Visibility}       & Public and protected elements, section 4.1. \\
+    \indent\textbf{NameLookup} \\
+    \indent\indent\textbf{Simple}    & Section 5.3.1. \\
+    \indent\indent\textbf{Composite} & Section 5.3.2. \\
+    \indent\indent\textbf{Global}    & Section 5.3.3. \\
+    \indent\indent\textbf{Imports}   & Section 13.2.1.*. \\
+    \indent\textbf{InnerOuter}       & Section 5.4-5.5. \\
+  \\
+  \textbf{Operators} \\
+    \indent\textbf{Arithmetic}       & Arithmetic operators $^\wedge\ast/+-$, section 3.4. \\
+    \indent\textbf{Relational}       & Relational operators $==, <>$, etc. Section 3.5 and 10.6.10. \\
+    \indent\textbf{Logical}          & Logical operators \textbf{not}, \textbf{and}, \textbf{or} (section 3.5). \\
+    \indent\textbf{String}           & String concatenation, section 3.6.1. \\
+    \indent\textbf{Mathematical}     & Operators in 3.7.1.*, except Integer and String. \\
+    \indent\textbf{Conversion}       & Conversion operators in 3.7.1, Integer and String.  \\
+    \indent\textbf{Events}           & Event-related operators in 3.7.3.*. \\
+    \indent\textbf{Special}          & Special purpose operators in 3.7.2.*, except connection operators. \\
+    \indent\textbf{If}               & If-expressions, section 3.3, 3.6.5. \\
+    \indent\textbf{Precedence}       & Precedence rules in section 3.2. \\
+    \indent\textbf{Associativity}    & Associativity rules in in section 3.2. \\
+    \indent\textbf{Overloading}      & Overloaded operators, chapter 14. \\
+
+\end{tabular}
+
+\begin{tabular}{l l}
+  \textbf{Inheritance} \\
+    \indent\textbf{Flattening}       & Flattening of extends, section 5.6.1, 7.1-7.1.2. \\
+    \indent\textbf{Restrictions}     & Base class restrictions, section 7.1.3-7.1.4. \\
+  \\
+  \textbf{Modification} \\
+    \indent\textbf{Flattening}       & Flattening of modifications, section 7.2-7.2.3, 7.2.5. \\
+    \indent\textbf{Restrictions}     & Restrictions on modifications, section 7.2.4, 7.2.6. \\
+  \\
+  \textbf{Redeclare} \\
+    \indent\textbf{Flattening}       & Flattening of redeclares, section 7.3, 7.3.4. \\
+    \indent\textbf{ConstrainingType} & Constraining types, section 7.3.2. \\
+    \indent\textbf{ClassExtends}     & Class extends, section 7.3.1. \\
+    \indent\textbf{Restrictions}     & Restrictions on redeclares, 7.3.3. \\
+  \\
+  \textbf{Equations} \\
+    \indent\textbf{Equality}         & Section 8.3.1. \\
+    \indent\textbf{For}              & Section 8.3.2.*. \\
+    \indent\textbf{If}               & Section 8.3.4. \\
+    \indent\textbf{When}             & Section 8.3.5.*. \\
+    \indent\textbf{Reinit}           & Section 8.3.6. \\
+    \indent\textbf{Assert}           & Section 8.3.7. \\
+    \indent\textbf{Terminate}        & Section 8.3.8. \\
+    \indent\textcolor{red}{\textbf{Events?}} & Section 8.5. \\
+    \indent\textcolor{red}{\textbf{Initialization?}} & Section 8.6. \\
+  \\
+  \textbf{Algorithms} \\
+    \indent\textbf{Assignment}       & Section 11.2.1.*. \\
+    \indent\textbf{For}              & Section 11.2.2.*. \\
+    \indent\textbf{If}               & Section 11.2.6. \\
+    \indent\textbf{When}             & Section 11.2.7.*. \\
+    \indent\textbf{While}            & Section 11.2.3. \\
+    \indent\textbf{Break}            & Section 11.2.4. \\
+    \indent\textbf{Return}           & Section 12.1.2. \\
+    \indent\textbf{Reinit}           & Section 11.2.8.1. \\
+    \indent\textbf{Assert}           & Section 11.2.8.2. \\
+    \indent\textbf{Terminate}        & Section 11.2.8.3. \\
+  \\
+  \textbf{Connections} \\
+    \indent\textbf{Declarations}     & Basic connect equations, section 9.1.  \\
+    \indent\textbf{Operators}        & Section 3.7.2, 15.2-15.3 \\
+    \indent\textbf{Expandable}       & Expandable connectors, section 9.1.3. \\
+    \indent\textbf{Stream}           & Stream connectors, chapter 15. \\
+    \indent\textbf{Restrictions}     & The restrictions in section 9.3.*, 15.1. \\
+    \indent\textbf{Overconstrained}  & Section 9.4. \\
+
+\end{tabular}
+
+\begin{tabular}{l l}
+  \textbf{Arrays} \\
+    \indent\textbf{Declarations}     & Array declarations, section 4.4.2, 10.1.*, 10.7. \\
+    \indent\textbf{Flexible}         & Flexible arrays, section 12.4.5. \\
+    \indent\textbf{Indexing}         & Array indexing, slicing, section 10.5.*, 10.6.9. \\
+    \indent\textbf{Functions} \\
+    \indent\indent\textbf{Size}      & ndims and size, section 10.3.1. \\
+    \indent\indent\textbf{Construction} & Array construction, section 10.3.3 and 10.4.*. \\
+    \indent\indent\textbf{Conversion}& Dimensionality conversion functions, section 10.3.2. \\
+    \indent\indent\textbf{Reductions}& Reduction expressions from section 10.3.4.*. \\
+    \indent\indent\textbf{Algebra}   & Matrix and vector algebra functions, section 10.3.5. \\
+    \indent\textbf{Operations} \\
+    \indent\indent\textbf{Equality}  & Array equality and assignment, section 10.6.1. \\
+    \indent\indent\textbf{Arithmetic}& Arithmetic operators, section 10.6.2-10.6.3, 10.6.5-10.6.7. \\
+    \indent\indent\textbf{MatrixProduct}& Matrix multiplication, section 10.6.4, 10.6.8.  \\
+    \indent\indent\textbf{Relational}& Relational operators, section 10.6.10. \\
+    \indent\indent\textbf{Logical}   & Logical operators, section 10.6.11. \\
+  \\
+  \textbf{Functions} \\
+    \indent\textbf{Declarations}     & Function declarations, section 12.1-12.1.1, 12.1.3. \\
+    \indent\textbf{Restrictions}     & Function restrictions, section 12.2. \\
+    \indent\textbf{Calls}            & Function calls, section 12.4.1, 12.4.3-12.4.4, 12.4.7. \\
+    \indent\indent\textbf{Vectorization}& Vectorization of scalar functions, section 12.4.6. \\
+    \indent\textbf{HigherOrder}      & Higher order functions, 12.4.2.*. \\
+    \indent\textbf{Records}          & Record constructor functions, section 12.6. \\
+    \indent\textbf{External}         & External functions, section 12.9.*. \\
+    \indent\textbf{Derivative}       & Function derivatives, section 12.7.* \\
+    \indent\textbf{Inverse}          & Function inverses, section 12.8. \\
+  \\
+  \textbf{Packages}                  & Chapter 13, except imports. \\
+  \textbf{Annotations}               & Chapter 18. \\
+
+\end{tabular}
+\newpage
+\section{Style guide}
+The test cases should follow the style of the specification and MSL to the
+extent that a consistent style is used. This means that class names should be
+UpperCamelCase, while component names should be lowerCamelCase.  The contents of
+classes and control statements should be indented with two spaces, and tabs
+should not be used.
+\begin{lstlisting}[language=modelica]
+package TestPackage
+  type TestType = Real;
+
+  model TestModel
+    TestType testComponent;
+  end TestModel;
+end TestPackage;
+\end{lstlisting}
+Control statements should be written as in the specification with the beginning
+and end parts on separate lines and the content indented.
+\begin{lstlisting}[language=modelica]
+for i in 1:3 loop
+  if i == 1 then
+    x[i] = 1;
+  elseif i == 2 then
+    x[i] = 2;
+  else
+    x[i] = 3;
+  end if;
+end loop;
+\end{lstlisting}
+Expressions and operators should usually be separated with spaces. Notable
+exceptions are brackets and the range operator.
+\begin{lstlisting}[language=modelica]
+model Test
+  Real x = 2.0;
+  Real y, z;
+  Integer u[1, 3] = {{1, 2, 3}};
+equation
+  y = x * (2 + z);
+  z = sum(u[1, i] for i in 1:size(u, 1));
+end Test;
+\end{lstlisting}
+\end{document}
