@@ -13,4 +13,4 @@ model PartialInstance
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that it's forbidden to instantiate a partial class.</html>"));
-end DoubleDeclarationComps;
+end PartialInstance;
