@@ -1,16 +1,15 @@
 within ModelicaCompliance.Functions.Restrictions;
 
-model PartialFunction
+model PartialExternalFunction
   extends Icons.TestCase;
 
   partial function func
-    input Integer a;
-    output Integer b;
-  algorithm
-    b := a;
+    input Real a;
+    output Real b;
+    external "C" b = sin(a);
   end func;
 
-  Integer x = func(2);
+  Real x = func(2);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false)),
@@ -18,4 +17,4 @@ model PartialFunction
     Documentation(
     info = "<html>Checks that a partial function cannot be called in a simulation model. 
 For a function to be called in a simulation model, it must have either an algorithm section or an external function interface as its body, or be defined as a function partial derivative and it may not be partial.</html>"));
-end PartialFunction;
+end PartialExternalFunction;
