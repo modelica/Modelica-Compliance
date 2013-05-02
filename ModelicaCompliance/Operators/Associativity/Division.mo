@@ -1,6 +1,6 @@
-within ModelicaCompliance.Operators.Arithmetic;
+within ModelicaCompliance.Operators.Associativity;
 
-model ExponentReal
+model Division
   extends Icons.TestCase;
 
 function realAlmostEq "Compare an approximation of floating-point numbers and check if they can be considered equal or not."
@@ -15,13 +15,13 @@ algorithm
   almostEq := diff < absTol or diff <= max(abs(b),abs(a)) * relTol;
 end realAlmostEq;
 
-  constant Real r = 2.3 ^ 9.5;
+  constant Real r = 4/2/2;
 equation
-  assert(realAlmostEq(r, 2731.5832575191735), "The approximate value of the scalar variable r can not be considered as equal to 2731.5832575191735");
+  assert(realAlmostEq(r, 1.0), "The approximate value of the scalar variable r can not be considered as equal to 1.0");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that exponentiation of real scalars is possible.</html>"));
-end ExponentReal;
+      info = "<html>Tests that division expression operators are left associative.</html>"));
+end Division;

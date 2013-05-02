@@ -10,5 +10,5 @@ model ExponentIntegers
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that exponentiation of integer scalars should not 
-		return type integer scalar value.</html>"));
+		return type integer.</html>"));
 end ExponentIntegers;

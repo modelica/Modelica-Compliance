@@ -9,6 +9,6 @@ model DivideIntegers
     __ModelicaAssociation(TestCase(shouldPass = false)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that division of integer scalars should not 
-		return type integer scalar value.</html>"));
+      info = "<html>Tests that division of type integer scalars shall not 
+		return type integer.</html>"));
 end DivideIntegers;
