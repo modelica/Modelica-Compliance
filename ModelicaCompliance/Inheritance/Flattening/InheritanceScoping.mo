@@ -9,7 +9,7 @@ model InheritanceScoping
 
   model Derived
     Integer y = 2;
-    extends A;
+    extends Base;
   end Derived;
   
   Derived d;
