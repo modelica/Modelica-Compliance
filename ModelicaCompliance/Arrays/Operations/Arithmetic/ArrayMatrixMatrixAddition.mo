@@ -1,6 +1,6 @@
 within ModelicaCompliance.Arrays.Operations.Arithmetic;
 
-model ArrayMtrixMatrixAddition
+model ArrayMatrixMatrixAddition
   extends Icons.TestCase;
   
 function realAlmostEq "Compare an approximation of floating-point numbers and check if they can be considered equal or not."
@@ -27,4 +27,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that addition of two matrices is posisble.</html>"));
-end ArrayMtrixMatrixAddition;
+end ArrayMatrixMatrixAddition;
