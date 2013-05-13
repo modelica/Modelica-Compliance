@@ -8,14 +8,14 @@ model LogicalAnd
   constant Boolean b3 = false and true;
   constant Boolean b4 = false and false;
 equation
-  assert(b1 == true, "The given condition for variable b1 should be true");
-  assert(b2 == false, "The given condition for variable b2 should be false");
-  assert(b3 == false, "The given condition for variable b3 should be false");
-  assert(b4 == false, "The given condition for variable b4 should be false");
+  assert(b1 == true, "The boolean value of b1 must be true");
+  assert(b2 == false, "The boolean value of b2 must be false");
+  assert(b3 == false, "The boolean value of variable b3 must be false");
+  assert(b4 == false, "The boolean value of variable b4 must be false");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that it's possible to define and logical operator.</html>"));
+      info = "<html>Tests the logical operator and.</html>"));
 end LogicalAnd;
