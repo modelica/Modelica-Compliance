@@ -1,6 +1,6 @@
 within ModelicaCompliance.Arrays.Functions.Reductions;
 
-model ArrayReductionMin
+model ArrayReductionSum1
   extends Icons.TestCase;
   
 function realAlmostEq "Compare an approximation of floating-point numbers and check if they can be considered equal or not."
@@ -15,14 +15,14 @@ algorithm
   almostEq := diff < absTol or diff <= max(abs(b),abs(a)) * relTol;
 end realAlmostEq;
   
-  Real minimum;
+  Real summ;  
 equation
-  minimum = min({1, -1, 7}); 
-  assert(realAlmostEq(minimum, -1.0), "The smallest element of the array expression should be -1.0");
+  summ    = sum({{1, 2, 3}, {4, 5, 6}});
+  assert(realAlmostEq(summ, 21.0), "The scalar sum of all the eleemnts of array expression should be 21.0");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that the array reduction function min is possible.</html>"));
-end ArrayReductionMin;
+      info = "<html>Tests that the array reduction function sum is possible.</html>"));
+end ArrayReductionSum1;
