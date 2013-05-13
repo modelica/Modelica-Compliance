@@ -10,4 +10,4 @@ model ArrayTypeIntegerParameter
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to declare array of type Integer parameter.</html>"));
-end AArrayTypeIntegerParameter;
+end ArrayTypeIntegerParameter;

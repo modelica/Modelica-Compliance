@@ -25,4 +25,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the array reduction function product is possible.</html>"));
-end AArrayReductionProduct1;
+end ArrayReductionProduct1;

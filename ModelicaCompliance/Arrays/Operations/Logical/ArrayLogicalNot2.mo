@@ -1,6 +1,6 @@
-within ModelicaCompliance.Arrays.Operations.Arithmetic;
+within ModelicaCompliance.Arrays.Operations.Logical;
 
-model ArrayLogicicalNot2
+model ArrayLogicalNot2
   extends Icons.TestCase;
  
   Boolean b[:] = {false, true}; 
@@ -16,4 +16,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array logical operator not.</html>"));
-end ArrayLogicicalNot2;
+end ArrayLogicalNot2;

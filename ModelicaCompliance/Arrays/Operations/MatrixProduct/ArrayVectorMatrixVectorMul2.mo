@@ -1,6 +1,6 @@
 within ModelicaCompliance.Arrays.Operations.MatrixProduct;
 
-model ArrayVectorMatrixVectorMu2
+model ArrayVectorMatrixVectorMul2
   extends Icons.TestCase;
   
 function realAlmostEq "Compare an approximation of floating-point numbers and check if they can be considered equal or not."
@@ -24,4 +24,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that vector-matrix-vector multiplication of arrays with numeric elements is possible.</html>"));
-end ArrayVectorMatrixVectorMu2;
+end ArrayVectorMatrixVectorMul2;

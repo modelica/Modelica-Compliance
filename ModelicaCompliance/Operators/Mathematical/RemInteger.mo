@@ -13,4 +13,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in mrem function is allowed and if both arguments are type integer the result shall have type integer.</html>"));
-end MRemInteger;
+end RemInteger;

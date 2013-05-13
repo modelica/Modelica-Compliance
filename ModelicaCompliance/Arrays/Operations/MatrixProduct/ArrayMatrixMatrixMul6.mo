@@ -40,4 +40,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that matrix by matrix multiplication of arrays with numeric elements is possible.</html>"));
-end AArrayMatrixMatrixMul6;
+end ArrayMatrixMatrixMul6;

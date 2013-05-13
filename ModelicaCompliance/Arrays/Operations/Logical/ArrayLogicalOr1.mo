@@ -1,6 +1,6 @@
-within ModelicaCompliance.Arrays.Operations.Arithmetic;
+within ModelicaCompliance.Arrays.Operations.Logical;
 
-model ArrayLogicicalOr1
+model ArrayLogicalOr1
   extends Icons.TestCase;
    
   Boolean b1[:] = {false, true, false, true};
@@ -17,4 +17,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array logical operator or.</html>"));
-end ArrayLogicicalOr1;
+end ArrayLogicalOr1;
