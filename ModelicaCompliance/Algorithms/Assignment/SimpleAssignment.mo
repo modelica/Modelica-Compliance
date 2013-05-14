@@ -7,7 +7,7 @@ model SimpleAssignment
 algorithm
   x := 3.0;
 
-  assert(abs(x - 3.0) <= 1e-10, "x was not set correctly.");
+  assert(Util.compareReal(x, 3.0), "x was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

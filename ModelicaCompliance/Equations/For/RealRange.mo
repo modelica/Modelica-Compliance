@@ -11,10 +11,10 @@ equation
 
   x[3] = 3.0;
 
-  assert(abs(x[1] - 1.0) < 1e-10, "x[1] was not set correctly.");
-  assert(abs(x[2] - 2.5) < 1e-10, "x[2] was not set correctly.");
-  assert(abs(x[4] - 4.0) < 1e-10, "x[4] was not set correctly.");
-  assert(abs(x[5] - 5.5) < 1e-10, "x[5] was not set correctly.");
+  assert(Util.compareReal(x[1], 1.0), "x[1] was not set correctly.");
+  assert(Util.compareReal(x[2], 2.5), "x[2] was not set correctly.");
+  assert(Util.compareReal(x[4], 4.0), "x[4] was not set correctly.");
+  assert(Util.compareReal(x[5], 5.5), "x[5] was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

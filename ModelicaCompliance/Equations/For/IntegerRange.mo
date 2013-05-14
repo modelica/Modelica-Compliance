@@ -10,16 +10,16 @@ equation
     y[i] = i * x[i];
   end for;
 
-  assert(abs(y[1]  -  0.0) < 1e-10, "y[1] was not set correctly.");
-  assert(abs(y[2]  -  2.0) < 1e-10, "y[2] was not set correctly.");
-  assert(abs(y[3]  -  6.0) < 1e-10, "y[3] was not set correctly.");
-  assert(abs(y[4]  - 12.0) < 1e-10, "y[4] was not set correctly.");
-  assert(abs(y[5]  - 20.0) < 1e-10, "y[5] was not set correctly.");
-  assert(abs(y[6]  - 30.0) < 1e-10, "y[6] was not set correctly.");
-  assert(abs(y[7]  - 42.0) < 1e-10, "y[7] was not set correctly.");
-  assert(abs(y[8]  - 56.0) < 1e-10, "y[8] was not set correctly.");
-  assert(abs(y[9]  - 72.0) < 1e-10, "y[9] was not set correctly.");
-  assert(abs(y[10] - 90.0) < 1e-10, "y[10] was not set correctly.");
+  assert(Util.compareReal(y[1] ,  0.0), "y[1] was not set correctly.");
+  assert(Util.compareReal(y[2] ,  2.0), "y[2] was not set correctly.");
+  assert(Util.compareReal(y[3] ,  6.0), "y[3] was not set correctly.");
+  assert(Util.compareReal(y[4] , 12.0), "y[4] was not set correctly.");
+  assert(Util.compareReal(y[5] , 20.0), "y[5] was not set correctly.");
+  assert(Util.compareReal(y[6] , 30.0), "y[6] was not set correctly.");
+  assert(Util.compareReal(y[7] , 42.0), "y[7] was not set correctly.");
+  assert(Util.compareReal(y[8] , 56.0), "y[8] was not set correctly.");
+  assert(Util.compareReal(y[9] , 72.0), "y[9] was not set correctly.");
+  assert(Util.compareReal(y[10], 90.0), "y[10] was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

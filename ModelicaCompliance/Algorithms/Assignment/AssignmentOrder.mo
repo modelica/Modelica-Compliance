@@ -6,9 +6,9 @@ model AssignmentOrder
   Real x;
 algorithm
   x := 3.0;
-  assert(abs(x - 3.0) <= 1e-10, "x was not set correctly.");
+  assert(Util.compareReal(x, 3.0), "x was not set correctly.");
   x := 4.0;
-  assert(abs(x - 4.0) <= 1e-10, "x was not set correctly.");
+  assert(Util.compareReal(x, 4.0), "x was not set correctly.");
   x := 5.0;
 
   annotation (

@@ -9,8 +9,8 @@ algorithm
     x[i] := i;
   end for;
 
-  assert(abs(x[1] - 1.0) < 1e-10, "x[1] was not set correctly.");
-  assert(abs(x[2] - 2.0) < 1e-10, "x[2] was not set correctly.");
+  assert(Util.compareReal(x[1], 1.0), "x[1] was not set correctly.");
+  assert(Util.compareReal(x[2], 2.0), "x[2] was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

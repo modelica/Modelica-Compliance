@@ -16,7 +16,7 @@ algorithm
     x := 2.0;
   end if;
 
-  assert(abs(x - 2.0) < 1e-10, "x was not set correctly.");
+  assert(Util.compareReal(x, 2.0), "x was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

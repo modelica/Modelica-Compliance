@@ -13,4 +13,6 @@ package Util
     diff := abs(a - b);
     equal := diff < absTol or diff <= max(abs(b), abs(a)) * relTol;
   end compareReal;
+
+  annotation(Documentation(info = "<html>This package contains utility functions used by the tests.</html>"));
 end Util;
