@@ -1,6 +1,6 @@
 within ModelicaCompliance.Operators.Overloading;
 
-model ExactMatchArrayOverload
+model ElemWiseBinaryOverloadResolution
   extends Icons.TestCase;
 
   operator record _Complex_
@@ -67,5 +67,5 @@ equation
       info = "<html> Tests whether proper expansions of normal operators are used for vectorized resolution of 
       elementwise operators.</html>"));
 
-end ExactMatchArrayOverload;
+end ElemWiseBinaryOverloadResolution;
 

@@ -1,4 +1,4 @@
-within ModelicaCompliance.Operators.Overloading;
+within ModelicaCompliance.Functions.Calls.Vectorization;
 
 model VectorizationMultiInputIllegal
   extends Icons.TestCase;

@@ -1,6 +1,6 @@
 within ModelicaCompliance.Operators.Overloading;
 
-model NegeationSubtractionOverload
+model NegationSubtractionOverload
   extends Icons.TestCase;
 
   operator record _Complex_ 
@@ -13,8 +13,8 @@ model NegeationSubtractionOverload
         input Integer im = 1;
         output _Complex_ result;
       algorithm
-        result.re = re;
-        result.im = im;
+        result.re := re;
+        result.im := im;
       end fromInteger;
     end 'constructor';
 
@@ -53,5 +53,5 @@ equation
     Documentation(
       info = "<html> Tests whether proper overload of '-' for binary and unary overloads. [14.5.2].</html>"));
 
-end NegeationSubtractionOverload;
+end NegationSubtractionOverload;
 

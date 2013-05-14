@@ -1,6 +1,6 @@
-within ModelicaCompliance.Operators.Overloading;
+within ModelicaCompliance.Functions.Calls.Vectorization;
 
-model VectorizationNoAlgorithm
+model VectorizationSimpleNoAlgorithm
   extends Icons.TestCase;
 
   function Test
@@ -20,5 +20,5 @@ equation
     Documentation(
       info = "<html> Tests for simple vectorization of a function with no algorithm section.</html>"));
 
-end VectorizationNoAlgorithm;
+end VectorizationSimpleNoAlgorithm;
 

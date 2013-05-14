@@ -1,4 +1,4 @@
-within ModelicaCompliance.Records;
+within ModelicaCompliance.Functions.Records;
 
 model RecordConstructorConstantModifiable
   extends Icons.TestCase;

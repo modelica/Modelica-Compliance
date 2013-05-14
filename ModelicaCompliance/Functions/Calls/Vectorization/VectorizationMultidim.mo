@@ -1,4 +1,4 @@
-within ModelicaCompliance.Operators.Overloading;
+within ModelicaCompliance.Functions.Calls.Vectorization;
 
 model VectorizationMultidim
   extends Icons.TestCase;

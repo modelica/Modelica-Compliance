@@ -1,4 +1,4 @@
-within ModelicaCompliance.Records;
+within ModelicaCompliance.Functions.Records;
 
 model RecordConstructorDefaultValueDependent
   extends Icons.TestCase;
