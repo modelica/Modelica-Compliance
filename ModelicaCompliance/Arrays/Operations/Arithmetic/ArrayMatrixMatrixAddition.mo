@@ -1,8 +1,7 @@
 within ModelicaCompliance.Arrays.Operations.Arithmetic;
 
 model ArrayMatrixMatrixAddition
-  extends Icons.TestCase;
-  
+  extends Icons.TestCase; 
   
   Real add3[2, 2] = {{1, 1}, {2, 2}} + {{1, 2}, {3, 4}};
 equation

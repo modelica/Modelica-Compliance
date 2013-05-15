@@ -7,7 +7,8 @@ model ArrayReductionMax1
   Real maximum;  
 equation
   maximum = max([1, 2, 3; 4, 5, 6]); 
-  assert(Util.compareReal(maximum, 6.0), "The largest element of array expression should be 6.0");
+  
+  assert(Util.compareReal(maximum, 6.0), "The value of maximum should be 6.0");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

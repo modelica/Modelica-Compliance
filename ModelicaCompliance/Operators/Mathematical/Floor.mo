@@ -7,11 +7,12 @@ model Floor
   Real r;
 equation
   r = floor(4.5);
+  
   assert(Util.compareReal(r, 4.0), "The approximate value of the scalar variable r can not be considered as equal to 4.0");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that the built-in Floor function is allowed and result and argument shall have type real.</html>"));
+      info = "<html>Tests that the built-in Floor function is possible.</html>"));
 end Floor;

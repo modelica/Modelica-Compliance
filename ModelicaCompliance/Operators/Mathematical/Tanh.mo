@@ -7,6 +7,7 @@ model Tanh
   Real r;
 equation
   r = tanh(45);
+  
   assert(Util.compareReal(r, 1.0), "The approximate value of the scalar variable r can not be considered as equal to 1.0");
   
   annotation (

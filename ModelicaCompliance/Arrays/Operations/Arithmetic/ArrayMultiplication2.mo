@@ -3,7 +3,6 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArrayMultiplication2
   extends Icons.TestCase;
   
-
   Real m[3] = {1, 2, 3} * 2; 
 equation
   assert(Util.compareReal(m[1], 2.0), "The element of m[1] must be 2.0");

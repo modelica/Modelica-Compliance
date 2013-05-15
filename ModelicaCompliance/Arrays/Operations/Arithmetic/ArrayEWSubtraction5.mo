@@ -3,7 +3,6 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArrayEWSubtraction5
   extends Icons.TestCase;
   
-
   constant Real realArray[2,2] = [5,6;7,8] .- [1,2;3,4];
 equation
   assert(Util.compareReal(realArray[1,1], 4.0), "The element of realArray[1,1] must be 4.0");

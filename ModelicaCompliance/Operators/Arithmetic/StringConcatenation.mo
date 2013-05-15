@@ -6,7 +6,8 @@ model StringConcatenation
   String s;
 equation
   s = "Testing" + " " + "modelica" + " " + "compliance";
-  assert(s == "Testing modelica compliance", "The string concatenation is wrong");
+  
+  assert(s == "Testing modelica compliance", "s was not set correctly");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

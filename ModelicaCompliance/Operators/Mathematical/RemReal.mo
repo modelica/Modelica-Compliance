@@ -7,6 +7,7 @@ model RemReal
   Real r;
 equation
   r = rem(27, 6.0);
+  
   assert(Util.compareReal(r, 3.0), "The approximate value of the scalar variable r can not be considered as equal to 3.0");
   
   annotation (

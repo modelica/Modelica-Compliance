@@ -7,6 +7,7 @@ model ArrayMatrixMatrixMul6
   Real x[4, 0], y[0, 4], z[4, 4];
 equation 
   z = x * y;
+  
   assert(Util.compareReal(z[1, 1], 0.0), "The element of r[1, 1] must be 0.0");
   assert(Util.compareReal(z[1, 2], 0.0), "The element of r[1, 2] must be 0.0");
   assert(Util.compareReal(z[1, 3], 0.0), "The element of r[1, 3] must be 0.0");

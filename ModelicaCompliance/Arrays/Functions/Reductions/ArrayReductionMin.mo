@@ -7,7 +7,8 @@ model ArrayReductionMin
   Real minimum;
 equation
   minimum = min({1, -1, 7}); 
-  assert(Util.compareReal(minimum, -1.0), "The smallest element of the array expression should be -1.0");
+  
+  assert(Util.compareReal(minimum, -1.0), "The value of minimum should be -1.0");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

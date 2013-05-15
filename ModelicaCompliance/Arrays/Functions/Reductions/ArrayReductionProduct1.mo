@@ -6,8 +6,9 @@ model ArrayReductionProduct1
   
   Real  prod; 
 equation
-  prod    = product({3.14, 2, 2}); 
-  assert(Util.compareReal(prod, 12.56), "The scalar product of all the elements of array expression should be 12.56");
+  prod = product({3.14, 2, 2}); 
+  
+  assert(Util.compareReal(prod, 12.56), "The value of prod should be 12.56");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

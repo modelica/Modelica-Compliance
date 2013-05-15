@@ -9,6 +9,10 @@ equation
   x = delay(y+1, 2.5);
   z = delay(y-1, 0.5, 1.0);
   
+  assert(Util.compareReal(y, sin(time)), "y was not set correctly");
+  assert(Util.compareReal(x, delay(y+1, 2.5)), "x was not set correctly");
+  assert(Util.compareReal(z, delay(y-1, 0.5, 1.0)), "z was not set correctly");
+  
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),

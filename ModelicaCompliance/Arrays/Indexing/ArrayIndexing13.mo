@@ -6,7 +6,8 @@ model ArrayIndexing13
   Integer x[4] = {15, 16, 17, 18};
   Integer y[2];
 equation
-  y = x[{1, 3}];	
+  y = x[{1, 3}];
+  
   assert(y[1] == 15, "The element of y[1] must be 15");
   assert(y[2] == 17, "The element of y[2] must be 17");
   

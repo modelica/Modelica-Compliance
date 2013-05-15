@@ -3,7 +3,6 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArrayVectorVectorAddition
   extends Icons.TestCase;
   
-  
   Real add3[3] = {{1, 2, 3} + {4, 5, 6}};
 equation
   assert(Util.compareReal(add3[1], 5.0), "The element of add3[1] must be 5.0");

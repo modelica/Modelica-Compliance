@@ -6,11 +6,12 @@ model ModInteger
   Integer i;
 equation
   i = mod(8, 3);
-  assert(i == 2, "The mod value of variable i should be 2");
+  
+  assert(i == 2, "The value of i should be 2");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that the built-in mod function is allowed and if both arguments are type integer the result shall have type integer.</html>"));
+      info = "<html>Tests that the built-in mod function is possible and if both arguments are type integer the result shall have type integer.</html>"));
 end ModInteger;

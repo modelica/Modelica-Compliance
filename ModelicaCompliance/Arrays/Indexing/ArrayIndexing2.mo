@@ -7,6 +7,7 @@ model ArrayIndexing2
   Integer y[3];
 equation
   y = x[:, 1];
+  
   assert(y[1] == 1, "The element of y[1] must be 1");
   assert(y[2] == 3, "The element of y[2] must be 3");
   assert(y[3] == 8, "The element of y[3] must be 8");

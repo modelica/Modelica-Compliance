@@ -8,6 +8,7 @@ model ArrayEWAddition5
   Integer intArray[3];
 equation
   intArray = intArray1 .+ intArray2;
+  
   assert(intArray[1] == 6, "The element of intArray[1] must be 6");
   assert(intArray[2] == 12, "The element of intArray[2] must be 12");
   assert(intArray[3] == 18, "The element of intArray[3] must be 18");

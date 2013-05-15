@@ -7,10 +7,8 @@ model ArrayAndScalarsSameLine
   Real c[2],d;
 equation
   a = 1;
-  b[1] = 2;
-  b[2] = 3;
-  c[1] = 4;
-  c[2] = 5;
+  b = {2,3};
+  c = {4, 5};
   d = 6;
 
   annotation (

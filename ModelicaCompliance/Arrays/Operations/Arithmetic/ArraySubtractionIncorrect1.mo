@@ -3,7 +3,7 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArraySubtractionIncorrect1
   extends Icons.TestCase;
   
-	Real add[3] = {1, 2, 3} - {1, 2};
+  Real add[3] = {1, 2, 3} - {1, 2};
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false)),

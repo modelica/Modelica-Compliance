@@ -7,6 +7,7 @@ model ArrayMatrixExponentiation3
   Real e[2, 2];
 equation
   e = {{1, 2}, {1, 2}} ^ 1;
+  
   assert(Util.compareReal(e[1, 1], 1.0), "The element of e[1, 1] must be 1.0");
   assert(Util.compareReal(e[1, 2], 2.0), "The element of e[1, 2] must be 2.0");
   assert(Util.compareReal(e[2, 1], 1.0), "The element of e[2, 1] must be 1.0");

@@ -3,10 +3,10 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArrayEWExponentiation2
   extends Icons.TestCase;
   
-
   Real[2] r;
 equation
   r = 2 .^{4,5};
+  
   assert(Util.compareReal(r[1], 16.0), "The element of r[1] must be 16.0");
   assert(Util.compareReal(r[2], 32.0), "The element of r[2] must be 32.0");
   

@@ -7,6 +7,7 @@ model ArrayVectorVectorMul1
   Real  r;
 equation 
   r = {1, 2, 3} * {2, 2, 2};
+  
   assert(Util.compareReal(r, 12.0), "The value of r must be 12.0");
   
   annotation (

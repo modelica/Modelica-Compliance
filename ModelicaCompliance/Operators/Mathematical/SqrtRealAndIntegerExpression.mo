@@ -8,6 +8,7 @@ model SqrtRealAndIntegerExpression
 equation
   i = sqrt(0);
   r = sqrt(25);
+  
   assert(i == 0, "The value of variable i should be 0");
   assert(Util.compareReal(r, 5.0), "The approximate value of the scalar variable r can not be considered as equal to 5.0");
 

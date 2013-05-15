@@ -3,7 +3,7 @@ within ModelicaCompliance.Arrays.Functions.Size;
 model ArrayDimSizeIncorrectArgument3
   extends Icons.TestCase;
 
-  Real r;
+  Real r = 5.0;
   Real s = size(r);
    
   annotation (

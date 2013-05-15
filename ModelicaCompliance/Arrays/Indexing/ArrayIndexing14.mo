@@ -7,6 +7,7 @@ model ArrayIndexing14
   Integer y[3];
 equation
   y = x[1:2:4];	
+  
   assert(y[1] == 15, "The element of y[1] must be 15");
   assert(y[2] == 17, "The element of y[2] must be 17");  
   

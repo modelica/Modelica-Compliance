@@ -3,7 +3,6 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArrayEWDivision2
   extends Icons.TestCase;
   
-
   constant Real realArray[2,2] = 12 ./[1,2;3,4];
 equation
   assert(Util.compareReal(realArray[1,1], 12.0), "The element of realArray[1,1] must be 12.0");

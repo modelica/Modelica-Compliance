@@ -8,6 +8,7 @@ model ArrayEWMultiplication5
   Integer intArray[3];
 equation
   intArray = intArray1 .* intArray2;
+  
   assert(intArray[1] == 8, "The element of intArray[1] must be 8");
   assert(intArray[2] == 32, "The element of intArray[2] must be 32");
   assert(intArray[3] == 72, "The element of intArray[3] must be 72");

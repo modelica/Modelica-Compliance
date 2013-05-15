@@ -15,5 +15,5 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to the cross product of the three vectors
-		 by using the builtin corss function.</html>"));
+		 by using the builtin cross function.</html>"));
 end Cross;

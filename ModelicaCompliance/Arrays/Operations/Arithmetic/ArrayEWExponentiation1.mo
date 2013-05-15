@@ -1,12 +1,12 @@
 within ModelicaCompliance.Arrays.Operations.Arithmetic;
 
 model ArrayEWExponentiation1
-  extends Icons.TestCase;
-  
+  extends Icons.TestCase; 
 
   Real r;
 equation
   r = 2 .^4;
+  
   assert(Util.compareReal(r, 16.0), "The value of r must be 16.0");
   
   annotation (

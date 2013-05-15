@@ -6,7 +6,8 @@ model RemInteger
   Integer i;
 equation
   r = rem(27, 6);
-  assert(i == 3, "The rem value of variable i should be 3");
+  
+  assert(i == 3, "The value of i should be 3");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

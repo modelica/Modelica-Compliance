@@ -9,6 +9,7 @@ model ArrayVectorVectorMul2
   Real r;
 equation
   r = x * y;
+  
   assert(Util.compareReal(r, 40.0), "The value of r must be 40.0");
   
   annotation (

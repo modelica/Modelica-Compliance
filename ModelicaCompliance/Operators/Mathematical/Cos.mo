@@ -6,11 +6,12 @@ model Cos
   Real r;
 equation
   r = cos(45);
+  
   assert(Util.compareReal(r, 0.5253219888177297), "The approximate value of the scalar variable r can not be considered as equal to 0.5253219888177297");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that the built-in cos function is allowed.</html>"));
+      info = "<html>Tests that the built-in cos function is possible.</html>"));
 end Cos;

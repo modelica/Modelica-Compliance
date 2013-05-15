@@ -6,7 +6,8 @@ model ArrayIndexing11
   Integer x[3, 2] = {{1, 2}, {3, 4}, {8, 9}};
   Integer y[1, 2];
 equation
-  y = x[{2}, :];	
+  y = x[{2}, :];
+  
   assert(y[1, 1] == 3, "The element of y[1, 1] must be 3");
   assert(y[1, 2] == 4, "The element of y[1, 2] must be 4");
   

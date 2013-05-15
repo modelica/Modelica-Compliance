@@ -7,6 +7,7 @@ model ArrayIndexing1
   Integer y;
 equation
   y = x[1, 1];
+  
   assert(y == 1, "The value of y must be 1");
   
   annotation (

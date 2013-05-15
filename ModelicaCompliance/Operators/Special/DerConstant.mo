@@ -9,12 +9,12 @@ model DerConstant
   Real b = der(1.0);
   Real[1,2,1,2] c = der({{{{1.0,2.0}},{{3.0,4.0}}}});
 equation
- assert(Util.compareReal(a, 0.0), "The result of a shall be 0.0");
- assert(Util.compareReal(b, 0.0), "The result of b shall be 0.0");
- assert(Util.compareReal(c[1,1,1,1], 0.0), "The result of c[1,1,1,1] shall be 0.0");
- assert(Util.compareReal(c[1,1,1,2], 0.0), "The result of c[1,1,1,2] shall be 0.0");
- assert(Util.compareReal(c[1,2,1,1], 0.0), "The result of c[1,2,1,1] shall be 0.0");
- assert(Util.compareReal(c[1,2,1,2], 0.0), "The result of c[1,2,1,2] shall be 0.0");
+  assert(Util.compareReal(a, 0.0), "The result of a should be 0.0");
+  assert(Util.compareReal(b, 0.0), "The result of b should be 0.0");
+  assert(Util.compareReal(c[1,1,1,1], 0.0), "The result of c[1,1,1,1] should be 0.0");
+  assert(Util.compareReal(c[1,1,1,2], 0.0), "The result of c[1,1,1,2] should be 0.0");
+  assert(Util.compareReal(c[1,2,1,1], 0.0), "The result of c[1,2,1,1] should be 0.0");
+  assert(Util.compareReal(c[1,2,1,2], 0.0), "The result of c[1,2,1,2] should be 0.0");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

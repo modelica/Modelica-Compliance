@@ -6,7 +6,7 @@ model ArrayDimSize2
   parameter Real[4, 1, 6] x = fill(1., 4, 1, 6);
   parameter Real dimsize = size(x, 1);
 equation
-  assert(Util.compareReal(dimsize, 4.0), "The size of dimensions of array expression x should be 4.0");  
+  assert(Util.compareReal(dimsize, 4.0), "The value of dimsize should be 4.0");  
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

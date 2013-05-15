@@ -3,8 +3,7 @@ within ModelicaCompliance.Arrays.Operations.Arithmetic;
 model ArraySubtraction1
   extends Icons.TestCase;
   
-  
-	Real sub[2, 2] = {{1, 2}, {3, 4}} - {{1, 2}, {2, 2}};
+  Real sub[2, 2] = {{1, 2}, {3, 4}} - {{1, 2}, {2, 2}};
 equation
   assert(Util.compareReal(sub[1,1], 0.0), "The element of sub[1,1] must be 0.0");
   assert(Util.compareReal(sub[1,2], 0.0), "The element of sub[1,2] must be 0.0");

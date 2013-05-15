@@ -7,6 +7,7 @@ model ArrayEWAddition1
   Real r;
 equation
   r = 2 .+4;
+  
   assert(Util.compareReal(r, 6.0), "The value of r must be 6.0");
   
   annotation (

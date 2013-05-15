@@ -7,6 +7,7 @@ model ArrayVectorVectorMul3
   Real x[0], y[0], r;
 equation 
   r = x * y;
+  
   assert(Util.compareReal(r, 0.0), "The value of r must be 0.0");
   
   annotation (

@@ -7,9 +7,9 @@ model LessThanEqual
   constant Boolean b2 = 5 <= 5;
   constant Boolean b3 = 7 <= 5;
 equation
-  assert(b1 == true, "The given condition for variable b1 should be true");
-  assert(b2 == true, "The given condition for variable b2 should be true");
-  assert(b3 == false, "The given condition for variable b3 should be false");
+  assert(b1 == true, "The value of b1 should be true");
+  assert(b2 == true, "The value of b2 should be true");
+  assert(b3 == false, "The value of b3 should be false");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

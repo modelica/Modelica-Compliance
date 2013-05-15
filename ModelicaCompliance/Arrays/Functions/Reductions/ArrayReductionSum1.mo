@@ -7,7 +7,8 @@ model ArrayReductionSum1
   Real summ;  
 equation
   summ    = sum({{1, 2, 3}, {4, 5, 6}});
-  assert(Util.compareReal(summ, 21.0), "The scalar sum of all the eleemnts of array expression should be 21.0");
+  
+  assert(Util.compareReal(summ, 21.0), "The value of summ should be 21.0");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

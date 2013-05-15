@@ -10,6 +10,7 @@ equation
   i = sign(65);
   r1 = sign(-4711.78);
   r2 = sign(0);
+  
   assert(i == 1, "The value of variable i should be 1");
   assert(Util.compareReal(r1, -1.0), "The approximate value of the scalar variable r1 can not be considered as equal to 1.0");
   assert(Util.compareReal(r2, 0.0), "The approximate value of the scalar variable r2 can not be considered as equal to 0.0");
