@@ -1,4 +1,4 @@
-within ModelicaCompliance.Equations.Equality;
+within ModelicaCompliance.Arrays.Operations.Equality;
 
 model ArrayEquality
   extends Icons.TestCase;

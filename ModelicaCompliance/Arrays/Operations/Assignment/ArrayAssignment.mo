@@ -1,4 +1,4 @@
-within ModelicaCompliance.Algorithms.Assignment;
+within ModelicaCompliance.Arrays.Operations.Assignment;
 
 model ArrayAssignment
   extends Icons.TestCase;
