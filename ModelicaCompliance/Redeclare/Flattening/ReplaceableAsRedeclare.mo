@@ -4,7 +4,9 @@ model ReplaceableAsRedeclare
   extends Icons.TestCase;
 
   model A
-    replaceable Real x;
+    replaceable Real x = 1.0;
+  equation
+    assert(Util.compareReal(x, 2.0), "x was not redeclared.");
   end A;
 
   A a(replaceable Real x = 2.0);
