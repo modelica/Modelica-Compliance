@@ -3,7 +3,7 @@ within ModelicaCompliance.Arrays.Declarations;
 model ArrayDeclarationMixedForms
   extends Icons.TestCase;
 
-  Real[3,2] x[4,5]; // x has type Real[4,5,3,2]
+  Real[3,2] x[4,5] = ones(4, 5, 3, 2); // x has type Real[4,5,3,2]
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

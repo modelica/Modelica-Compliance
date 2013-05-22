@@ -6,6 +6,7 @@ model BaseClassKindConnectorFunction
   function Base
     input Real x;
     output Real y = x;
+  algorithm
   end Base;
 
   connector Derived

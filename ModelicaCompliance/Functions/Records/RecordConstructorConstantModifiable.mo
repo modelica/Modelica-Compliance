@@ -1,7 +1,7 @@
 within ModelicaCompliance.Functions.Records;
 
 model RecordConstructorConstantModifiable
-  extends Icons.TestCase;
+  //extends Icons.TestCase;
 
   record Test
     Integer in1;

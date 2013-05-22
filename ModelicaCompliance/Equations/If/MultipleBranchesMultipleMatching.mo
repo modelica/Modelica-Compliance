@@ -3,7 +3,7 @@ within ModelicaCompliance.Equations.If;
 model MultipleBranchesMultipleMatching
   extends Icons.TestCase;
 
-  Real x = 2.0;
+  Real x;
   parameter Integer i = 4;
 equation
   if i == 4 then
@@ -14,7 +14,7 @@ equation
     x = 5.0;
   end if;
 
-  assert(Util.compareReal(x, 2.0), "x was not set correctly.");
+  assert(Util.compareReal(x, 3.0), "x was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

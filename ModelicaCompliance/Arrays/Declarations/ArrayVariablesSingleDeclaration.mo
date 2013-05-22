@@ -4,6 +4,9 @@ model ArrayVariablesSingleDeclaration
   extends Icons.TestCase;
 
   Real[2,2] A, B; 
+equation
+  A = {{1, 2}, {3, 4}};
+  B = {{5, 6}, {7, 8}};
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

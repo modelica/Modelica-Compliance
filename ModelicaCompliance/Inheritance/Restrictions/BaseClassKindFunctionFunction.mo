@@ -6,6 +6,7 @@ model BaseClassKindFunctionFunction
   function Base
     input Real x;
     output Real y = x;
+  algorithm
   end Base;
 
   function Derived

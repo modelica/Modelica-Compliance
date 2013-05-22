@@ -7,6 +7,7 @@ model BaseClassKindFunctionType
 
   function Derived
     extends Base;
+  algorithm
   end Derived;
 
   Real x = Derived(1.0);

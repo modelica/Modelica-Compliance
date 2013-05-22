@@ -7,6 +7,7 @@ model FunctionLookupViaComp
     function f
       input Real x;
       output Real y = x;
+    algorithm
     end f;
   end A;
 

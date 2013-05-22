@@ -6,6 +6,7 @@ model BaseClassKindBlockFunction
   function Base
     input Real x;
     output Real y = x;
+  algorithm
   end Base;
 
   block Derived

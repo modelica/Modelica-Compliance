@@ -4,7 +4,7 @@ model ArrayIndexedbyEnum
   extends Icons.TestCase;
 
   type TwoEnums = enumeration(one,two); 
-  Real[TwoEnums] y; 
+  Real[TwoEnums] y = {1, 2}; 
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

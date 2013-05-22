@@ -11,8 +11,8 @@ equation
   i1 = abs(-100);
   i2 = abs(0);
   
-  assert(r1 == 100.78, "The value of r1 should be 100.78");
-  assert(r2 == 100.00, "The value of r2 should be 100.00");
+  assert(Util.compareReal(r1, 100.78), "The value of r1 should be 100.78");
+  assert(Util.compareReal(r2, 100.00), "The value of r2 should be 100.00");
   assert(i1 == 100, "The value of i1 should be 100");
   assert(i2 == 0, "The value of i2 should be 0");
   

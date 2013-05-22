@@ -16,6 +16,5 @@ model FunctionInitialEquations
     __ModelicaAssociation(TestCase(shouldPass = false)),
     experiment(StopTime = 0.01),
     Documentation(
-    info = "<html>Checks that a function cannot be contain equations. 
-    A function may not be used in connections, may have no equations, may have no initial algorithm, and can have at most one algorithm section, which, if present, is the body of the function.</html>"));
+    info = "<html>Checks that a function cannot be contain equations.</html>"));
 end FunctionInitialEquations;

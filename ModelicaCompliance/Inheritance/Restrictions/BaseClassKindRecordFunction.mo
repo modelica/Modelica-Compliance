@@ -6,6 +6,7 @@ model BaseClassKindRecordFunction
   function Base
     input Real x;
     output Real y = x;
+  algorithm
   end Base;
 
   record Derived
