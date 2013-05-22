@@ -1,0 +1,15 @@
+BasicBindingRedeclare
+InheritanceDimensionClass
+InheritanceDimensionComp
+InheritanceDirection
+InheritanceFlow
+InheritanceInnerOuterComp
+InheritanceProtectedClass
+InheritanceProtectedComp
+InheritancePublicClass
+InheritancePublicComp
+InheritanceStream
+InheritanceVariabilityConst
+InheritanceVariabilityParam
+InheritanceVisibilityComp
+ReplaceableAsRedeclare

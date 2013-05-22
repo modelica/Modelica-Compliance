@@ -1,0 +1,12 @@
+BasicDeclarationMulti
+BasicDeclarationSingle
+CyclicBindingArraySize
+CyclicBindingConstantSelf
+CyclicBindingConstants
+CyclicBindingParameterSelf
+CyclicBindingParameters
+DeclarationOrder
+DoubleDeclarationComps
+DoubleDeclarationMixed
+PartialInstance
+TypeNameAsComponentName

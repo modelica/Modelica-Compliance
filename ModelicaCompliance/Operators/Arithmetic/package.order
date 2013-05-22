@@ -1,0 +1,12 @@
+AddIntegers
+AddLargeStrings
+AddReal
+DivideIntegers
+DivideReal
+ExponentIntegers
+ExponentReal
+MultiplyIntegers
+MultiplyReal
+StringConcatenation
+SubtractIntegers
+SubtractReal

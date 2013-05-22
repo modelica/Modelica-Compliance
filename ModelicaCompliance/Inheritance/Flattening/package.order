@@ -1,0 +1,15 @@
+BaseClassWithReplaceableElement
+BasicInheritance
+DuplicateInheritedEqClasses
+DuplicateInheritedEqComps
+DuplicateInheritedNeqClasses
+DuplicateInheritedNeqComps
+InheritanceScoping
+InheritanceSections
+InheritedBaseClass
+MultiLevelInheritance
+MultipleInheritance
+ProtectedInheritance
+ReplaceableBaseClass
+ReplacedBaseClass
+VisibilityHeadingInheritance

@@ -1,0 +1,11 @@
+Encapsulation
+EnclosingClassLookupClass
+EnclosingClassLookupConstant
+EnclosingClassLookupNonConstant
+EnclosingClassLookupShadowedConstant
+ImplicitShadowingFor
+ImplicitShadowingReduction
+LocalClassNameLookup
+LocalCompNameLookup
+OutsideEncapsulation
+OutsideEncapsulationMulti
