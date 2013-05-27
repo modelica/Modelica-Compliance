@@ -3,7 +3,7 @@ within ModelicaCompliance.Algorithms.If;
 model MultipleBranchesNoneMatching
   extends Icons.TestCase;
 
-  Real x = 2.0;
+  Real x(start = 2.0);
   parameter Integer i = 4;
 algorithm
   if i == 3 then
