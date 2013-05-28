@@ -3,7 +3,7 @@ within ModelicaCompliance.Operators.Mathematical;
 model SqrtIntegerArgument
   extends Icons.TestCase;
 
-  Integer r;
+  Real r;
 equation
   r = sqrt(225);
   
