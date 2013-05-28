@@ -16,7 +16,7 @@ model BaseClassKindFunctionFunction
   Real x = Derived(1.0);
 equation
   annotation (
-    __ModelicaAssocication(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that a class with specialization function is allowed to derive from another function.</html>"));

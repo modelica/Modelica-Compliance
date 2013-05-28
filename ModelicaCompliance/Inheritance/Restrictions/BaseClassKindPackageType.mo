@@ -12,7 +12,7 @@ model BaseClassKindPackageType
   Real x = Derived.x;
 equation
   annotation (
-    __ModelicaAssocication(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false)),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that a class with specialization package is not allowed to derive from type.</html>"));

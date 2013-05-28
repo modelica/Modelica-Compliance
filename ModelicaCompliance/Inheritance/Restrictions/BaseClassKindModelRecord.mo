@@ -14,7 +14,7 @@ model BaseClassKindModelRecord
   Derived d;
 equation
   annotation (
-    __ModelicaAssocication(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that a class with specialization model is allowed to derive from record.</html>"));
