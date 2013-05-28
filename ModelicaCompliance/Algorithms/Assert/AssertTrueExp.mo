@@ -3,9 +3,9 @@ within ModelicaCompliance.Algorithms.Assert;
 model AssertTrueExp
   extends Icons.TestCase;
 
-  Real x(start = 1.0);
+  Real x;
 algorithm
-  x := der(x);
+  x := 1 + abs(time);
   assert(x > 0.5, "This assert should not be triggered.");
 
   annotation (
