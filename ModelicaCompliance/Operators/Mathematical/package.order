@@ -27,7 +27,8 @@ SignBooleanIncorrect
 SignRealAndIntegerExpression
 Sin
 Sinh
+SqrtIntegerArgument
 SqrtNegativeExpressionIncorrect
-SqrtRealAndIntegerExpression
+SqrtRealArgument
 Tan
 Tanh
