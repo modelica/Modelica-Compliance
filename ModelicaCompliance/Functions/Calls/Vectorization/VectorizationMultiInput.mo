@@ -6,15 +6,15 @@ model VectorizationMultiInput
   function Test
     input Integer i1;
     input Integer i2;
-    output Integer o1[2];
+    output Integer o1;
   algorithm
-    o1[1] := i2;
-    o1[2] := i1;
+    o1 := i1 + i2;
   end Test;
   
-  Integer[2,2] a = Test({42, 1984},{496,1729});
+  Integer[2] a = Test({42, 1984},{496,1729});
 equation
-  assert(a[2,2] == 1984, "Vectorization should have been applied.");
+  assert(a[1] == 538, "Vectorization should have been applied.");
+  assert(a[2] == 3713, "Vectorization should have been applied.");
 
   
   annotation (
