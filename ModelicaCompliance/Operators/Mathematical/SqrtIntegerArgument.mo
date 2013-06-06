@@ -7,7 +7,7 @@ model SqrtIntegerArgument
 equation
   r = sqrt(225);
   
-  assert(Util.compareReal(r2, 15.0), "The value of sqrt(225) was not evaluated correctly.");
+  assert(Util.compareReal(r, 15.0), "The value of sqrt(225) was not evaluated correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
