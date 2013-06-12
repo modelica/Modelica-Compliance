@@ -3,7 +3,7 @@ within ModelicaCompliance.Equations.For;
 model BoolTypeRange
   extends Icons.TestCase;
 
-  Boolean b[2];
+  Boolean b[Boolean];
 equation
   for i in Boolean loop
     b[i] = i;
