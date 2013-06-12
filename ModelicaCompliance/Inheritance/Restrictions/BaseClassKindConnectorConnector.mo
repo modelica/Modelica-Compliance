@@ -5,7 +5,7 @@ model BaseClassKindConnectorConnector
 
   connector Base
     Real x = 4.0;
-    flow Real f = 2.0;
+    flow Real f;
   end Base;
 
   connector Derived

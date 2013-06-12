@@ -19,7 +19,7 @@ equation
   assert(x == 3, "P2.A was not replaced!");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the extended base class is allowed to be replaced.</html>"));

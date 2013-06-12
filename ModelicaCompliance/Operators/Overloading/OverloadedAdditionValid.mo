@@ -20,7 +20,7 @@ model OverloadedAdditionValid
   _Complex_ b = _Complex_(2);
   _Complex_ c = a + b;
 equation
-  assert(c.re == 3, "Overloaded '+' not matched properly.")
+  assert(c.re == 3, "Overloaded '+' not matched properly.");
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

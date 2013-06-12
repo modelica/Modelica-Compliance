@@ -3,7 +3,7 @@ within ModelicaCompliance.Arrays.Declarations;
 model ArrayTypeIntegerParameter
   extends Icons.TestCase;
 
-  parameter Integer x[2,3];
+  parameter Integer x[2,3] = {{1, 2, 3}, {4, 5, 6}};
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

@@ -8,10 +8,16 @@ model InheritanceFlow
     replaceable flow Real f;
   end C;
 
-  C c1(redeclare Real f);
+  model A
+    C c(redeclare Real f);
+  equation
+    c.e = 1.0;
+  end A;
+
+  A a;
   C c2, c3;
 equation
-  connect(c1, c2);
+  connect(a.c, c2);
   connect(c2, c3);
 
   annotation (

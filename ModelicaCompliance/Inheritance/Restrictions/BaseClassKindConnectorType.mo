@@ -9,7 +9,7 @@ model BaseClassKindConnectorType
     extends Base;
   end Derived;
 
-  Derived d;
+  Derived d = 1.0;
 equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

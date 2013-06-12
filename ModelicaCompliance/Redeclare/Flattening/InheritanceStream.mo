@@ -9,11 +9,18 @@ model InheritanceStream
     replaceable stream Real s;
   end C;
 
-  C c1;
-  C c2;
-  Real x = inStream(c1.s);
+  model A
+    C c;
+  end A;
+
+  A a1, a2;
+  Real x = inStream(a1.c.s);
 equation
-  connect(c1, c2);
+  a1.c.e = 3.0;
+  a1.c.f = 2.0;
+  a1.c.s = 2.0;
+  a2.c.s = 4.0;
+  connect(a1.c, a2.c);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

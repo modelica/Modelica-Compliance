@@ -21,7 +21,7 @@ model ConstructorPriority
 
   _Complex_ a = _Complex_(1);
 equation
-  assert(a.re == 2, "Overloaded constructor should shadow automatically generated constructor.")
+  assert(a.re == 2, "Overloaded constructor should shadow automatically generated constructor.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),

@@ -3,16 +3,25 @@ within ModelicaCompliance.Redeclare.Restrictions;
 model DoubleRedeclareWithoutReplaceable
   extends Icons.TestCase;
 
+  model M1
+    Real x = 1.0;
+  end M1;
+
+  model M2
+    Real x = 2.0;
+    Real y = 3.0;
+  end M2;
+
   model A
-    replaceable Real x = 2.0;
+    replaceable M1 m;
   end A;
 
   model B
-    extends A(redeclare Real x = 3.0);
+    extends A(redeclare M1 m);
   end B;
 
   model C
-    extends B(redeclare Real x = 4.0);
+    extends B(redeclare M2 m);
   end C;
 
   C c;
