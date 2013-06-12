@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="omc 1.9.0 beta4+dev (r16315) compliance suite 3.2.2.0">
+<testsuite name="ModelicaCompliance">
+<testcase name="Template"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Algorithms.Assert">
+<testcase name="AssertDiffLevel"></testcase>
+<testcase name="AssertError"></testcase>
+<testcase name="AssertFalseExp"></testcase>
+<testcase name="AssertFalse"></testcase>
+<testcase name="AssertNoEval"></testcase>
+<testcase name="AssertNonBoolCond"></testcase>
+<testcase name="AssertNonStringMsg"></testcase>
+<testcase name="AssertTrueExp"></testcase>
+<testcase name="AssertTrue"></testcase>
+<testcase name="AssertVarLevel"><error type="failed" message=""/></testcase>
+<testcase name="AssertWarning"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Algorithms.Assignment">
+<testcase name="AssignmentOrder"><error type="expected failure" message=""/></testcase>
+<testcase name="SimpleAssignment"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Algorithms.For">
+<testcase name="ArrayRangeExp"></testcase>
+<testcase name="ArrayRange"></testcase>
+<testcase name="BoolRange"><error type="expected failure" message=""/></testcase>
+<testcase name="BoolTypeRange"><error type="expected failure" message=""/></testcase>
+<testcase name="EnumRange"><error type="expected failure" message=""/></testcase>
+<testcase name="EnumTypeRange"></testcase>
+<testcase name="ImplicitBoolIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitEnumIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitIntegerIterator"></testcase>
+<testcase name="ImplicitIteratorEqRange"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitIteratorNeqRange"></testcase>
+<testcase name="ImplicitIteratorNonSub"></testcase>
+<testcase name="ImplicitMultiIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitMultiMixedIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="IntegerRange"></testcase>
+<testcase name="IteratorScope"></testcase>
+<testcase name="MixedImplExplIterator"></testcase>
+<testcase name="MultiEq"></testcase>
+<testcase name="MultiIterator"></testcase>
+<testcase name="NestedLoops"></testcase>
+<testcase name="RangeScope"></testcase>
+<testcase name="RealRange"></testcase>
+<testcase name="ScalarRange"></testcase>
+<testcase name="ShadowedIterator"></testcase>
+<testcase name="SingleIterator"></testcase>
+<testcase name="StringRange"></testcase>
+<testcase name="VarArrayRange"><error type="failed" message=""/></testcase>
+<testcase name="VariableRange"><error type="failed" message=""/></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Algorithms.If">
+<testcase name="BranchEvaluation"></testcase>
+<testcase name="EvaluationOrder"><error type="expected failure" message=""/></testcase>
+<testcase name="MultipleBranchesMultipleMatching"></testcase>
+<testcase name="MultipleBranchesNoneMatchingElse"></testcase>
+<testcase name="MultipleBranchesNoneMatching"></testcase>
+<testcase name="NonBooleanCondition"></testcase>
+<testcase name="NonScalarCondition"></testcase>
+<testcase name="SingleBranchEmpty"></testcase>
+<testcase name="SingleBranch"></testcase>
+<testcase name="TwoBranchesElseSelectFirst"></testcase>
+<testcase name="TwoBranchesElseSelectSecond"></testcase>
+<testcase name="TwoBranchesNoElseSelectFirst"></testcase>
+<testcase name="TwoBranchesNoElseSelectSecond"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Declarations">
+<testcase name="ArrayAndScalarsSameLine"></testcase>
+<testcase name="ArrayDeclarationMixedForms"></testcase>
+<testcase name="ArrayDeclarationTypeDim1"></testcase>
+<testcase name="ArrayDeclarationTypeDim2"></testcase>
+<testcase name="ArrayEmptyMatrices"></testcase>
+<testcase name="ArrayEmptyMatricesWithFill"></testcase>
+<testcase name="ArrayEmptyVector"></testcase>
+<testcase name="ArrayEmptyVectorWithFill"></testcase>
+<testcase name="ArrayIndexedbyEnum"><error type="expected failure" message=""/></testcase>
+<testcase name="ArraysofArraysRealParameter"></testcase>
+<testcase name="ArrayTypeIntegerMatrix"></testcase>
+<testcase name="ArrayTypeIntegerParameter"></testcase>
+<testcase name="ArrayTypeInteger"></testcase>
+<testcase name="ArrayUnspecifiedDimIncorrect"></testcase>
+<testcase name="ArrayUnspecifiedDim"></testcase>
+<testcase name="ArrayVariablesMultipleDeclarations"></testcase>
+<testcase name="ArrayVariablesSingleDeclaration"></testcase>
+<testcase name="ArrayWithNegativeDims"><error type="failed" message=""/></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Flexible">
+<testcase name="ArrayFlexible"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Functions.Algebra">
+<testcase name="Cross"></testcase>
+<testcase name="OuterProduct"></testcase>
+<testcase name="Skew"></testcase>
+<testcase name="Symmetric"></testcase>
+<testcase name="Transpose1"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Functions.Construction">
+<testcase name="ArrayConstructorDiagonal"></testcase>
+<testcase name="ArrayConstructorFillBoolean"></testcase>
+<testcase name="ArrayConstructorFill"></testcase>
+<testcase name="ArrayConstructorIdentity"></testcase>
+<testcase name="ArrayConstructorLinespace"></testcase>
+<testcase name="ArrayConstructorOnes"></testcase>
+<testcase name="ArrayConstructorZeros"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Functions.Conversion">
+<testcase name="DimConversionMatrix"></testcase>
+<testcase name="DimConversionScalar"></testcase>
+<testcase name="DimConversionVector"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Functions.Reductions">
+<testcase name="ArrayReductionMax1"></testcase>
+<testcase name="ArrayReductionMax2"></testcase>
+<testcase name="ArrayReductionMin"></testcase>
+<testcase name="ArrayReductionProduct1"></testcase>
+<testcase name="ArrayReductionSum1"></testcase>
+<testcase name="ArrayReductionSum2"></testcase>
+<testcase name="ArrayReductionSum3"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Functions.Size">
+<testcase name="ArrayDimSize1"></testcase>
+<testcase name="ArrayDimSize2"></testcase>
+<testcase name="ArrayDimSize3"></testcase>
+<testcase name="ArrayDimSizeIncorrectArgument1"></testcase>
+<testcase name="ArrayDimSizeIncorrectArgument2"></testcase>
+<testcase name="ArrayDimSizeIncorrectArgument3"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Indexing">
+<testcase name="ArrayIndexing10"></testcase>
+<testcase name="ArrayIndexing11"></testcase>
+<testcase name="ArrayIndexing12"></testcase>
+<testcase name="ArrayIndexing13"></testcase>
+<testcase name="ArrayIndexing14"></testcase>
+<testcase name="ArrayIndexing1"></testcase>
+<testcase name="ArrayIndexing2"></testcase>
+<testcase name="ArrayIndexing3"></testcase>
+<testcase name="ArrayIndexing4"></testcase>
+<testcase name="ArrayIndexing5"></testcase>
+<testcase name="ArrayIndexing6"></testcase>
+<testcase name="ArrayIndexing7"></testcase>
+<testcase name="ArrayIndexing8"></testcase>
+<testcase name="ArrayIndexing9"></testcase>
+<testcase name="ArrayIndexingWithEnd1"></testcase>
+<testcase name="ArrayIndexingWithEnd2"></testcase>
+<testcase name="ArrayIndexingWithEnd3"></testcase>
+<testcase name="ArrayIndexingWithEnd4"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Operations.Arithmetic">
+<testcase name="ArrayAdditionIncorrect1"></testcase>
+<testcase name="ArrayAdditionIncorrect2"></testcase>
+<testcase name="ArrayConcatenation10"></testcase>
+<testcase name="ArrayConcatenation11"><error type="expected failure" message=""/></testcase>
+<testcase name="ArrayConcatenation12"></testcase>
+<testcase name="ArrayConcatenation13"><error type="expected failure" message=""/></testcase>
+<testcase name="ArrayConcatenation14"></testcase>
+<testcase name="ArrayConcatenation15"></testcase>
+<testcase name="ArrayConcatenation16"></testcase>
+<testcase name="ArrayConcatenation1"></testcase>
+<testcase name="ArrayConcatenation2"></testcase>
+<testcase name="ArrayConcatenation3"></testcase>
+<testcase name="ArrayConcatenation4"></testcase>
+<testcase name="ArrayConcatenation5"></testcase>
+<testcase name="ArrayConcatenation6"></testcase>
+<testcase name="ArrayConcatenation7"></testcase>
+<testcase name="ArrayConcatenation8"></testcase>
+<testcase name="ArrayConcatenation9"></testcase>
+<testcase name="ArrayDivision1"></testcase>
+<testcase name="ArrayDivisionIncorrect1"></testcase>
+<testcase name="ArrayDivisionIncorrect2"></testcase>
+<testcase name="ArrayEWAddition1"></testcase>
+<testcase name="ArrayEWAddition2"></testcase>
+<testcase name="ArrayEWAddition3"></testcase>
+<testcase name="ArrayEWAddition4"></testcase>
+<testcase name="ArrayEWAddition5"></testcase>
+<testcase name="ArrayEWAddition6"></testcase>
+<testcase name="ArrayEWDivision1"></testcase>
+<testcase name="ArrayEWDivision2"></testcase>
+<testcase name="ArrayEWDivision3"></testcase>
+<testcase name="ArrayEWDivision4"></testcase>
+<testcase name="ArrayEWDivision5"></testcase>
+<testcase name="ArrayEWDivisionIncorrect"></testcase>
+<testcase name="ArrayEWExponentiation1"></testcase>
+<testcase name="ArrayEWExponentiation2"></testcase>
+<testcase name="ArrayEWExponentiation3"></testcase>
+<testcase name="ArrayEWExponentiation4"></testcase>
+<testcase name="ArrayEWExponentiation5"></testcase>
+<testcase name="ArrayEWExponentiationIncorrect"></testcase>
+<testcase name="ArrayEWMultiplication1"></testcase>
+<testcase name="ArrayEWMultiplication2"></testcase>
+<testcase name="ArrayEWMultiplication3"></testcase>
+<testcase name="ArrayEWMultiplication4"></testcase>
+<testcase name="ArrayEWMultiplication5"></testcase>
+<testcase name="ArrayEWMultiplicationIncorrect1"></testcase>
+<testcase name="ArrayEWSubtraction1"></testcase>
+<testcase name="ArrayEWSubtraction2"></testcase>
+<testcase name="ArrayEWSubtraction3"></testcase>
+<testcase name="ArrayEWSubtraction4"></testcase>
+<testcase name="ArrayEWSubtraction5"></testcase>
+<testcase name="ArrayEWSubtraction6"></testcase>
+<testcase name="ArrayExponentiationIncorrect1"></testcase>
+<testcase name="ArrayExponentiationIncorrect2"></testcase>
+<testcase name="ArrayExponentiationIncorrect3"></testcase>
+<testcase name="ArrayMatrixMatrixAddition"></testcase>
+<testcase name="ArrayMultiplication2"></testcase>
+<testcase name="ArrayMultiplication3"></testcase>
+<testcase name="ArraySubtraction1"></testcase>
+<testcase name="ArraySubtractionIncorrect1"></testcase>
+<testcase name="ArraySubtractionIncorrect2"></testcase>
+<testcase name="ArrayVectorVectorAddition"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Operations.Assignment">
+<testcase name="ArrayAssignment"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Operations.Equality">
+<testcase name="ArrayEquality"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Operations.Logical">
+<testcase name="ArrayLogicalAnd1"></testcase>
+<testcase name="ArrayLogicalAnd2"></testcase>
+<testcase name="ArrayLogicalNot1"></testcase>
+<testcase name="ArrayLogicalNot2"></testcase>
+<testcase name="ArrayLogicalOr1"></testcase>
+<testcase name="ArrayLogicalOr2"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Arrays.Operations.MatrixProduct">
+<testcase name="ArrayMatrixExponentiation1"></testcase>
+<testcase name="ArrayMatrixExponentiation2"></testcase>
+<testcase name="ArrayMatrixExponentiation3"></testcase>
+<testcase name="ArrayMatrixMatrixMul1"></testcase>
+<testcase name="ArrayMatrixMatrixMul2"></testcase>
+<testcase name="ArrayMatrixMatrixMul3"></testcase>
+<testcase name="ArrayMatrixMatrixMul4"></testcase>
+<testcase name="ArrayMatrixMatrixMul5"></testcase>
+<testcase name="ArrayMatrixMatrixMul6"></testcase>
+<testcase name="ArrayMatrixVectorMul1"></testcase>
+<testcase name="ArrayMatrixVectorMul2"></testcase>
+<testcase name="ArrayMatrixVectorMul3"></testcase>
+<testcase name="ArrayMatrixVectorMul4"></testcase>
+<testcase name="ArrayMatrixVectorMul5"></testcase>
+<testcase name="ArrayVectorMatrixMul1"></testcase>
+<testcase name="ArrayVectorMatrixMul2"></testcase>
+<testcase name="ArrayVectorMatrixMul3"></testcase>
+<testcase name="ArrayVectorMatrixMul4"></testcase>
+<testcase name="ArrayVectorMatrixMul5"></testcase>
+<testcase name="ArrayVectorMatrixVectorMul1"></testcase>
+<testcase name="ArrayVectorMatrixVectorMul2"></testcase>
+<testcase name="ArrayVectorVectorMul1"></testcase>
+<testcase name="ArrayVectorVectorMul2"></testcase>
+<testcase name="ArrayVectorVectorMul3"></testcase>
+<testcase name="ArrayVectorVectorMul4"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Classes.Declarations">
+<testcase name="PartialSimulationModel"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Components.Declarations">
+<testcase name="BasicDeclarationMulti"></testcase>
+<testcase name="BasicDeclarationSingle"></testcase>
+<testcase name="CyclicBindingArraySize"></testcase>
+<testcase name="CyclicBindingConstantSelf"><error type="failed" message=""/></testcase>
+<testcase name="CyclicBindingConstants"></testcase>
+<testcase name="CyclicBindingParameterSelf"><error type="failed" message=""/></testcase>
+<testcase name="CyclicBindingParameters"></testcase>
+<testcase name="DeclarationOrder"></testcase>
+<testcase name="PartialInstance"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Equations.Assert">
+<testcase name="AssertDiffLevel"></testcase>
+<testcase name="AssertError"></testcase>
+<testcase name="AssertFalseExp"></testcase>
+<testcase name="AssertFalse"></testcase>
+<testcase name="AssertNoEval"></testcase>
+<testcase name="AssertNonBoolCond"></testcase>
+<testcase name="AssertNonStringMsg"></testcase>
+<testcase name="AssertTrueExp"></testcase>
+<testcase name="AssertTrue"></testcase>
+<testcase name="AssertVarLevel"><error type="failed" message=""/></testcase>
+<testcase name="AssertWarning"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Equations.Equality">
+<testcase name="ComplexEquality"></testcase>
+<testcase name="IfEquality"></testcase>
+<testcase name="SimpleEquality"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Equations.For">
+<testcase name="ArrayRangeExp"></testcase>
+<testcase name="ArrayRange"><error type="failed" message=""/></testcase>
+<testcase name="BoolRange"><error type="expected failure" message=""/></testcase>
+<testcase name="BoolTypeRange"><error type="expected failure" message=""/></testcase>
+<testcase name="EnumRange"></testcase>
+<testcase name="EnumTypeRange"></testcase>
+<testcase name="ImplicitBoolIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitEnumIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitIntegerIterator"></testcase>
+<testcase name="ImplicitIteratorEqRange"></testcase>
+<testcase name="ImplicitIteratorNeqRange"></testcase>
+<testcase name="ImplicitIteratorNonSub"></testcase>
+<testcase name="ImplicitMultiIterator"></testcase>
+<testcase name="ImplicitMultiMixedIterator"><error type="expected failure" message=""/></testcase>
+<testcase name="IntegerRange"></testcase>
+<testcase name="IteratorScope"></testcase>
+<testcase name="MixedImplExplIterator"></testcase>
+<testcase name="MultiEq"></testcase>
+<testcase name="MultiIterator"></testcase>
+<testcase name="NestedLoops"></testcase>
+<testcase name="RangeScope"></testcase>
+<testcase name="RealRange"></testcase>
+<testcase name="ScalarRange"></testcase>
+<testcase name="ShadowedIterator"></testcase>
+<testcase name="SingleIterator"></testcase>
+<testcase name="StringRange"></testcase>
+<testcase name="VariableRange"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Equations.If">
+<testcase name="BranchEvaluation"></testcase>
+<testcase name="EvaluationOrder"><error type="expected failure" message=""/></testcase>
+<testcase name="MultipleBranchesMultipleMatching"></testcase>
+<testcase name="MultipleBranchesNoneMatchingElse"></testcase>
+<testcase name="MultipleBranchesNoneMatching"></testcase>
+<testcase name="NonBooleanCondition"></testcase>
+<testcase name="NonScalarCondition"></testcase>
+<testcase name="SingleBranchEmpty"></testcase>
+<testcase name="SingleBranch"></testcase>
+<testcase name="TwoBranchesElseSelectFirst"></testcase>
+<testcase name="TwoBranchesElseSelectSecond"></testcase>
+<testcase name="TwoBranchesNoElseSelectFirst"></testcase>
+<testcase name="TwoBranchesNoElseSelectSecond"></testcase>
+<testcase name="VarConditionDiffEqCount"></testcase>
+<testcase name="VarConditionNoElse"></testcase>
+<testcase name="VarConditionSameEqCount"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Functions.Calls.Vectorization">
+<testcase name="VectorizationMultidim"></testcase>
+<testcase name="VectorizationMultiInputIllegal"></testcase>
+<testcase name="VectorizationMultiInput"></testcase>
+<testcase name="VectorizationMultiOutput"></testcase>
+<testcase name="VectorizationSimple"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Functions.Records">
+<testcase name="RecordConstructorConstantModifiable"></testcase>
+<testcase name="RecordConstructorDefaultValueDependent"></testcase>
+<testcase name="RecordConstructorDefaultValue"></testcase>
+<testcase name="RecordConstructorWithRecordInput"><error type="expected failure" message=""/></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Functions.Restrictions">
+<testcase name="FunctionAssignInput"></testcase>
+<testcase name="FunctionBlock"></testcase>
+<testcase name="FunctionEquations"></testcase>
+<testcase name="FunctionInitialAlgorithm"></testcase>
+<testcase name="FunctionInitialEquations"></testcase>
+<testcase name="FunctionInnerOuter"><error type="failed" message=""/></testcase>
+<testcase name="FunctionModel"></testcase>
+<testcase name="FunctionMultipleAlgorithm"><error type="failed" message=""/></testcase>
+<testcase name="FunctionProtectedArguments"></testcase>
+<testcase name="FunctionPublicElements"><error type="failed" message=""/></testcase>
+<testcase name="PartialExternalFunction"></testcase>
+<testcase name="PartialFunction"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Inheritance.Flattening">
+<testcase name="BaseClassWithReplaceableElement"><error type="failed" message=""/></testcase>
+<testcase name="BasicInheritance"></testcase>
+<testcase name="DuplicateInheritedEqClasses"></testcase>
+<testcase name="DuplicateInheritedEqComps"></testcase>
+<testcase name="DuplicateInheritedNeqClasses"><error type="failed" message=""/></testcase>
+<testcase name="DuplicateInheritedNeqComps"></testcase>
+<testcase name="InheritanceScoping"><error type="failed" message=""/></testcase>
+<testcase name="InheritanceSections"></testcase>
+<testcase name="InheritedBaseClass"></testcase>
+<testcase name="MultiLevelInheritance"></testcase>
+<testcase name="MultipleInheritance"></testcase>
+<testcase name="ProtectedInheritance"><error type="failed" message=""/></testcase>
+<testcase name="ReplaceableBaseClass"><error type="failed" message=""/></testcase>
+<testcase name="ReplacedBaseClass"><error type="failed" message=""/></testcase>
+<testcase name="VisibilityHeadingInheritance"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Inheritance.Restrictions">
+<testcase name="BaseClassKindBlockBlock"></testcase>
+<testcase name="BaseClassKindBlockConnector"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindBlockFunction"></testcase>
+<testcase name="BaseClassKindBlockModel"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindBlockPackage"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindBlockRecord"></testcase>
+<testcase name="BaseClassKindBlockType"></testcase>
+<testcase name="BaseClassKindConnectorBlock"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindConnectorConnector"><error type="expected failure" message=""/></testcase>
+<testcase name="BaseClassKindConnectorFunction"></testcase>
+<testcase name="BaseClassKindConnectorModel"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindConnectorPackage"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindConnectorRecord"></testcase>
+<testcase name="BaseClassKindConnectorType"><error type="expected failure" message=""/></testcase>
+<testcase name="BaseClassKindFunctionBlock"></testcase>
+<testcase name="BaseClassKindFunctionConnector"></testcase>
+<testcase name="BaseClassKindFunctionFunction"></testcase>
+<testcase name="BaseClassKindFunctionModel"></testcase>
+<testcase name="BaseClassKindFunctionPackage"></testcase>
+<testcase name="BaseClassKindFunctionRecord"></testcase>
+<testcase name="BaseClassKindFunctionType"></testcase>
+<testcase name="BaseClassKindModelBlock"></testcase>
+<testcase name="BaseClassKindModelConnector"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindModelFunction"></testcase>
+<testcase name="BaseClassKindModelModel"></testcase>
+<testcase name="BaseClassKindModelPackage"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindModelRecord"></testcase>
+<testcase name="BaseClassKindModelType"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindPackageBlock"></testcase>
+<testcase name="BaseClassKindPackageConnector"></testcase>
+<testcase name="BaseClassKindPackageFunction"></testcase>
+<testcase name="BaseClassKindPackageModel"></testcase>
+<testcase name="BaseClassKindPackagePackage"></testcase>
+<testcase name="BaseClassKindPackageRecord"></testcase>
+<testcase name="BaseClassKindPackageType"></testcase>
+<testcase name="BaseClassKindRecordBlock"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindRecordConnector"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindRecordFunction"></testcase>
+<testcase name="BaseClassKindRecordModel"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindRecordPackage"><error type="failed" message=""/></testcase>
+<testcase name="BaseClassKindRecordRecord"></testcase>
+<testcase name="BaseClassKindRecordType"><error type="failed" message=""/></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Arithmetic">
+<testcase name="AddIntegers"></testcase>
+<testcase name="AddLargeStrings"></testcase>
+<testcase name="AddReal"></testcase>
+<testcase name="DivideIntegers"></testcase>
+<testcase name="DivideReal"></testcase>
+<testcase name="ExponentIntegers"></testcase>
+<testcase name="ExponentReal"></testcase>
+<testcase name="MultiplyIntegers"></testcase>
+<testcase name="MultiplyReal"></testcase>
+<testcase name="StringConcatenation"></testcase>
+<testcase name="SubtractIntegers"></testcase>
+<testcase name="SubtractReal"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Associativity">
+<testcase name="AdditionAndSubtraction"></testcase>
+<testcase name="Division"></testcase>
+<testcase name="Subtraction"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Conversion">
+<testcase name="BooleanToStringConversion"></testcase>
+<testcase name="IntegerToStringConversion"></testcase>
+<testcase name="RealToIntegerConversion"></testcase>
+<testcase name="RealToStringConversion"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Events">
+<testcase name="ReinitIncorrect1"></testcase>
+<testcase name="ReinitIncorrect2"></testcase>
+<testcase name="ReinitIncorrect3"></testcase>
+<testcase name="SampleIncorrect"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.If">
+<testcase name="IfExpression"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Logical">
+<testcase name="LogicalAnd"></testcase>
+<testcase name="LogicalNot"></testcase>
+<testcase name="LogicalOr"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Mathematical">
+<testcase name="AbsBooleanIncorrect"></testcase>
+<testcase name="AbsIntegerAndRealExpression"></testcase>
+<testcase name="AcosIncorrect1"></testcase>
+<testcase name="AcosIncorrect2"></testcase>
+<testcase name="Acos"></testcase>
+<testcase name="AsinIncorrect1"></testcase>
+<testcase name="AsinIncorrect2"></testcase>
+<testcase name="Asin"></testcase>
+<testcase name="Atan2"></testcase>
+<testcase name="Atan"></testcase>
+<testcase name="Ceil"></testcase>
+<testcase name="Cosh"></testcase>
+<testcase name="Cos"></testcase>
+<testcase name="DivInteger"></testcase>
+<testcase name="DivReal"></testcase>
+<testcase name="Exp"></testcase>
+<testcase name="Floor"></testcase>
+<testcase name="Log10Incorrect"><error type="failed" message=""/></testcase>
+<testcase name="Log10"></testcase>
+<testcase name="LogIncorrect"><error type="failed" message=""/></testcase>
+<testcase name="Log"></testcase>
+<testcase name="ModInteger"></testcase>
+<testcase name="ModReal"></testcase>
+<testcase name="RemInteger"></testcase>
+<testcase name="RemReal"></testcase>
+<testcase name="SignBooleanIncorrect"></testcase>
+<testcase name="SignRealAndIntegerExpression"></testcase>
+<testcase name="Sinh"></testcase>
+<testcase name="Sin"></testcase>
+<testcase name="SqrtIntegerArgument"></testcase>
+<testcase name="SqrtNegativeExpressionIncorrect"><error type="failed" message=""/></testcase>
+<testcase name="SqrtRealArgument"></testcase>
+<testcase name="Tanh"></testcase>
+<testcase name="Tan"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Overloading">
+<testcase name="BinaryOperatorOverloadVectorization"></testcase>
+<testcase name="ConstructorAmbiguous"><error type="failed" message=""/></testcase>
+<testcase name="ConstructorNumberOfOutputs"><error type="failed" message=""/></testcase>
+<testcase name="ConstructorSimpleValid"></testcase>
+<testcase name="ConstructorTypeOfOutput"><error type="failed" message=""/></testcase>
+<testcase name="ElemWiseBinaryOverloadResolution"></testcase>
+<testcase name="ExactMatchArrayOverload"><error type="expected failure" message=""/></testcase>
+<testcase name="ImplicitConstructionAndBinaryOp"></testcase>
+<testcase name="NegationSubtractionOverload"></testcase>
+<testcase name="OverloadedBinaryNumberOfInputs"><error type="failed" message=""/></testcase>
+<testcase name="OverloadedLogicalOperation"></testcase>
+<testcase name="OverloadedRelationalOperation"></testcase>
+<testcase name="OverloadedString"></testcase>
+<testcase name="OverloadedStringTypeOfOutput"><error type="failed" message=""/></testcase>
+<testcase name="VectorizeConstructAndApply"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Relational">
+<testcase name="Equals"></testcase>
+<testcase name="GreaterThanEqual"></testcase>
+<testcase name="GreaterThan"></testcase>
+<testcase name="LessThanEqual"></testcase>
+<testcase name="LessThan"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Operators.Special">
+<testcase name="DelayIncorrect1"></testcase>
+<testcase name="DelayIncorrect2"></testcase>
+<testcase name="DelayIncorrect3"><error type="failed" message=""/></testcase>
+<testcase name="Delay"></testcase>
+<testcase name="DerConstantIncorrect1"><error type="failed" message=""/></testcase>
+<testcase name="DerConstantIncorrect2"><error type="failed" message=""/></testcase>
+<testcase name="DerConstant"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Packages">
+<testcase name="BOM"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Redeclare.ConstrainingType">
+<testcase name="ConstrainingMod"><error type="expected failure" message=""/></testcase>
+<testcase name="ConstrainingModWithRedecl"><error type="expected failure" message=""/></testcase>
+<testcase name="ConstrainingTypeDimsClass"></testcase>
+<testcase name="ConstrainingTypeDimsComponent"></testcase>
+<testcase name="ConstrainingType"></testcase>
+<testcase name="ConstrainingTypeWrongDimsClass"><error type="failed" message=""/></testcase>
+<testcase name="ConstrainingTypeWrongDimsComponent"><error type="failed" message=""/></testcase>
+<testcase name="ImplConstrainingModWithRedecl"></testcase>
+<testcase name="RedeclareConstrainingTypeClass"><error type="failed" message=""/></testcase>
+<testcase name="RedeclareConstrainingTypeComponent"><error type="failed" message=""/></testcase>
+<testcase name="RedeclareConstrainingTypeMod"><error type="expected failure" message=""/></testcase>
+<testcase name="RedeclareConstrainingTypeSubtype"><error type="failed" message=""/></testcase>
+<testcase name="RedeclareMod"><error type="expected failure" message=""/></testcase>
+<testcase name="RedeclareNonSubtypeClassImpl"><error type="failed" message=""/></testcase>
+<testcase name="RedeclareNonSubtypeClass"><error type="failed" message=""/></testcase>
+<testcase name="RedeclareNonSubtypeComponentImpl"><error type="failed" message=""/></testcase>
+<testcase name="RedeclareNonSubtypeComponent"><error type="failed" message=""/></testcase>
+<testcase name="ReplaceableModWithRedecl"><error type="expected failure" message=""/></testcase>
+<testcase name="ReplaceableNonSubtypeComponent"><error type="failed" message=""/></testcase>
+<testcase name="ReplaceableNonSubtypeLongClass"><error type="failed" message=""/></testcase>
+<testcase name="ReplaceableNonSubtypeShortClass"><error type="failed" message=""/></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Redeclare.Flattening">
+<testcase name="BasicBindingRedeclare"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceDimensionClass"></testcase>
+<testcase name="InheritanceDimensionComp"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceDirection"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceFlow"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceInnerOuterComp"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceProtectedClass"><error type="failed" message=""/></testcase>
+<testcase name="InheritanceProtectedComp"></testcase>
+<testcase name="InheritancePublicClass"><error type="failed" message=""/></testcase>
+<testcase name="InheritancePublicComp"></testcase>
+<testcase name="InheritanceStream"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceVariabilityConst"></testcase>
+<testcase name="InheritanceVariabilityParam"><error type="expected failure" message=""/></testcase>
+<testcase name="InheritanceVisibilityComp"></testcase>
+<testcase name="ReplaceableAsRedeclare"><error type="expected failure" message=""/></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Redeclare.Restrictions">
+<testcase name="ArrayDimRedeclare"><error type="expected failure" message=""/></testcase>
+<testcase name="ConstantRedeclareElement"></testcase>
+<testcase name="ConstantRedeclareModifier"></testcase>
+<testcase name="DoubleRedeclareWithoutReplaceable"></testcase>
+<testcase name="FinalRedeclareElementClass"><error type="failed" message=""/></testcase>
+<testcase name="FinalRedeclareElementComp"></testcase>
+<testcase name="FinalRedeclareModifierClass"></testcase>
+<testcase name="FinalRedeclareModifierComp"></testcase>
+<testcase name="ProtectedToPublicRedeclareClass"><error type="failed" message=""/></testcase>
+<testcase name="ProtectedToPublicRedeclareComp"></testcase>
+<testcase name="PublicToProtectedRedeclareClass"><error type="failed" message=""/></testcase>
+<testcase name="PublicToProtectedRedeclareComp"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Scoping.NameLookup.Composite">
+<testcase name="FunctionLookupViaComp"></testcase>
+<testcase name="NestedCompLookup"></testcase>
+<testcase name="NonFunctionLookupViaComp"></testcase>
+<testcase name="NonPackageLookupEncapsulated"></testcase>
+<testcase name="NonPackageLookupNonEncapsulated"><error type="failed" message=""/></testcase>
+<testcase name="PackageLookup"></testcase>
+</testsuite>
+<testsuite name="ModelicaCompliance.Scoping.NameLookup.Simple">
+<testcase name="Encapsulation"></testcase>
+<testcase name="EnclosingClassLookupClass"></testcase>
+<testcase name="EnclosingClassLookupConstant"></testcase>
+<testcase name="EnclosingClassLookupNonConstant"></testcase>
+<testcase name="EnclosingClassLookupShadowedConstant"><error type="failed" message=""/></testcase>
+<testcase name="ImplicitShadowingFor"></testcase>
+<testcase name="ImplicitShadowingReduction"></testcase>
+<testcase name="LocalClassNameLookup"></testcase>
+<testcase name="LocalCompNameLookup"></testcase>
+<testcase name="OutsideEncapsulationMulti"><error type="failed" message=""/></testcase>
+<testcase name="OutsideEncapsulation"><error type="failed" message=""/></testcase>
+</testsuite>
+</testsuites>

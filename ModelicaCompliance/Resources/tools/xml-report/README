@@ -1,0 +1,4 @@
+Run ./test.sh from this directory to see what the reports under sample-files look like
+
+Note: You should not check in more xml-files here on subversion. They are only to be used as reference during development.
+A separate procedure will be put in place to update xml-files that your tool produces.
