@@ -3,14 +3,14 @@ within ModelicaCompliance.Equations.If;
 model VarConditionSameEqCount
   extends Icons.TestCase;
 
-  Real x(start = 0.0), y(start = 2.0);
+  Real x, y;
 equation
   if x < 1.0 then
     x = time;
-    y = y + x;
+    y = x + 1.0;
   else
-    x = 1.0;
-    y = der(y);
+    x = 2 - time;
+    y = x + 1.0;
   end if;
 
   annotation (
