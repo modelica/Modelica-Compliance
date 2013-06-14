@@ -10,9 +10,9 @@ model BaseClassWithReplaceableElement
   extends A;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-    info = "<html>Checks that the extended base class is not allowed to contain
+    info = "<html>Checks that an extended base class is allowed to contain
       replaceable elements.</html>"));
 end BaseClassWithReplaceableElement;
