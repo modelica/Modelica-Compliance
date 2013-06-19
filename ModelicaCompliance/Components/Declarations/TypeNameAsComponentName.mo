@@ -1,8 +1,7 @@
 within ModelicaCompliance.Components.Declarations;
 
 package TypeNameAsComponentName
-  model x
-  end x;
+  type x = Real;
 
   model TypeNameAsComponentName
     extends Icons.TestCase;

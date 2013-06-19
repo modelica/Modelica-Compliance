@@ -7,6 +7,10 @@
 <html>
 <head>
   <title><xsl:value-of select="@name" /> Modelica Compliance Results</title>
+  <style>
+    td.success {color:green;}
+    td.error {color:red;}
+  </style>
 </head>
 <body>
 <h1><xsl:value-of select="@name" /></h1>
@@ -18,19 +22,19 @@
 <tr><th>Test</th><th>Status</th><!-- <th>Message</th> --></tr>
 <xsl:for-each select="testcase">
 <tr><td><xsl:value-of select="@name" /></td>
-<td>
 <xsl:choose>
   <xsl:when test="not(error)">
-    OK
+    <td class="success">pass</td>
   </xsl:when>
+<!--
   <xsl:when test="error/@type">
-    <xsl:value-of select="error/@type" />
+    <td class="error"><xsl:value-of select="error/@type" /></td>
   </xsl:when>
+-->
   <xsl:otherwise>
-    Error
+    <td class="error">fail</td>
   </xsl:otherwise>
 </xsl:choose>
-</td>
 <!--
 <td>
 <xsl:choose>
