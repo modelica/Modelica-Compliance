@@ -35,7 +35,7 @@ equation
   assert(Util.compareReal(c.b.y, 3.0), "c.b.y was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to redefine the constraining type

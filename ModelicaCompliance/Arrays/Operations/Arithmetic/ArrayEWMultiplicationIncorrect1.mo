@@ -8,7 +8,7 @@ equation
   r = {2,3}.*{4,5,4};
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.6.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that elementwise multiplication of two vectors with different size is not possible.</html>"));

@@ -16,7 +16,7 @@ algorithm
   assert(Util.compareReal(x[4], 8.0), "x[4] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.2.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests an integer implicit iteration range in a for-statement.</html>"));

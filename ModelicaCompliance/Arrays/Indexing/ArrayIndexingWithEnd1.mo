@@ -17,7 +17,7 @@ equation
   assert(y[3, 3] == 1, "The element of y[3, 3] must be 1");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.5.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it is possible to retrieve elements of the matrix as the matrix using indexing with end.</html>"));

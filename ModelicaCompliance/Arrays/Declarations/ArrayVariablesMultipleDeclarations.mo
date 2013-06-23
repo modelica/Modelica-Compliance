@@ -7,7 +7,7 @@ model ArrayVariablesMultipleDeclarations
   Real[2,2] B = {{5, 6}, {7, 8}}; 
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to declare array variables in multiple declarations.</html>"));

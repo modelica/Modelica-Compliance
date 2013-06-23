@@ -23,7 +23,7 @@ equation
   assert(c.re == 3, "Overloaded '+' not matched properly.");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether operator '+' overloading is resolved properly.</html>"));

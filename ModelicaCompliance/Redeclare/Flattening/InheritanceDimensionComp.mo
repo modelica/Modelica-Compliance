@@ -12,7 +12,7 @@ equation
   assert(x[2] == 2, "x was not redeclared!"); 
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the dimension of the original declaration

@@ -7,7 +7,7 @@ model DeclarationOrder
   Real y = 2;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that components can be used before they are declared.</html>"));

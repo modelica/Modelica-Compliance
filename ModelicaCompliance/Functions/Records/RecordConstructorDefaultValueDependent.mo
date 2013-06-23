@@ -16,7 +16,7 @@ equation
   assert(b.in2 == 42, "Default value should be used for missing argument.");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether proper default values are used when matching calls to record constructors.</html>"));

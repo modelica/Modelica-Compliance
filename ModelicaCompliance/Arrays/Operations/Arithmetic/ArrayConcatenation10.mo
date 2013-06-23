@@ -11,7 +11,7 @@ equation
   assert(c[1, 4] == 1, "The element of c[1, 4] must be 1");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.4.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array concatenation.</html>"));

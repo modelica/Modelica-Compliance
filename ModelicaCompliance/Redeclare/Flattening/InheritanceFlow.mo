@@ -21,7 +21,7 @@ equation
   connect(c2, c3);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the flow prefix of the original declaration

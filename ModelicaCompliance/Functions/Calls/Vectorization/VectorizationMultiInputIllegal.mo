@@ -16,7 +16,7 @@ model VectorizationMultiInputIllegal
 equation
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"12.4.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests for failure of vectorization for a function call with multiple inputs where the vectorization dimensions don't match.</html>"));

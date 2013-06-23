@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(add3[2,2], 6.0), "The element of add3[2,2] must be 6.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that addition of two matrices is posisble.</html>"));

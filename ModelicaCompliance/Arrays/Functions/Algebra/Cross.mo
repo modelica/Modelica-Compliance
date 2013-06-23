@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(c[3], 1.0), "The element of c[1,3] should be 1.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to the cross product of the three vectors

@@ -17,7 +17,7 @@ equation
   assert(i2 == 0, "The value of i2 should be 0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in abs operator is allowed for integer and real expressions.</html>"));

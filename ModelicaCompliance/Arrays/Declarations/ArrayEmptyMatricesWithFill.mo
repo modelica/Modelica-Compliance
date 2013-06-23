@@ -7,7 +7,7 @@ model ArrayEmptyMatricesWithFill
   Boolean B[:, :, :] = fill (false, 0, 1, 0); 
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.7"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct empty matrices with the fill function.</html>"));

@@ -17,7 +17,7 @@ equation
   assert(Util.compareReal(s[3,3], 0.0), "The element of s[3,3] should be 0.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct the three by three skew matrix associated with a three vector

@@ -17,7 +17,7 @@ equation
   assert(t.a.x == 1984, "t.a should have been modified.");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests simple record modification.</html>"));

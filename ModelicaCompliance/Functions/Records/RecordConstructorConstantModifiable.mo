@@ -13,7 +13,7 @@ model RecordConstructorConstantModifiable
 equation
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether record member constant components without 

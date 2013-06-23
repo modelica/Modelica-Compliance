@@ -39,7 +39,7 @@ equation
 
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether arrays operations againest arrays of constructible type objects

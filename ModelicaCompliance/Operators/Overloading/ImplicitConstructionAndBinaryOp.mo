@@ -35,7 +35,7 @@ equation
   assert(b.im == 4, "Implcit construction followed by binary operation should have been applied.");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether implicit construction is applied when resolving binary overlaoads. [14.4.3].</html>"));

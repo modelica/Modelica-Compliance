@@ -11,7 +11,7 @@ equation
   assert(y == 1, "The value of y must be 1");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it is possible to retrieve an element from the the array.</html>"));

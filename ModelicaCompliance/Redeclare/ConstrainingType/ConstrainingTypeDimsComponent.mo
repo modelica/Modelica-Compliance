@@ -7,7 +7,7 @@ model ConstrainingTypeDimsComponent
   replaceable Real3 x[2] = {{1, 2, 3}, {4, 5, 6}} constrainedby Real3;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the constraining type of a replaceable component

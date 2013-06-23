@@ -11,7 +11,7 @@ model DuplicateInheritedEqComps
   extends Base;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that it's allowed to have duplicate components due to

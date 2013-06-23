@@ -17,7 +17,7 @@ equation
   assert(Util.compareReal(c[1,2,1,2], 0.0), "The result of c[1,2,1,2] should be 0.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the time derivative result for Real parameters and constants is a zero scalar or array of the same size as the variable.</html>"));

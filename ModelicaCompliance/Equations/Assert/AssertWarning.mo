@@ -9,7 +9,7 @@ equation
   assert(x < 0.5, "This assert should be triggered.", AssertionLevel.warning);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.7"})),
     experiment(StopTime = 1),
     Documentation(
       info = "<html>Checks that the assertion level can be set to

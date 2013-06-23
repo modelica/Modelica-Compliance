@@ -13,7 +13,7 @@ equation
   assert(y[3, 1] == 8, "The element of y[3, 1] must be 8");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it is possible to retrieve the the first column of the matrix as column matrix.</html>"));

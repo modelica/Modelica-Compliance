@@ -12,7 +12,7 @@ model Encapsulation
   A a;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that builtin functions can be found even if the scope is encapsulated.</html>"));

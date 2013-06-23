@@ -18,7 +18,7 @@ equation
   assert(Util.compareReal(B[3,3], 9.0), "The element of B[3,3] should be 9.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct a matrix where the diagonal elements and the elements above the diagonal are identical 

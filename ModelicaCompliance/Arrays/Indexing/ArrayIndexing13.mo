@@ -12,7 +12,7 @@ equation
   assert(y[2] == 17, "The element of y[2] must be 17");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it is possible to retrieve some elements of a vector as the vector.</html>"));

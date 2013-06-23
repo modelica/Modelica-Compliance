@@ -25,7 +25,7 @@ algorithm
   assert(Util.compareReal(x[3, 2, 2], 24.0), "x[3, 2, 2] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.2.1", "11.2.2.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests multiple implicit iteration ranges with mixed types in a

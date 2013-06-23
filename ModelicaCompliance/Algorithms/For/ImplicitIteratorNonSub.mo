@@ -10,7 +10,7 @@ algorithm
   end for;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"11.2.2.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that an iterator in an implicit range must appear as a

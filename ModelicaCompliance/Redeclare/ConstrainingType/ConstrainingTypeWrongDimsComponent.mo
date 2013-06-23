@@ -8,7 +8,7 @@ model ConstrainingTypeWrongDimsComponent
   replaceable Real3 x[2] = {{1, 2, 3}, {4, 5, 6}} constrainedby Real23;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the constraining type of a replaceable component

@@ -35,7 +35,7 @@ equation
   assert(Util.compareReal(y[10], 10.0 * x[10]), "y[10] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
   info = "<html>Checks that it's possible to have multiple equations inside a for-equation.</html>"));

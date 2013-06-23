@@ -9,7 +9,7 @@ equation
   assert(Util.compareReal(dimsize, 4.0), "The value of dimsize should be 4.0");  
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the size builtin function for array that returns the size of dimension of array expression.</html>"));

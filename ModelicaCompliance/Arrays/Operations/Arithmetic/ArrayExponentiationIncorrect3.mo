@@ -8,7 +8,7 @@ equation
   e = {{1, 2}, {1, 2}} ^ 2.3;
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.6.7"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that non-integer exponents are forbidden.</html>"));

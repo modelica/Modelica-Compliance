@@ -10,7 +10,7 @@ equation
   y = delay(x, a, b);
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the builtin function delay shall show an error since the argument b is not a parameter expression.</html>"));

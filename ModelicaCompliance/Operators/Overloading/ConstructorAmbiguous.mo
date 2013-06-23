@@ -28,7 +28,7 @@ model ConstructorAmbiguous
 equation 
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"14.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests if ambiguous constructor declarations are detected properly.</html>"));

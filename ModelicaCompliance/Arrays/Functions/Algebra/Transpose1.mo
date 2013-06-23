@@ -12,7 +12,7 @@ equation
   assert(Util.compareReal(i[2,2], 4.4), "The element of i[2,2] should be 4.4");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to permute the first two dimension of an array by using the built in function symmetric.</html>"));

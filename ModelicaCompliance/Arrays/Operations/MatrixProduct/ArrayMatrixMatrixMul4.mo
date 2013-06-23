@@ -9,7 +9,7 @@ equation
   assert(Util.compareReal(r[1, 1], 77.0), "The element of r[1, 1] must be 77.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.7"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that matrix by matrix multiplication of arrays with numeric elements is possible.</html>"));

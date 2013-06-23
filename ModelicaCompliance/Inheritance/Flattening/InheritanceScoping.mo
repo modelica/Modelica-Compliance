@@ -15,7 +15,7 @@ model InheritanceScoping
   Derived d;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that elements declared in the derived class cannot be used in the base class.</html>"));

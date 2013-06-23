@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(dim, 3.0), "The value of dim should be 3.0");  
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the ndims builtin function for array that returns the number of dimensions of array expression.</html>"));

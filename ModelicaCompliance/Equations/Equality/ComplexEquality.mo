@@ -11,7 +11,7 @@ equation
   x = 4.0;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests equality with complex expressions on both sides.</html>"));

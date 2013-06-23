@@ -13,7 +13,7 @@ equation
   assert(Util.compareReal(div1[3], 3.0), "The element of div1[3] must be 3.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array division</html>"));

@@ -20,7 +20,7 @@ model RedeclareNonSubtypeClassImpl
   C c(redeclare class D = A);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that it's an error if the class in a redeclare is not

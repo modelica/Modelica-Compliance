@@ -10,7 +10,7 @@ model LocalClassNameLookup
   A a;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that a class name in the local scope can be found.</html>"));

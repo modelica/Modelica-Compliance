@@ -12,7 +12,7 @@ model InheritedBaseClass
   extends B;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.6.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that a name used in an extends-clause may not be inherited.</html>"));

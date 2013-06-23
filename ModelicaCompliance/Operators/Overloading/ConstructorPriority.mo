@@ -24,7 +24,7 @@ equation
   assert(a.re == 2, "Overloaded constructor should shadow automatically generated constructor.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether overloaded constructors properly shadow automatically generated ones on overload resolution.</html>"));

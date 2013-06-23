@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(m[3], 9.0), "The element of m[3] must be 9.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array multiplication.</html>"));

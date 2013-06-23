@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(specsize[3], 6.0), "The vector length of specsize[3] should be 6.0"); 
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the size builtin function for array that returns a vector length containing the dimension sizes of array.</html>"));

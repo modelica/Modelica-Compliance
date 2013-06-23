@@ -17,7 +17,7 @@ model VisibilityHeadingInheritance
   Real z = b.y;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.1.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that protected/public heading are not inherited, i.e.

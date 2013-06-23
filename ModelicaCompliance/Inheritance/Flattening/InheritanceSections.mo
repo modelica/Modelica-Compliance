@@ -15,7 +15,7 @@ model InheritanceSections
 
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests the equation and algorithms sections are inherited.</html>"));

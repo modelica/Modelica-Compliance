@@ -17,7 +17,7 @@ model MultipleInheritance
   Real z = x + y;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.1.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that multiple inheritance works.</html>"));

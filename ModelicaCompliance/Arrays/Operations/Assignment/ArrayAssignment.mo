@@ -19,7 +19,7 @@ algorithm
   assert(Util.compareReal(y[4], time * 4), "y[4] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array assignment in algorithm sections.</html>"));

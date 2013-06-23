@@ -17,7 +17,7 @@ equation
   assert(Util.compareReal(di[3,3], 3.0), "The element of di[3,3] should be 3.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct a square matrix with elements of vector v on the diagonal and all other elements zero 

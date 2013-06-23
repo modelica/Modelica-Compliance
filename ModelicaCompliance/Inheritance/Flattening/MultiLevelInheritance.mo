@@ -19,7 +19,7 @@ model MultiLevelInheritance
   Real y = c.x;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that inheritance works through multiple levels.</html>"));

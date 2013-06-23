@@ -6,7 +6,7 @@ model ExponentIntegers
   constant Integer i = 8 ^ 3;
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that exponentiation of integer scalars should not 

@@ -15,7 +15,7 @@ equation
   assert(x[E.fish] == 3, "x[E.fish] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests an enumeration implicit iteration range in a for-equation.</html>"));

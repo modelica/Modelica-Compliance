@@ -10,7 +10,7 @@ equation
   assert(s == "Testing modelica compliance", "s was not set correctly");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.6.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that string concatenation is possible.</html>"));

@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(r, 3.14), "The value of sqrt(9.8596) was not evaluated correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.1.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in sqrt function can handle Real arguments.</html>"));

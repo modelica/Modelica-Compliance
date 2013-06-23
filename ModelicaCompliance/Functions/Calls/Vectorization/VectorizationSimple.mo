@@ -17,7 +17,7 @@ equation
 
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.4.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests for simple vectorization of a function call.</html>"));

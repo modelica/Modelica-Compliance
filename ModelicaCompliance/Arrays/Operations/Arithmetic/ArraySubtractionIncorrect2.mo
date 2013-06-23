@@ -6,7 +6,7 @@ model ArraySubtractionIncorrect2
   Real add = {1, 2, 3} - {1, 2, 3};
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.6.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it is not allowed to subtract arrays since the left hand side is a scalar.</html>"));

@@ -11,7 +11,7 @@ model FinalRedeclareElementComp
   redeclare Real x = 3.0;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that a component declared as final cannot be redeclared

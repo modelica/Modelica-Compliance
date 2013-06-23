@@ -21,7 +21,7 @@ equation
   assert(b, "Overloaded String not matched properly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests whether String overloading is resolved properly.</html>"));

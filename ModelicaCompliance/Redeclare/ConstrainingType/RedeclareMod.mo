@@ -36,7 +36,7 @@ equation
   assert(Util.compareReal(e.a.z, 5.0), "e.a.z was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that an element modification of a replaceable element

@@ -16,7 +16,7 @@ model InheritanceProtectedComp
   Real y = b.x;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the protected prefix of the original declaration

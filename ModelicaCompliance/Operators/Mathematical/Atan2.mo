@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(r, 0.7853981633974483), "The approximate value of the scalar variable r can not be considered as equal to 0.7853981633974483");  
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.1.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in inverse tangent2 function is possible.</html>"));

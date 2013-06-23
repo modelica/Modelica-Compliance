@@ -23,7 +23,7 @@ model VarArrayRange
   Integer n = f(5);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"11.2.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that an array used as a range expression in a

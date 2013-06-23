@@ -14,7 +14,7 @@ equation
   assert(b4 == false, "The boolean value of b4 must be false");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the logical operator or.</html>"));

@@ -17,7 +17,7 @@ model DuplicateInheritedEqClasses
   A a;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that it's allowed to have duplicate classes due to

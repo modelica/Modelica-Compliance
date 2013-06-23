@@ -10,7 +10,7 @@ equation
   assert(b2 == false, "The boolean value of b2 must be false");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the unary logical operator not.</html>"));

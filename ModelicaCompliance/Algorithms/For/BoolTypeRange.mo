@@ -13,7 +13,7 @@ algorithm
   assert(b[true] == true, "b[true] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.2.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the use of the type Boolean as a range in a

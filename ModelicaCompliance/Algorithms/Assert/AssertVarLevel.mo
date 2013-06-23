@@ -10,7 +10,7 @@ algorithm
     if x > 0.6 then AssertionLevel.error else AssertionLevel.warning);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"8.3.7", "11.2.8.2"})),
     experiment(StopTime = 1),
     Documentation(
       info = "<html>Checks that the assertion level can itself be dependent on a

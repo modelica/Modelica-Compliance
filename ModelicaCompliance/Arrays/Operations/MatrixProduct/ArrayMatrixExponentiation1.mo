@@ -14,7 +14,7 @@ equation
   assert(Util.compareReal(e[2, 2], 1.0), "The element of e[2, 2] must be 1.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.8"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that matrix exponentiation of arrays with numeric elements is possible.</html>"));

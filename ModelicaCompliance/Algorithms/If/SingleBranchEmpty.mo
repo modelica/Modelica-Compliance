@@ -12,7 +12,7 @@ algorithm
   assert(Util.compareReal(x, 3.0), "x was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that an if-statement can consist of a single branch.</html>"));

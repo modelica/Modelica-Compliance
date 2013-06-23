@@ -27,7 +27,7 @@ equation
   assert(Util.compareReal(c.b.y, 3.0), "The modification on b in D should not be applied in the redeclaration.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that a modification on a replaceable element without an

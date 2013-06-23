@@ -21,7 +21,7 @@ model ConstructorTypeOfOutput
 equation
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"14.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> The operator _Complex_.′constructor′ shall only contain functions that declare one output component, which shall

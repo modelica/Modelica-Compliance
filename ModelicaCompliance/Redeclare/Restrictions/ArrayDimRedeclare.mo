@@ -10,7 +10,7 @@ model ArrayDimRedeclare
   A a(redeclare Real x[2, 3]);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that array dimensions can be redeclared, even if the

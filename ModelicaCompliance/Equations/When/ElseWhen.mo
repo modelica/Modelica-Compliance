@@ -13,12 +13,12 @@ equation
   elsewhen {time > 0.2,time > 0.8} then
     i = -4;
   end when;
+
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.5", "8.3.5.3"})),
     experiment(StopTime = 1.0),
     Documentation(
       info = "<html>
 <p>Tests that elsewhen works as expected, including arrays of booleans as conditions on both expressions.</p>
-<p>(MLS3.3 : 8.3.5 and 8.3.5.3 when we add annotations for this)</p>
 </html>"));
 end ElseWhen;

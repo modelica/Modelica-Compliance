@@ -19,7 +19,7 @@ model RedeclareNonSubtypeComponent
   C c(redeclare A b);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that it's an error if the type of a component in a

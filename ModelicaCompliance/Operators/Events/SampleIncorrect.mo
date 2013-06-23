@@ -11,7 +11,7 @@ equation
   end when;
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.3"})),
     experiment(StopTime = 1.0),
     Documentation(
       info = "<html>Tests the first argument to sample must be a parameter expression.</html>"));

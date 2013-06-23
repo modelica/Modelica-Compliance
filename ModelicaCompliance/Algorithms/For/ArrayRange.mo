@@ -10,7 +10,7 @@ algorithm
   end for;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"11.2.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the range of a for-statement must be a vector

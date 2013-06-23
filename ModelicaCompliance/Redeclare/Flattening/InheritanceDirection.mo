@@ -14,7 +14,7 @@ model InheritanceDirection
   Real x = f2(5.0);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the direction of the original declaration

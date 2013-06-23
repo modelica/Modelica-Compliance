@@ -14,7 +14,7 @@ model ConstrainingType
   replaceable B b constrainedby A;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that a replaceable element can have an explicit constraining type.</html>"));

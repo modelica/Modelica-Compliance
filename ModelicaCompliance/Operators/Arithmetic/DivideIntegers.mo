@@ -6,7 +6,7 @@ model DivideIntegers
   constant Integer i = 4000 / 100;
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that division of type integer scalars shall not 

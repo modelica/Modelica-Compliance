@@ -13,7 +13,7 @@ equation
   assert(Util.compareReal(v2[3], 3.0), "The third element of the array should be 3.0");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the builtin function vector for array that returns a vector containing all the elements of the array,

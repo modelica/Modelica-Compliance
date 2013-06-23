@@ -30,7 +30,7 @@ equation
   assert(Util.compareReal(x[3, 2, 3], 36.0), "x[3, 2, 3] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests multiple implicit iteration ranges in a for-equation.</html>"));

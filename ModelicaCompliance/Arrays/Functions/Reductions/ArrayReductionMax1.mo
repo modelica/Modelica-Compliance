@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(maximum, 6.0), "The value of maximum should be 6.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the array reduction function max is possible.</html>"));

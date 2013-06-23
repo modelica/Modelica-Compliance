@@ -14,7 +14,7 @@ equation
   assert(intArray[3] == 72, "The element of intArray[3] must be 72");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that elementwise multiplication two arrays of type integer is possible.</html>"));

@@ -14,7 +14,7 @@ model EnclosingClassLookupConstant
   A a;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that constants can be looked up in an enclosing scope.</html>"));

@@ -17,7 +17,7 @@ equation
   assert(Util.compareReal(id[3,3], 1.0), "The element of id[3,3] should be 1.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct the n by n integer identity matix, with ones on the diagonal and zeros at the other places 

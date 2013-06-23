@@ -13,7 +13,7 @@ equation
   assert(b[true] == true, "b[true] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests the use of the type Boolean as a range in a for-equation.</html>"));

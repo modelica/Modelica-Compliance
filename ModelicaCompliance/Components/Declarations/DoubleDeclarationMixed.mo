@@ -7,7 +7,7 @@ model DoubleDeclarationMixed
   class x end x;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that double declaration of mixed elements is forbidden.</html>"));

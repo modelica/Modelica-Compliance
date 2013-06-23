@@ -17,7 +17,7 @@ equation
   assert(Util.compareReal(x[5], 5.5), "x[5] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the use of a Real range in a for-equation.</html>"));

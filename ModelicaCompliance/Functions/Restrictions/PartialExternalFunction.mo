@@ -12,7 +12,7 @@ model PartialExternalFunction
   Real x = func(2);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"12.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that a partial function cannot be called in a simulation model. 

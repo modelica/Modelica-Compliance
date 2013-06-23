@@ -16,7 +16,7 @@ equation
   assert(Util.compareReal(x[4], 4.0), "x[4] was not set correctly");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the iterator in a for-equation can be shadowed by a

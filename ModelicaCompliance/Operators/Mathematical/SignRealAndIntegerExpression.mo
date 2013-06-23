@@ -16,7 +16,7 @@ equation
   assert(Util.compareReal(r2, 0.0), "The approximate value of the scalar variable r2 can not be considered as equal to 0.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in sign function is  allowed for real and integer expression.</html>"));

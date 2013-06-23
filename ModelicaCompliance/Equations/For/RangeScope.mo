@@ -10,7 +10,7 @@ equation
   end for;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the range expression is not evaluated in the

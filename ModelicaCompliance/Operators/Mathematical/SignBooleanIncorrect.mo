@@ -8,7 +8,7 @@ equation
   b1 = sign(true);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in sign function is not allowed for boolean expression.</html>"));

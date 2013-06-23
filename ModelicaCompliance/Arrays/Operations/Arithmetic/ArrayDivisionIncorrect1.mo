@@ -6,7 +6,7 @@ model ArrayDivisionIncorrect1
 	Real div[3] = {1, 2, 3} / {1, 2, 3};
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.6.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it is not allowed to divide arrays since the denominator is not scalar.</html>"));

@@ -61,7 +61,7 @@ equation
 
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether proper expansions of normal operators are used for vectorized resolution of 

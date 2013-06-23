@@ -10,7 +10,7 @@ algorithm
   assert(x < 0.6, "Error: x became larger than 0.6");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"8.3.7", "11.2.8.2"})),
     experiment(StopTime = 1),
     Documentation(
       info = "<html>Checks that both warning and error asserts can be used in

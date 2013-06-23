@@ -10,7 +10,7 @@ algorithm
   end if;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"11.2.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that non-scalar conditions are detected.</html>"));

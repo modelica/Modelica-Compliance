@@ -22,8 +22,10 @@ equation
   assert(y == 17, "y was not set correctly!");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
-    info = "<html>Checks that composite names where each identifier is a component can be looked up.</html>"));
+    info = "<html>Checks that composite names where each identifier is a
+      component can be looked up if the types of the components satisfy the
+      requirements for a package.</html>"));
 end PackageLookup;

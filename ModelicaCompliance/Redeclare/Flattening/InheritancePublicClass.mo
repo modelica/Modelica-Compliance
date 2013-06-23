@@ -27,7 +27,7 @@ equation
   assert(x == 2, "f1 has not been redeclared!");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the public prefix of the original declaration

@@ -16,7 +16,7 @@ equation
   assert(i == 1, "The value of i must be 1");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.6.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that if expresssion clauses are only evaluated if the appropriate condition is true.</html>"));

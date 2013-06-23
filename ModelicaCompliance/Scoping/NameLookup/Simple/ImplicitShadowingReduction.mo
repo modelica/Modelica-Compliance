@@ -9,7 +9,7 @@ equation
   assert(y == 15, "The wrong x was found!");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that reduction iterators shadows locally defined variables.</html>"));

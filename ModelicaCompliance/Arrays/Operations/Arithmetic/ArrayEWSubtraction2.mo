@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(r[2], -3.0), "The element of r[2] must be -3.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that elementwise subtraction of numeric scalar and array is possible.</html>"));

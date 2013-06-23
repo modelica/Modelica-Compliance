@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(realArray[2,2], 4.0), "The element of realArray[2,2] must be 4.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that elementwise subtraction of array is possible.</html>"));

@@ -48,10 +48,10 @@ equation
 
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.5"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html> Tests whether proper overload of '-' for binary and unary overloads. [14.5.2].</html>"));
+      info = "<html> Tests whether proper overload of '-' for binary and unary overloads.</html>"));
 
 end NegationSubtractionOverload;
 

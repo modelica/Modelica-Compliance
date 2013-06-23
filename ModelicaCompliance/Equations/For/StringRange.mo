@@ -20,7 +20,7 @@ equation
   assert(str[3] == "str3", "str[3] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests the use of a string range in a for-equation.</html>"));

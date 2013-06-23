@@ -12,7 +12,7 @@ algorithm
   x := 5.0;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that assignments in an algorithm section are performed

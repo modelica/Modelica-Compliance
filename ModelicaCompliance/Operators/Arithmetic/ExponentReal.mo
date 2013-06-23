@@ -8,7 +8,7 @@ equation
   assert(Util.compareReal(r, 2731.5832575191735), "The approximate value of the scalar variable r can not be considered as equal to 2731.5832575191735");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that exponentiation of real scalars is possible.</html>"));

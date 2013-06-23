@@ -63,7 +63,7 @@ equation
 
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether proper overload of operators is chosed in array case. Operations should

@@ -14,7 +14,7 @@ equation
   assert(true, genMsg());
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.7"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that the message expression isn't evaluated when the

@@ -28,7 +28,7 @@ equation
   assert(x[9] == 9, "The element of x[9] must be 9");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.2", "12.4.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that flexible setting of array dimension sizes of arrays in functions is possible.</html>"));

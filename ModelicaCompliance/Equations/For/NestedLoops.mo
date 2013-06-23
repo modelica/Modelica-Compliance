@@ -19,7 +19,7 @@ equation
   assert(x[3, 2] == 6, "x[3, 2] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests nesting of for-equations.</html>"));

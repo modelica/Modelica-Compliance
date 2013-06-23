@@ -27,7 +27,7 @@ model DoubleRedeclareWithoutReplaceable
   C c;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's not allowed to redeclare a previously

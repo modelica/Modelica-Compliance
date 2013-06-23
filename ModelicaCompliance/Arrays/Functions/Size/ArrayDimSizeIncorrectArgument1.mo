@@ -7,7 +7,7 @@ model ArrayDimSizeIncorrectArgument1
   parameter Real dimsize = size(x, 0);
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the second argument for the size builtin function of arrays shall not be less equal zero.It must be greater than zero.</html>"));

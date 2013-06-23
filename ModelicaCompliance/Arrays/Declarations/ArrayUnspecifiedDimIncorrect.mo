@@ -6,7 +6,7 @@ model ArrayUnspecifiedDimIncorrect
   Real r[:];
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's not possible to declare arrays of unspecified dimensions with out binding equation.</html>"));

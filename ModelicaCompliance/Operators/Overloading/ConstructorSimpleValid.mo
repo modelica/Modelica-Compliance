@@ -26,7 +26,7 @@ equation
   assert(a.im == 2, "Overloaded constructor should have been used.");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"14.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests a simple overloaded constructor.</html>"));

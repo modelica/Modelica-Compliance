@@ -14,7 +14,7 @@ equation
   end if;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that an if-equation with variable conditions is legal

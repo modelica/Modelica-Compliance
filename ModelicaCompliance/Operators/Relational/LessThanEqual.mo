@@ -12,7 +12,7 @@ equation
   assert(b3 == false, "The value of b3 should be false");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to define less than or equal to relational operator within expressions.</html>"));

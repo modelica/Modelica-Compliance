@@ -14,7 +14,7 @@ equation
   assert(Util.compareReal(result[3], 2.0), "The element of result[3] must be 2.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests elementwise array division</html>"));

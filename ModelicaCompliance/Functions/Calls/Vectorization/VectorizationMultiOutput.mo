@@ -18,7 +18,7 @@ equation
   (r1, r2) = Test({42, 1984},{496,1729});
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"12.4.6"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that vectorization of function with multiple outputs

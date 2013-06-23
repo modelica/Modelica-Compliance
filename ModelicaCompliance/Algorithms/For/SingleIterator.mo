@@ -13,7 +13,7 @@ algorithm
   assert(Util.compareReal(x[2], 2.0), "x[2] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests a single iteration range in a for-statement.</html>"));

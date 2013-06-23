@@ -7,7 +7,7 @@ model DerConstantIncorrect1
   Real a = der(pa);
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that Operator der cannot be applied to Integer expressions. It shall be a subtype of Real expression.</html>"));

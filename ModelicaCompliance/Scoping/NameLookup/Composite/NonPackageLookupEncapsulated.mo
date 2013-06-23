@@ -14,7 +14,7 @@ model NonPackageLookupEncapsulated
   A.B ab;
 
   annotation (
-  __ModelicaAssociation(TestCase(shouldPass = true)),
+  __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that looking up an encapsulated element inside a class

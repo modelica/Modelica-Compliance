@@ -15,7 +15,7 @@ equation
   assert(Util.compareReal(x[3], 3.0), "x[3] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that an iterator for an implicit range can be used to

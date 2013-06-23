@@ -14,7 +14,7 @@ equation
   assert(intArray[3] == 6, "The element of intArray[3] must be 6");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests elementwise array subtraction</html>"));

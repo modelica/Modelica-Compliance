@@ -17,7 +17,7 @@ model OverloadedStringTypeOfOutput
 
 equation 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"14.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Tests whether String overloading returns the proper type.</html>"));

@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(summ, 21.0), "The value of summ should be 21.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the array reduction function sum is possible.</html>"));

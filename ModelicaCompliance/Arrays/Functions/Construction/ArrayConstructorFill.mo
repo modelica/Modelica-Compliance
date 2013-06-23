@@ -12,7 +12,7 @@ equation
   assert(Util.compareReal(f[2,2], 2.1), "The element of f[2,2] should be 2.1");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct the matrix 

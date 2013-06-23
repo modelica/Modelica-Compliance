@@ -13,7 +13,7 @@ equation
   assert(Util.compareReal(m4[2,2], 4.0), "The element of m4[2,2] should be 4.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the builtin function matrix for array that returns the elements of the first two dimensions as a matrix.</html>"));

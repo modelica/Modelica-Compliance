@@ -27,7 +27,7 @@ equation
   assert(length2 == 65536, "Cannot do strlen on long strings correctly");
 
   annotation(
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.6.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the tool can concatenate large strings, that strings concatenated in different ways are still equal, and that the lengths of the strings are as expected. Note that there is no maximum limit of string sizes in Modelica which essentially means the size is unlimited. This test uses a rather small limit of 65536 characters for practical reasons (making the size of the test small). That should also make it possible to run this test on a 16-bit platform (maybe there are some Modelica 16-bit embedded tools?). Reading files >1GB should be expected of a Modelica tool and indeed any modern programming language. If you fail this test, try to make sure your tool handles very large strings (architecture limit) rather than increasing the size arbitrarily.</html>"));

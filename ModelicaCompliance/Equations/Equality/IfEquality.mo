@@ -9,7 +9,7 @@ equation
   x = 2.0;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests equality with a more complex expression on the left.</html>"));

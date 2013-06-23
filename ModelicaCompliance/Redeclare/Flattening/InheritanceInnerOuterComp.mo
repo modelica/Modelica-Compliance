@@ -18,7 +18,7 @@ model InheritanceInnerOuterComp
   B b(redeclare Real x);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that the inner/outer prefix of the original component

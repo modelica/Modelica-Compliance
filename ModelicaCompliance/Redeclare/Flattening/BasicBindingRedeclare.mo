@@ -12,7 +12,7 @@ model BasicBindingRedeclare
   M m(redeclare Integer x = 2);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that redeclaring the binding of a variable of basic type works.</html>"));

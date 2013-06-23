@@ -9,7 +9,7 @@ model ConstrainingTypeWrongDimsClass
   T x = {{1, 2, 3}, {4, 5, 6}};
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that the constraining type of a replaceable array type

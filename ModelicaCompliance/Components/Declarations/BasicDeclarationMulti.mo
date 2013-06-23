@@ -8,7 +8,7 @@ model BasicDeclarationMulti
   Real z = 3.0;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.4.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that it's possible to declare multiple component.</html>"));

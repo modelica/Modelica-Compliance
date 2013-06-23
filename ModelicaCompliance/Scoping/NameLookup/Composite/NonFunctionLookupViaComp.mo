@@ -13,7 +13,7 @@ model NonFunctionLookupViaComp
   a.B b;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Checks that it's not allowed to look up a non-function class

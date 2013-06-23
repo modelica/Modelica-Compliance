@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(r[2], 15.0), "The element of r[2] must be 15.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that elementwise multiplication of two arrays is possible.</html>"));

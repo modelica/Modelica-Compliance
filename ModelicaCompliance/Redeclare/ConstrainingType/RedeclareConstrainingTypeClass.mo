@@ -27,7 +27,7 @@ model RedeclareConstrainingTypeClass
   E e;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to redeclare the constraining type

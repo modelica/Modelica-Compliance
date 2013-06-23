@@ -13,7 +13,7 @@ equation
   assert(Util.compareReal(ls[5], 8.0), "The element of ls[5] should be 8.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's possible to construct the vector 

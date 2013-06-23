@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(minimum, -1.0), "The value of minimum should be -1.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the array reduction function min is possible.</html>"));

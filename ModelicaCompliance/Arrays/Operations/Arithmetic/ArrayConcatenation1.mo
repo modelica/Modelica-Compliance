@@ -13,7 +13,7 @@ equation
   assert(Util.compareReal(c[5], 13.0), "The element of c[5] must be 13.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.4.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests array concatenation.</html>"));

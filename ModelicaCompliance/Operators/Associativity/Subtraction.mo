@@ -8,7 +8,7 @@ equation
   assert(i == 0, "The value of the scalar variable i should be 0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that subtraction expression operators are left associative.</html>"));

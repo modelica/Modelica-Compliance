@@ -18,7 +18,7 @@ model OverloadedBinaryNumberOfInputs
 equation
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"14.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html> Overloaded binary operator function should have at least two inputs.</html>"));

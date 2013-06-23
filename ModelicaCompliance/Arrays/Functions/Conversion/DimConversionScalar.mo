@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(s1, 4.0), "The scalar function should return 4.0 which is the single element of array m2");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.3.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the builtin function scalar for array that returns the single element of array.</html>"));

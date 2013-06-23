@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(r, 1.7467135528742547e+19), "The approximate value of the scalar variable r can not be considered as equal to 1.7467135528742547e+19");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.1.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in cosh function is possible.</html>"));

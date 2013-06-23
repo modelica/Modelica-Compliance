@@ -16,7 +16,7 @@ model ProtectedInheritance
   Real y = b.x;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that inherited elements from an extends-clause in a

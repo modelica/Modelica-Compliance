@@ -10,7 +10,7 @@ equation
   assert(Util.compareReal(r, -2.0), "The value of r must be -2.0");
   
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that elementwise subtraction of two numeric scalars is possible.</html>"));
