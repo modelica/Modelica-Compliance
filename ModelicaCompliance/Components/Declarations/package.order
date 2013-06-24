@@ -9,4 +9,5 @@ DeclarationOrder
 DoubleDeclarationComps
 DoubleDeclarationMixed
 PartialInstance
+QuotedIdentifiers
 TypeNameAsComponentName
