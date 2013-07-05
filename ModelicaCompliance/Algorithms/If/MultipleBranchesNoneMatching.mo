@@ -1,12 +1,13 @@
 within ModelicaCompliance.Algorithms.If;
 
-
 model MultipleBranchesNoneMatching
   extends Icons.TestCase;
 
   Real x;
   Integer i = 4;
 algorithm
+  x := 2.0;
+
   if i == 3 then
     x := 3.0;
     assert(false, "The first branch was erroneously selected.");
@@ -17,8 +18,6 @@ algorithm
     x := 5.0;
     assert(false, "The third branch was erroneously selected.");
   end if;
-
-  x := 2.0;
 
   assert(Util.compareReal(x, 2.0), "x was not set correctly.");
 
