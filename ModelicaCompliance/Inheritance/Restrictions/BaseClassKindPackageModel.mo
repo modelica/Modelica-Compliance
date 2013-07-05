@@ -1,10 +1,11 @@
 within ModelicaCompliance.Inheritance.Restrictions;
 
+
 model BaseClassKindPackageModel
   extends Icons.TestCase;
 
   model Base
-    Real y = 6.0;
+    constant Real x = 6.0;
   end Base;
 
   package Derived
@@ -12,7 +13,6 @@ model BaseClassKindPackageModel
   end Derived;
 
   Real x = Derived.x;
-equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1.3"})),
     experiment(StopTime = 0.01),

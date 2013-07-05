@@ -4,7 +4,7 @@ model BaseClassKindBlockFunction
   extends Icons.TestCase;
 
   function Base
-    input Real x;
+    input Real x = 1.0;
     output Real y = x;
   algorithm
   end Base;

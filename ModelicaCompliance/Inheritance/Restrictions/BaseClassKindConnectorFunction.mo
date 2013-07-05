@@ -4,8 +4,8 @@ model BaseClassKindConnectorFunction
   extends Icons.TestCase;
 
   function Base
-    input Real x;
-    output Real y = x;
+    input Real x = 1.0;
+    output Real y = 2.0;
   algorithm
   end Base;
 

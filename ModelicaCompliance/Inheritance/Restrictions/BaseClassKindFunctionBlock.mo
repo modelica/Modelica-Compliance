@@ -1,10 +1,12 @@
 within ModelicaCompliance.Inheritance.Restrictions;
 
+
 model BaseClassKindFunctionBlock
   extends Icons.TestCase;
 
   block Base
-    Real x = 5.0;
+    input Real x;
+    output Real y = x;
   end Base;
 
   function Derived
@@ -13,7 +15,6 @@ model BaseClassKindFunctionBlock
   end Derived;
 
   Real x = Derived(1.0);
-equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1.3"})),
     experiment(StopTime = 0.01),

@@ -1,11 +1,11 @@
 within ModelicaCompliance.Inheritance.Restrictions;
 
+
 model BaseClassKindPackageConnector
   extends Icons.TestCase;
 
   connector Base
-    Real x = 4.0;
-    flow Real f = 2.0;
+    constant Real x = 4.0;
   end Base;
 
   package Derived
@@ -13,7 +13,6 @@ model BaseClassKindPackageConnector
   end Derived;
 
   Real x = Derived.x;
-equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1.3"})),
     experiment(StopTime = 0.01),

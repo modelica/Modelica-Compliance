@@ -1,5 +1,6 @@
 within ModelicaCompliance.Inheritance.Restrictions;
 
+
 model BaseClassKindModelType
   extends Icons.TestCase;
 
@@ -9,8 +10,7 @@ model BaseClassKindModelType
     extends Base;
   end Derived;
 
-  Derived d;
-equation
+  Derived d = 1.0;
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1.3"})),
     experiment(StopTime = 0.01),

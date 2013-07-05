@@ -1,10 +1,11 @@
 within ModelicaCompliance.Inheritance.Restrictions;
 
+
 model BaseClassKindPackageRecord
   extends Icons.TestCase;
 
   record Base
-    Real x = 3.0;
+    constant Real x = 3.0;
   end Base;
 
   package Derived
@@ -12,7 +13,6 @@ model BaseClassKindPackageRecord
   end Derived;
 
   Real x = Derived.x;
-equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.1.3"})),
     experiment(StopTime = 0.01),

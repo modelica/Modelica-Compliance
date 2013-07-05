@@ -9,6 +9,7 @@ model BaseClassKindConnectorBlock
 
   connector Derived
     extends Base;
+    flow Real f;
   end Derived;
 
   Derived d;
