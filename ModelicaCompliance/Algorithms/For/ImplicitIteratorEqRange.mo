@@ -6,7 +6,7 @@ model ImplicitIteratorEqRange
   Real x[3], y[3];
 algorithm
   for i loop
-    x[i] := y[i];
+    x[i] := i;
     y[i] := i;
   end for;
 
