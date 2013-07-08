@@ -3,11 +3,10 @@ within ModelicaCompliance.Algorithms.For;
 model ImplicitMultiIterator
   extends Icons.TestCase;
 
-  Real x[3, 2, 3], y[3, 3, 2];
+  Real x[3, 2, 3];
 algorithm
   for i, j, k loop
-    y[i, k, j] := i * j * k;
-    x[i, j, k] := 2 * y[k, i, j];
+    x[i, j, k] := 2 * i * j * k;
   end for;
 
   assert(Util.compareReal(x[1, 1, 1], 2.0),  "x[1, 1, 1] was not set correctly.");
