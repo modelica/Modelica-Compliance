@@ -4,7 +4,7 @@ model InheritanceDimensionComp
   extends Icons.TestCase;
 
   model A
-    replaceable Integer x[3];
+    replaceable parameter Integer x[3];
   end A;
 
   extends A(redeclare Integer x = {1, 2, 3});
