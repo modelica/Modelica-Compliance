@@ -8,7 +8,7 @@ model FlowValidClassType
   end R;
 
   connector C
-    input Real f;
+    output Real f;
   end C;
 
   connector CR
