@@ -4,11 +4,16 @@ model InvalidUsageModifier
   extends Icons.TestCase;
 
   model A
-    Real x = 3.0 if true;
+    Real y = 1.0;
   end A;
 
-  A a(x = 2.0);
-  
+  model B
+    Real x = 3.0 if true;
+    A a(y = x);
+  end B;
+
+  B b;
+
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.5"})),
     experiment(StopTime = 0.01),
