@@ -21,8 +21,12 @@ model FlowValidClassType
     Real e;
   end CC;
 
-  CR cr(e = 1.0);
-  CC cc(e = 2.0);
+  model M
+    CR cr(e = 1.0);
+    CC cc(e = 2.0);
+  end M;
+
+  M m;
   flow Real x = 3.0;
 
   annotation (

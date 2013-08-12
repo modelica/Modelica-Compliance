@@ -12,7 +12,7 @@ model VariabilityStructured1
   constant Real z = r.x;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.4.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.4.4.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the variability prefix of a structured component

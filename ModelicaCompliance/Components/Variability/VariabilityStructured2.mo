@@ -9,7 +9,7 @@ model VariabilityStructured2
     Real z;
   end R;
 
-  constant R r(x = 3.0);
+  constant R r(z = 3.0);
   constant Real u = r.x;
   constant Real v = r.y;
   constant Real w = r.z;

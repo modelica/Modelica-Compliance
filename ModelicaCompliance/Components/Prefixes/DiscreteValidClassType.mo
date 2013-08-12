@@ -26,7 +26,7 @@ equation
   when true then
     x = 2.0;
     m.c1.d = 4.0;
-    m.c2.f = 5.0;
+    m.c1.f = 5.0;
     r.x = 6.0;
   end when;
 

@@ -11,7 +11,7 @@ model ConstantBindingModifier
   M m(x = 1.0);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.8.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.8.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that a component declared as constant can be given a
