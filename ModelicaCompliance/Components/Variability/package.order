@@ -1,7 +1,6 @@
 ConstantBindingModifier
 ConstantFunction
 ConstantNoBinding
-ConstantNoBindingUnused
 ConstantSimpleExpressions
 ContinuousSimpleExpressions
 DiscreteFunction
