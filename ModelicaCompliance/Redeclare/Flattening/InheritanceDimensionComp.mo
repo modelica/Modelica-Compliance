@@ -7,7 +7,7 @@ model InheritanceDimensionComp
     replaceable parameter Integer x[3];
   end A;
 
-  extends A(redeclare Integer x = {1, 2, 3});
+  extends A(redeclare parameter Integer x = {1, 2, 3});
 equation
   assert(x[2] == 2, "x was not redeclared!"); 
 
