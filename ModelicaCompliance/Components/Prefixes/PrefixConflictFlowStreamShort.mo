@@ -13,7 +13,7 @@ model PrefixConflictFlowStreamShort
   FlowC c;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.2.2", "4.5.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.2.2", "4.5.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the rule that a type prefix is not allowed to be
