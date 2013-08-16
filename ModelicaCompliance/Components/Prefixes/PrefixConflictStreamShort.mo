@@ -20,7 +20,7 @@ model PrefixConflictStreamShort
   C2 c2;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.2.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.2.2", "4.5.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the rule that a type prefix is not allowed to be
