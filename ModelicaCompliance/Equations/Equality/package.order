@@ -1,3 +1,7 @@
 ComplexEquality
 IfEquality
+MultiOutputEquality
+MultiOutputEqualityLess
+MultiOutputEqualityMore
+MultiOutputEqualityOmitted
 SimpleEquality
