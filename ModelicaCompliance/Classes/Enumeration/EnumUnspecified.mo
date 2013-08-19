@@ -12,7 +12,7 @@ model EnumUnspecified
   A a(redeclare type E = E2, e = E2.e2);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.8.5.3"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.5.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the typical usage of enumeration(:) as a placeholder type to
