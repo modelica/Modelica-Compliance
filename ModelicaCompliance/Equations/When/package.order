@@ -1,1 +1,9 @@
 ElseWhen
+ElseWhenEquation
+ElseWhenNestedEquation
+NestedWhenEquation
+WhenEquation
+WhenEquationInvalid
+WhenEquationOrderNoMatter
+WhenPriority
+WhenVectorExpression
