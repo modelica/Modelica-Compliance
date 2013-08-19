@@ -5,7 +5,7 @@ model ConnectorInner
 
   connector C
     inner Real e = 2.54;
-    flow Real e;
+    flow Real f;
   end C;
 
   C c;

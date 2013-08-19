@@ -1,6 +1,6 @@
 within ModelicaCompliance.Classes.Predefined;
 
-model AttributesRealInvalid
+model AttributesEnumInvalid
   extends Icons.TestCase;
 
   type E = enumeration(one, two);
@@ -12,4 +12,4 @@ model AttributesRealInvalid
     Documentation(
     info = "<html>Checks that trying to modify a non-existing attribute of an
       enumeration results in an error.</html>"));
-end AttributesRealInvalid;
+end AttributesEnumInvalid;

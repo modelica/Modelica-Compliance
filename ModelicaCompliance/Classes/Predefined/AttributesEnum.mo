@@ -11,4 +11,4 @@ model AttributesEnum
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that all attributes of an enumeration can be modified.</html>"));
-end AttributesReal;
+end AttributesEnum;

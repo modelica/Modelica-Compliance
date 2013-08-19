@@ -1,6 +1,6 @@
 within ModelicaCompliance.Classes.Specialized;
 
-model OperatorRecordAlgorithm
+model OperatorRecordProtected
   extends Icons.TestCase;
 
   operator record OR
@@ -16,4 +16,4 @@ model OperatorRecordAlgorithm
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that protected sections are not allowed in operator records.</html>"));
-end OperatorRecordAlgorithm;
+end OperatorRecordProtected;

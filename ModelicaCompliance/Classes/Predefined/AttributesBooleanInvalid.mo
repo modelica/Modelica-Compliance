@@ -1,6 +1,6 @@
 within ModelicaCompliance.Classes.Predefined;
 
-model AttributesIntegerInvalid
+model AttributesBooleanInvalid
   extends Icons.TestCase;
 
   Boolean b(invalid = 2);
@@ -11,4 +11,4 @@ model AttributesIntegerInvalid
     Documentation(
     info = "<html>Checks that trying to modify a non-existing attribute of
       Boolean results in an error.</html>"));
-end AttributesIntegerInvalid;
+end AttributesBooleanInvalid;

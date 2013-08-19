@@ -1,4 +1,4 @@
-within ModelicaCompliance.Algorithms.Equality;
+within ModelicaCompliance.Equations.Equality;
 
 model MultiOutputEquality
   extends Icons.TestCase;
