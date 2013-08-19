@@ -1,5 +1,10 @@
+EnumAttributeScope
+EnumDuplicateLiteral
 EnumFixedAsLiteral
 EnumMaxAsLiteral
 EnumMinAsLiteral
 EnumQuantityAsLiteral
+EnumScope
+EnumSimple
 EnumStartAsLiteral
+EnumUnspecified
