@@ -16,3 +16,6 @@ ArrayIndexingWithEnd1
 ArrayIndexingWithEnd2
 ArrayIndexingWithEnd3
 ArrayIndexingWithEnd4
+EnumArrayIndexing
+EnumArrayInvalidIndexing
+EnumMixedArrayIndexing

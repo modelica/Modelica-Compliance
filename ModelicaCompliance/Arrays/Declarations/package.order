@@ -6,7 +6,6 @@ ArrayEmptyMatrices
 ArrayEmptyMatricesWithFill
 ArrayEmptyVector
 ArrayEmptyVectorWithFill
-ArrayIndexedbyEnum
 ArrayTypeInteger
 ArrayTypeIntegerMatrix
 ArrayTypeIntegerParameter
@@ -16,3 +15,5 @@ ArrayVariablesMultipleDeclarations
 ArrayVariablesSingleDeclaration
 ArrayWithNegativeDims
 ArraysofArraysRealParameter
+EnumArray
+EnumMixedArray
