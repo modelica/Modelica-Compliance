@@ -1,5 +1,6 @@
 within ModelicaCompliance.Classes.Declarations.Short;
 
+
 model ModifierScope
   extends Icons.TestCase;
 
@@ -7,7 +8,7 @@ model ModifierScope
 
   model A
     constant Real x = 2.0;
-    Real y;
+    Real y = 3.0;
   end A;
 
   model B = A(y = x);

@@ -1,6 +1,6 @@
 within ModelicaCompliance.Scoping.MemberAccess;
 
-model AccessEquation
+model AccessAlgorithm
   extends Icons.TestCase;
 
   model A
@@ -16,4 +16,4 @@ algorithm
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the member access operator in an algorithm.</html>"));
-end AccessEquation;
+end AccessAlgorithm;

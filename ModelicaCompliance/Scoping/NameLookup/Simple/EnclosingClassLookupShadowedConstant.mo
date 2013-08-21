@@ -1,5 +1,6 @@
 within ModelicaCompliance.Scoping.NameLookup.Simple;
 
+
 model EnclosingClassLookupShadowedConstant
   extends Icons.TestCase;
 
@@ -11,9 +12,11 @@ model EnclosingClassLookupShadowedConstant
     model B
       Real y = x;
     end B;
+
+    B b;
   end A;
 
-  A.B ab;
+  A a;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.3.1"})),

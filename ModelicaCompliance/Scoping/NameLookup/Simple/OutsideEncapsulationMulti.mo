@@ -1,5 +1,6 @@
 within ModelicaCompliance.Scoping.NameLookup.Simple;
 
+
 model OutsideEncapsulationMulti
   extends Icons.TestCase;
 
@@ -9,9 +10,11 @@ model OutsideEncapsulationMulti
     model B
       constant Real y = x;
     end B;
+
+    B b;
   end A;
 
-  A.B ab;
+  A a;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.3.1"})),

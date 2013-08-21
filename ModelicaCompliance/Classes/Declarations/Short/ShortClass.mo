@@ -1,5 +1,6 @@
 within ModelicaCompliance.Classes.Declarations.Short;
 
+
 model ShortClass
   extends Icons.TestCase;
 
@@ -10,7 +11,7 @@ model ShortClass
   class B = A(x = 3.0);
   B b;
 equation
-  assert(Util.compareReal(x, 3.0), "x was not given the correct value.");
+  assert(Util.compareReal(b.x, 3.0), "b.x was not given the correct value.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.5.1"})),
