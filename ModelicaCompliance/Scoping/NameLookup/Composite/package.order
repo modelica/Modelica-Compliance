@@ -1,6 +1,15 @@
+FunctionInOperatorLookupViaComp
+FunctionLookupViaArrayComp
+FunctionLookupViaArrayElement
+FunctionLookupViaClassComp
 FunctionLookupViaComp
+FunctionLookupViaCompNonCall
+FunctionLookupViaNonClassComp
 NestedCompLookup
 NonFunctionLookupViaComp
 NonPackageLookupEncapsulated
 NonPackageLookupNonEncapsulated
-PackageLookup
+OperatorFunctionLookupViaComp
+PackageLookupClass
+PackageLookupConstant
+PartialClassLookup
