@@ -11,7 +11,7 @@ equation
   end when;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"8.3.5", "8.3.5.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests equations within a when-equation to a form ,where the result variable is on the left-hand side ,is not allowed.</html>"));

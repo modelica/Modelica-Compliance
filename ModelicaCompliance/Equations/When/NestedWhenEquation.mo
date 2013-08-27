@@ -12,7 +12,7 @@ equation
   end when;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"8.3.5", "8.3.5.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests When-clause inside when-clause is not allowed.</html>"));

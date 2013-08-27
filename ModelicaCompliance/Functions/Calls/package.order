@@ -1,1 +1,13 @@
 Vectorization
+CallDefaultArguments
+CallEmptyResult
+CallMultiResults
+CallMultiResultsAssignment
+CallMultiResultsWithOmittedOutput
+CallMultiResultsWithOmittedOutput1
+CallNamedAndPositionalArguments
+CallNamedArguments
+CallNamedArgumentsAssignment
+CallPositionalArguments
+CallPositionalArgumentsAssignment
+
