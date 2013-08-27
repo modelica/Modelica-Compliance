@@ -9,3 +9,5 @@ LocalClassNameLookup
 LocalCompNameLookup
 OutsideEncapsulation
 OutsideEncapsulationMulti
+QualifiedImportPriority
+UnqualifiedImportPriority
