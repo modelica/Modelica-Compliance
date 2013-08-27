@@ -1,0 +1,8 @@
+ClassExtends
+ClassExtendsChain
+ClassExtendsClassTypes
+ClassExtendsMod
+ClassExtendsNonReplaceable
+NonRedeclareClassExtends
+RedeclareClassExtends
+ReplaceableNotInherited
