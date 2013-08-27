@@ -1,0 +1,8 @@
+EncapsulatedGlobalLookup
+EncapsulatedLookupClass
+GlobalLookupEncapsulatedElement
+GlobalLookupNonEncapsulatedElement
+GlobalPartialClass
+LocalNameGlobalLookup
+NonExistingGlobalName
+PackageLikeClassLookup
