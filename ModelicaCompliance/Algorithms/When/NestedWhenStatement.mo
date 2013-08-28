@@ -18,7 +18,7 @@ equation
   x = 2*time;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false)),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"11.2.7.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests nested when-statement is not allowed.</html>"));

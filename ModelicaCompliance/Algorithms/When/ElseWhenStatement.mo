@@ -15,7 +15,7 @@ algorithm
   assert(close == false, "close was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.7.2"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests elsewhen-statment.</html>"));

@@ -21,7 +21,7 @@ equation
   assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true)),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.7"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests When-statment.</html>"));
