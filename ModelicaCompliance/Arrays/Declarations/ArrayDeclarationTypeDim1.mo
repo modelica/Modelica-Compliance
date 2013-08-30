@@ -3,10 +3,10 @@ within ModelicaCompliance.Arrays.Declarations;
 model ArrayDeclarationTypeDim1
   extends Icons.TestCase;
 
-  Real realArray[2];
+  Real realArray[2] = {4,5};
 equation
-  realArray[1] = 4;
-  realArray[2] = 5;
+  assert(Util.compareReal(realArray[1], 4.0), "realArray[1] was not set correctly.");
+  assert(Util.compareReal(realArray[2], 5.0), "realArray[2] was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.1"})),
