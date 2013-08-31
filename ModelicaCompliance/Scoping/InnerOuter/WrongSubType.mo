@@ -16,7 +16,7 @@ model WrongSubType
   A a;
 equation
   annotation (
-    __ModelicaAssociation(TestCase(shouldFail = true, section = {"5.4"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.4"})),
     experiment(StopTime = 0.01),
     Documentation(info = "<html>Checks that inner should be subtype of outer.</html>"));
 end WrongSubType;

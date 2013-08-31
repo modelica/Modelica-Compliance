@@ -44,7 +44,7 @@ equation
   assert(e.d.y == 1, "e.d.y was not set to the correct value!");
   assert(f.d.y == 2, "f.d.y was not set to the correct value!");
   annotation (
-    __ModelicaAssociation(TestCase(shouldFail = false, section = {"5.4.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.4.1"})),
     experiment(StopTime = 0.01),
     Documentation(info = "<html>Checks that inner/outer works with classes (functions).</html>"));
 end FunctionSelection;
