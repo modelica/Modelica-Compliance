@@ -47,6 +47,5 @@ model CorrectBalance2
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.7"})),
     experiment(StopTime = 0.01),
-    Documentation(info = "<html>Checks that a balanced model works fine.</html>"),
-    uses(Modelica(version="3.2")));
+    Documentation(info = "<html>Checks that a balanced model works fine.</html>"));
 end CorrectBalance2;
