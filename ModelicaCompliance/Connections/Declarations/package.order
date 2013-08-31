@@ -1,0 +1,16 @@
+ArrayEquations
+ConnectArrays
+ConnectArraysIncompatible
+ConnectInNonParametricIf
+ConnectInWhen
+ConnectInvalidForm
+ConnectNonParamSubscript
+ConnectParamSubscript
+ConnectWholeDim
+OperatorRecordEquations
+OperatorRecordMissingAddition
+OperatorRecordMissingNegation
+OperatorRecordMissingZero
+SimpleEquations
+UnconnectedFlow
+UnconnectedInsideFlow

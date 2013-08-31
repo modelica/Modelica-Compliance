@@ -1,0 +1,17 @@
+AugmentArray
+AugmentArrayElement
+AugmentComplex
+AugmentNonEmpty
+AugmentScalar
+ConnectDisjointExpandables
+ConnectNonExpandable
+ConnectTwoUndeclared
+FlowInConnectorInExpandable
+FlowInExpandable
+InputVariable
+MissingNonInput
+NonConnectorInExpandable
+NonPresentInExp
+PotentiallyPresentMod
+PresentInExp
+UnknownArrayDimensions
