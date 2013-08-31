@@ -3,20 +3,22 @@ within ModelicaCompliance.Algorithms.When;
 model ElseWhenStatement
   extends Icons.TestCase;
 
-  Boolean close;
-  parameter Real x = 5;
+  Real r;
+  discrete Real i(fixed=true, start = 0);
 algorithm
-  when x > 5 then
-    close := true;
-  elsewhen x <= 5 then
-    close := false;
+  when {time > 0.1,time > 0.6} then
+    i := 2;
+  elsewhen {time > 0.2,time > 0.8} then
+    i := -4;
   end when;
-
-  assert(close == false, "close was not set correctly.");
+equation
+  der(r) = i;
+  assert(r <= 0.2, "Signal outside expected range (either an event was missed, the solver not exact)");
+  assert(r >= -1.8, "Signal outside expected range (either an event was missed, the solver not exact, or stopTime wrong)");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.7.2"})),
-    experiment(StopTime = 0.01),
+    experiment(StopTime = 1.0),
     Documentation(
     info = "<html>Tests elsewhen-statment.</html>"));
 end ElseWhenStatement;
