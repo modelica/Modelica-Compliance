@@ -8,3 +8,12 @@ EnumScope
 EnumSimple
 EnumStartAsLiteral
 EnumUnspecified
+WrongConversion1
+WrongConversion2
+WrongConversion3
+GoodConversion1
+GoodConversion2
+WrongType1
+WrongType2
+
+
