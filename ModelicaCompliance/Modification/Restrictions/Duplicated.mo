@@ -1,4 +1,4 @@
-within ModelicaCompliance.Modification.Flattening;
+within ModelicaCompliance.Modification.Restrictions;
 
 model Duplicated
   extends Icons.TestCase;
