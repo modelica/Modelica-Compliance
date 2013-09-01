@@ -1,6 +1,6 @@
 within ModelicaCompliance.Operators.Conversion;
 
-model BooleanToStringConversion
+model BooleanToString
   extends Icons.TestCase;
 
   String s1;
@@ -17,4 +17,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that string conversion from boolean is possible.</html>"));
-end BooleanToStringConversion;
+end BooleanToString;

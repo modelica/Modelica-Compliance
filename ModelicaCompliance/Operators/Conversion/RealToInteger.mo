@@ -1,6 +1,6 @@
 within ModelicaCompliance.Operators.Conversion;
 
-model RealToIntegerConversion
+model RealToInteger
   extends Icons.TestCase;
 
   Integer i;
@@ -14,4 +14,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the built-in integer function is possible.</html>"));
-end RealToIntegerConversion;
+end RealToInteger;

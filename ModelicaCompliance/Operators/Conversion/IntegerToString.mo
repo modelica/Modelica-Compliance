@@ -1,6 +1,6 @@
 within ModelicaCompliance.Operators.Conversion;
 
-model IntegerToStringConversion
+model IntegerToString
   extends Icons.TestCase;
 
   String s1;
@@ -17,4 +17,4 @@ equation
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that string conversion from integer is possible.</html>"));
-end IntegerToStringConversion;
+end IntegerToString;

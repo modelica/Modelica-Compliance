@@ -1,4 +1,8 @@
-BooleanToStringConversion
-IntegerToStringConversion
-RealToIntegerConversion
-RealToStringConversion
+BooleanToString
+EnumToInteger
+EnumToIntegerExp
+EnumToString
+EnumToStringExp
+IntegerToString
+RealToInteger
+RealToString
