@@ -19,7 +19,8 @@ model ConstructorNumberOfOutputs
     end 'constructor';
     
   end _Complex_;
-equation
+
+  _Complex_ c = _Complex_(1);
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"14.2"})),

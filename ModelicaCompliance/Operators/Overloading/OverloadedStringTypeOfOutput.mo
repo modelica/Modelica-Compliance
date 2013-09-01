@@ -15,6 +15,8 @@ model OverloadedStringTypeOfOutput
 
   end _Complex_;
 
+  _Complex_ c = _Complex_(4);
+  String s = String(c);
 equation 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"14.3"})),

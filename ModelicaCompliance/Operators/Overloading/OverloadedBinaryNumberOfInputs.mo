@@ -15,6 +15,9 @@ model OverloadedBinaryNumberOfInputs
 
   end _Complex_;
 
+  _Complex_ c1 = _Complex_(1);
+  _Complex_ c2 = _Complex_(2);
+  _Complex_ c3 = c1 + c2;
 equation
   
   annotation (
