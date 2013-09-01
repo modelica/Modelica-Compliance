@@ -4,3 +4,10 @@ WrongSubType
 FunctionSelection
 ModificationOnOuter
 SimultaneousDeclarations
+Enumeration
+EnumerationWrong
+Record
+RecordWrong
+MissingInner
+MissingInnerAdded
+
