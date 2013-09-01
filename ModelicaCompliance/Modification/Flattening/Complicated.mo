@@ -46,7 +46,7 @@ equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.2"})),
     experiment(StopTime = 0.01),
-    Documentation(info = "<html>Checks that simple modifications work.</html>"));
+    Documentation(info = "<html>Checks that more complicated modifications work correctly.</html>"));
 end Complicated;
 
 
