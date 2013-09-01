@@ -7,6 +7,7 @@ QualifiedImport
 QualifiedImportConflict
 QualifiedImportNonPackage
 QualifiedImportProtected
+Recursive
 RedeclareImport
 RenamingImport
 RenamingImportNonPackage
