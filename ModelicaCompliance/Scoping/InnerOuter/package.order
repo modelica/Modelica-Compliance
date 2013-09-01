@@ -10,4 +10,7 @@ Record
 RecordWrong
 MissingInner
 MissingInnerAdded
-
+OuterInPackage
+PartialInner
+PartialOuter
+PartialOuterWrong
