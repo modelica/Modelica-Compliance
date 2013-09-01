@@ -8,10 +8,10 @@ model MultipleSingle
      Real x = 1.0;
     end C4;
 
-    C4 a(x.unit = "V", x.displayUnit="mV", x=5.0); 
+    C4 a(x.unit = "V", x.displayUnit="mV", x = 5.0); 
     // Ok, different attributes designated (unit, displayUnit and value)
     // identical to:
-    C4 b(x(unit = "V", displayUnit="mV") = 5.0));
+    C4 b(x(unit = "V", displayUnit="mV") = 5.0);
   end C3;  
   
   C3 c3;

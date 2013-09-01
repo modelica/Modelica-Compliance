@@ -22,7 +22,7 @@ model WrongBalance
     correlation.y = time;
   end UseCorrelation;
 
-  UseCorrelation example(redeclare Correlation = SpecialCorrelation);
+  UseCorrelation example(redeclare model Correlation = SpecialCorrelation);
 
 equation
   annotation (
