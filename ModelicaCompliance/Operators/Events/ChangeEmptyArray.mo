@@ -1,6 +1,6 @@
 within ModelicaCompliance.Operators.Events;
 
-model ChangeCorrect
+model ChangeEmptyArray
   extends Icons.TestCase;
   
   Boolean b[0];
@@ -17,4 +17,4 @@ algorithm
     experiment(StopTime = 1.0),
     Documentation(
       info = "<html>Test change for empty arrays as input.</html>"));
-end ChangeCorrect;
+end ChangeEmptyArray;
