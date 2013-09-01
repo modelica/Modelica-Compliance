@@ -1,4 +1,4 @@
-within ModelicaCompliance.Operators.Events;
+within ModelicaCompliance.Equations.Reinit;
 
 model Reinit
   extends Icons.TestCase;
