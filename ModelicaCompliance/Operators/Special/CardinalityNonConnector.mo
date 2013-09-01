@@ -1,4 +1,4 @@
-within ModelicaCompliance.Connections.Operators;
+within ModelicaCompliance.Operators.Special;
 
 model CardinalityNonConnector
   extends Icons.TestCase;
