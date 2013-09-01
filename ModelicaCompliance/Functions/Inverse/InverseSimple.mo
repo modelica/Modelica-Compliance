@@ -1,4 +1,4 @@
-within ModelicaCompliance;
+within ModelicaCompliance.Functions.Inverse;
 
 model InverseSimple
   extends Icons.TestCase;
