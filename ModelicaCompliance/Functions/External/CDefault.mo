@@ -1,13 +1,13 @@
 within ModelicaCompliance.Functions.External;
 
-model C
+model CDefault
   extends Icons.TestCase;
 
   package M
     function mySin
       input Real x;
       output Real y;
-      external "C" y = externalSin(x) annotation(Include="
+      external y = externalSin(x) annotation(Include="
 #include <stdio.h>
 double externalSin(double x) 
 { 
@@ -25,5 +25,5 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.9"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that external *C* is working.</html>"));
-end C;
+      info = "<html>Tests that external *C* is selected by default if the language_specification string is missing.</html>"));
+end CDefault;
