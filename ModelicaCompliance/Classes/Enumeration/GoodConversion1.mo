@@ -13,4 +13,4 @@ model GoodConversion1
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that a enumeration can be assigned to Integer via conversion using the Integer(E) function.</html>"));
-end WrongConversion1;
+end GoodConversion1;

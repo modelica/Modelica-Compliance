@@ -1,6 +1,6 @@
 within ModelicaCompliance.Scoping.InnerOuter;
 
-model MissingInner1
+model MissingInner
   extends Icons.TestCase;
 
   class A
@@ -20,4 +20,4 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.4"})),
     experiment(StopTime = 0.01),
     Documentation(info = "<html>Checks that missing inner generates errors.</html>"));
-end MissingInner1;
+end MissingInner;
