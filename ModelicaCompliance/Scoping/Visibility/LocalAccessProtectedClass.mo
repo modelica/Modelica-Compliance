@@ -10,7 +10,7 @@ protected
     Real x = 2.0;
   end A;
 
-  A a;
+  A aprotected;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.1"})),
