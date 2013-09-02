@@ -1,8 +1,16 @@
+Array1
+Array2
+Array3
+Array4
+Array5
+Array6
 SimpleNameLookup
 ComplicatedNameLookup
 WrongSubType
 FunctionSelection
-ModificationOnOuter
+ModificationOnOuter1
+ModificationOnOuter2
+ModificationOnOuter3
 SimultaneousDeclarations
 Enumeration
 EnumerationWrong
@@ -14,3 +22,7 @@ OuterInPackage
 PartialInner
 PartialOuter
 PartialOuterWrong
+MultipleInnerMultipleOuter
+DifferentPrefixes
+Nested
+
