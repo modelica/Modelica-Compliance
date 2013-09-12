@@ -14,7 +14,7 @@ model FunctionLookupViaNonClassComp
         end f;
       end C;
 
-      C c;
+      constant C c;
     end B;
   end A;
 
