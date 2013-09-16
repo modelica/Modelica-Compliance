@@ -1,7 +1,7 @@
 within ModelicaCompliance.Classes.Declarations.Long;
 
 package QuotedIdentifiers
-  extends Icons.TestCase;
+  extends Icons.TestPackage;
   /* The example is stored inside an auxilliary package to avoid mapping quoted identifiers to file system */
   model '\"\'\?\\\a\b\f\n\r\t\v'
     Real r;
