@@ -14,10 +14,12 @@ equation
     y3 = 2*x + y1 + y2; 
   end when; 
 
-  assert(Util.compareReal(x, time - y2), "x was not set correctly.");
-  assert(Util.compareReal(y1, 0.0), "y1 was not set correctly.");
-  assert(Util.compareReal(y2, 3.0), "y2 was not set correctly.");
-  assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
+  if not initial() then
+    assert(Util.compareReal(x, time - y2), "x was not set correctly.");
+    assert(Util.compareReal(y1, 0.0), "y1 was not set correctly.");
+    assert(Util.compareReal(y2, 3.0), "y2 was not set correctly.");
+    assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
+  end if;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.5"})),

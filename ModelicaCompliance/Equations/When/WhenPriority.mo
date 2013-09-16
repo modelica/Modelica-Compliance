@@ -12,7 +12,9 @@ equation
     close = false;
   end when;
 
-  assert(close == true, "close was not set correctly.");
+  if not initial() then
+    assert(close == true, "close was not set correctly.");
+  end if;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.5", "8.3.5.3"})),

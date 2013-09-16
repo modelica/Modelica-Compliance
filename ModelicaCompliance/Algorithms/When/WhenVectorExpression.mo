@@ -15,10 +15,12 @@ algorithm
 equation
   x = 2*time;
 
-  assert(Util.compareReal(x, 2 * time), "x was not set correctly.");
-  assert(Util.compareReal(y1, 0.0), "y1 was not set correctly.");
-  assert(Util.compareReal(y2, 5.0), "y2 was not set correctly.");
-  assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
+  if not initial() then
+    assert(Util.compareReal(x, 2 * time), "x was not set correctly.");
+    assert(Util.compareReal(y1, 0.0), "y1 was not set correctly.");
+    assert(Util.compareReal(y2, 5.0), "y2 was not set correctly.");
+    assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
+  end if;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.7"})),

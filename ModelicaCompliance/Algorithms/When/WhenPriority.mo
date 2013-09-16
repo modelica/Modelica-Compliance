@@ -12,7 +12,9 @@ algorithm
     close := false;
   end when;
 
-  assert(close == true, "close was not set correctly.");
+  if not initial() then
+    assert(close == true, "close was not set correctly.");
+  end if;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true)),
