@@ -21,7 +21,9 @@ model CorrectBalance3
     end BaseProperties;
   end BaseMedium;
 
-  package OtherMedium = BaseMedium(nXi = 0);
+  package OtherMedium
+    extends BaseMedium(nXi = 0);
+  end OtherMedium;
 
   model SimpleAir 
     "Medium model of simple air. Independent variables: p,T"
