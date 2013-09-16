@@ -33,10 +33,10 @@ equation
   m.c1.theta = 3.0;
   m.c2.theta = 3.0;
   connect(m.c1, m.c2);
-  Connections.branch(m.c1.theta, m.c2.theta);
+  .Connections.branch(m.c1.theta, m.c2.theta);
 
   when time > 1.0 then
-    Connections.root(m.c1.theta);
+    .Connections.root(m.c1.theta);
   end when;
 
   annotation (

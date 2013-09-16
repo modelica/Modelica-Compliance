@@ -1,5 +1,6 @@
 within ModelicaCompliance.Connections.Overconstrained;
 
+
 model BranchInAlgorithm
   extends Icons.TestCase;
 
@@ -10,7 +11,7 @@ model BranchInAlgorithm
       input AC_Angle theta1;
       input AC_Angle theta2;
       output Real residue[0];
-    algorithm 
+    algorithm
       assert(abs(theta1 - theta2) < 1.e-10, "theta1 and theta2 are not equal.");
     end equalityConstraint;
   end AC_Angle;
@@ -27,16 +28,16 @@ model BranchInAlgorithm
   end M;
 
   M m;
-equation 
+equation
   m.c1.i = 1.0;
   m.c1.v = 2.0;
   m.c1.theta = 3.0;
   m.c2.theta = 3.0;
   connect(m.c1, m.c2);
-  Connections.root(m.c1.theta);
+  .Connections.root(m.c1.theta);
 
 algorithm
-  Connections.branch(m.c1.theta, m.c2.theta);
+  .Connections.branch(m.c1.theta, m.c2.theta);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"9.4.1"})),

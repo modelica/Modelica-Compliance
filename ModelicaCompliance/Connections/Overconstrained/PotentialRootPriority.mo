@@ -33,8 +33,8 @@ equation
   m.c1.theta = 3.0;
   m.c2.theta = 3.0;
   connect(m.c1, m.c2);
-  Connections.branch(m.c1.theta, m.c2.theta);
-  Connections.potentialRoot(m.c1.theta, 1);
+  .Connections.branch(m.c1.theta, m.c2.theta);
+  .Connections.potentialRoot(m.c1.theta, 1);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.4.1"})),

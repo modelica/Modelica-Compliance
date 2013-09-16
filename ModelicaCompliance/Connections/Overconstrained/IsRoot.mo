@@ -33,10 +33,10 @@ equation
   m.c1.theta = 3.0;
   m.c2.theta = 3.0;
   connect(m.c1, m.c2);
-  Connections.branch(m.c1.theta, m.c2.theta);
-  Connections.root(m.c1.theta);
-  assert(Connections.isRoot(m.c1.theta), "m.c1.theta was not chosen as root.");
-  assert(not Connections.isRoot(m.c2.theta), "m.c2.theta should not be chosen as root.");
+  .Connections.branch(m.c1.theta, m.c2.theta);
+  .Connections.root(m.c1.theta);
+  assert(.Connections.isRoot(m.c1.theta), "m.c1.theta was not chosen as root.");
+  assert(not .Connections.isRoot(m.c2.theta), "m.c2.theta should not be chosen as root.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.4.1"})),

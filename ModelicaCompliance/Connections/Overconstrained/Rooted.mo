@@ -33,9 +33,9 @@ equation
   m.c1.theta = 3.0;
   m.c2.theta = 3.0;
   connect(m.c1, m.c2);
-  Connections.branch(m.c1.theta, m.c2.theta);
-  Connections.root(m.c1.theta);
-  assert(Connections.rooted(m.c1.theta), "Connections.rooted(m.c1.theta returned false.");
+  .Connections.branch(m.c1.theta, m.c2.theta);
+  .Connections.root(m.c1.theta);
+  assert(.Connections.rooted(m.c1.theta), "Connections.rooted(m.c1.theta returned false.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.4.1"})),

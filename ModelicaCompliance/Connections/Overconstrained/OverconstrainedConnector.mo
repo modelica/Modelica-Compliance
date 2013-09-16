@@ -30,7 +30,7 @@ model OverconstrainedConnector
     parameter Real r[3];
     Frame frame_a, frame_b;
   equation
-    Connections.branch(frame_a.R, frame_b.R);
+    .Connections.branch(frame_a.R, frame_b.R);
     frame_b.r = frame_a.r + transpose(frame_a.R) * r;
     frame_b.R = frame_a.R;
     zeros(3) = frame_a.f + frame_b.f;
@@ -40,7 +40,7 @@ model OverconstrainedConnector
   model InertialSystem
     Frame frame_b;
   equation
-    Connections.root(frame_b.R);
+    .Connections.root(frame_b.R);
     frame_b.r = zeros(3);
     frame_b.R = identity(3);
   end InertialSystem;
