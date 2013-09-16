@@ -23,7 +23,7 @@ equation
   assert(Util.compareReal(m2.c[1].e, 1.0), "m2.c[1].e was given an incorrect value.");
   assert(Util.compareReal(m2.c[1].f, -2.0), "m2.c[1].f was given an incorrect value.");
   assert(Util.compareReal(m2.c[2].e, 1.0), "m2.c[2].e was given an incorrect value.");
-  assert(Util.compareReal(m2.c[2].e, -2.0), "m2.c[2].f was given an incorrect value.");
+  assert(Util.compareReal(m2.c[2].f, -2.0), "m2.c[2].f was given an incorrect value.");
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.1"})),
     experiment(StopTime = 0.01),
