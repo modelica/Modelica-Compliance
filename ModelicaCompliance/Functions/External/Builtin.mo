@@ -14,7 +14,7 @@ model Builtin
   parameter Real p = M.mySin(0.5);
   
 equation
-  assert(Util.compareReal(p, 0.479425538604203), "x was not set correctly, " + String(x) + " <> 0.479425538604203.");
+  assert(Util.compareReal(p, 0.479425538604203), "p was not set correctly, " + String(p) + " <> 0.479425538604203.");
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.9"})),
     experiment(StopTime = 0.01),
