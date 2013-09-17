@@ -3,7 +3,7 @@ within ModelicaCompliance.Scoping.NameLookup.Global;
 model GlobalPartialClass
   extends Icons.TestCase;
 
-  partial class A
+  partial package A
     constant Real x = 3.2;
   end A;
 

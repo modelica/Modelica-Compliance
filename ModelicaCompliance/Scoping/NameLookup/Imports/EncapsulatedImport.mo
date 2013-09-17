@@ -11,7 +11,7 @@ model EncapsulatedImport
   end P;
 
   encapsulated model A
-    import ModelicaCompliance.Scoping.NameLookup.Imports.EncapsulatedImport.P;
+    import ModelicaCompliance.Scoping.NameLookup.Imports.EncapsulatedImport.P.M;
     P.M m;
   end A;
 

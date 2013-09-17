@@ -1,5 +1,6 @@
 within ModelicaCompliance.Scoping.NameLookup.Global;
 
+
 model LocalNameGlobalLookup
   extends Icons.TestCase;
 
@@ -26,7 +27,7 @@ equation
   assert(Util.compareReal(a.x, 2.0), "a.x was not correctly set.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.3.3"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that the global name lookup start from the global

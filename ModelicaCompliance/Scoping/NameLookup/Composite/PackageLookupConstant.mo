@@ -9,7 +9,7 @@ model PackageLookupConstant
 
   Real y = P.x;
 equation
-  assert(y == 5.1, "y was not set correctly!");
+  assert(Util.compareReal(y, 5.1), "y was not set correctly!");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.2"})),

@@ -11,7 +11,7 @@ model PackageLookupClass
 
   P.A a;
 equation
-  assert(a.x == 531, "a.x was not set correctly!");
+  assert(Util.compareReal(a.x, 531), "a.x was not set correctly!");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.3.2"})),
