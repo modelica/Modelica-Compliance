@@ -5,4 +5,5 @@ GlobalLookupNonEncapsulatedElement
 GlobalPartialClass
 LocalNameGlobalLookup
 NonExistingGlobalName
+NonPackageLikeClassLookup
 PackageLikeClassLookup
