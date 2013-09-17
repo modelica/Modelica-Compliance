@@ -1,31 +1,31 @@
 within ModelicaCompliance.Connections.Declarations;
 
-
 model OperatorRecordMissingNegation
   extends Icons.TestCase;
+  import ModelicaCompliance.Connections.Declarations.OperatorRecordMissingNegation.P.Complex;
 
-  encapsulated operator record Complex
-    Real re;
-    Real im;
+  encapsulated package P
+    encapsulated operator record Complex
+      Real re;
+      Real im;
 
-    encapsulated operator function '+'
-      import
-        ModelicaCompliance.Connections.Declarations.OperatorRecordMissingNegation.Complex;
-      input Complex c1;
-      input Complex c2;
-      output Complex result;
-    algorithm
-      result := Complex(c1.re + c2.re, c1.im + c2.im);
-    end '+';
+      encapsulated operator function '+'
+        import ModelicaCompliance.Connections.Declarations.OperatorRecordMissingNegation.P.Complex;
+        input Complex c1;
+        input Complex c2;
+        output Complex result;
+      algorithm
+        result := Complex(c1.re + c2.re, c1.im + c2.im);
+      end '+';
 
-    encapsulated operator function '0'
-      import
-        ModelicaCompliance.Connections.Declarations.OperatorRecordMissingNegation.Complex;
-      output Complex result;
-    algorithm
-      result := Complex(0.0, 0.0);
-    end '0';
-  end Complex;
+      encapsulated operator function '0'
+        import ModelicaCompliance.Connections.Declarations.OperatorRecordMissingNegation.P.Complex;
+        output Complex result;
+      algorithm
+        result := Complex(0.0, 0.0);
+      end '0';
+    end Complex;
+  end P;
 
   connector C
     Complex e;

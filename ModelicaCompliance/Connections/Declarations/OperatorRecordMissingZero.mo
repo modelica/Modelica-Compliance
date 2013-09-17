@@ -1,32 +1,32 @@
 within ModelicaCompliance.Connections.Declarations;
 
-
 model OperatorRecordMissingZero
   extends Icons.TestCase;
+  import ModelicaCompliance.Connections.Declarations.OperatorRecordMissingZero.P.Complex;
 
-  encapsulated operator record Complex
-    Real re;
-    Real im;
+  encapsulated package P
+    encapsulated operator record Complex
+      Real re;
+      Real im;
 
-    encapsulated operator function '+'
-      import
-        ModelicaCompliance.Connections.Declarations.OperatorRecordMissingZero.Complex;
-      input Complex c1;
-      input Complex c2;
-      output Complex result;
-    algorithm
-      result := Complex(c1.re + c2.re, c1.im + c2.im);
-    end '+';
+      encapsulated operator function '+'
+        import ModelicaCompliance.Connections.Declarations.OperatorRecordMissingZero.P.Complex;
+        input Complex c1;
+        input Complex c2;
+        output Complex result;
+      algorithm
+        result := Complex(c1.re + c2.re, c1.im + c2.im);
+      end '+';
 
-    encapsulated operator function '-'
-      import
-        ModelicaCompliance.Connections.Declarations.OperatorRecordMissingZero.Complex;
-      input Complex c;
-      output Complex result;
-    algorithm
-      result := Complex(-c.re, -c.im);
-    end '-';
-  end Complex;
+      encapsulated operator function '-'
+        import ModelicaCompliance.Connections.Declarations.OperatorRecordMissingZero.P.Complex;
+        input Complex c;
+        output Complex result;
+      algorithm
+        result := Complex(-c.re, -c.im);
+      end '-';
+    end Complex;
+  end P;
 
   connector C
     Complex e;
