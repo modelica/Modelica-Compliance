@@ -12,7 +12,7 @@ model EncapsulatedImport
 
   encapsulated model A
     import ModelicaCompliance.Scoping.NameLookup.Imports.EncapsulatedImport.P.M;
-    P.M m;
+    M m;
   end A;
 
   A a;
