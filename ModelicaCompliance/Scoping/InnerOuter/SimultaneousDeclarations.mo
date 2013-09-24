@@ -5,7 +5,7 @@ model SimultaneousDeclarations
 
   model ConditionalIntegrator "Simple differential equation if isEnabled"
    outer Boolean isEnabled;
-   Real x(start=1);
+   Real x(start = 1, fixed = true);
   equation
    der(x) = if isEnabled then -x else 0;
   end ConditionalIntegrator;

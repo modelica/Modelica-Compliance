@@ -3,11 +3,12 @@ within ModelicaCompliance.Equations.Terminate;
 model Terminate
   extends Icons.TestCase;
 
-  Real x(start=0);
-  Real y(start=1);
+  Real x(start = 0, fixed = true);
+  Real y(start = 1, fixed = true);
 equation
-  der(x)= y;
-  der(y)= -x;
+  der(x) = y;
+  der(y) = -x;
+
   when y < 0 then
     terminate("The ball touches the ground");
   end when;
