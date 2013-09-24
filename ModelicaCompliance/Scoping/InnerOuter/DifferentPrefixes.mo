@@ -14,10 +14,9 @@ model DifferentPrefixes
   end B;
 
   B b;
-
 equation 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.4"})),
+  __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.4"})),
     experiment(StopTime = 0.01),
-    Documentation(info = "<html>Checks different type prefixes for outer and inner generates error.</html>"));
+    Documentation(info = "<html>Checks that different type prefixes for outer and inner are allowed.</html>"));
 end DifferentPrefixes;
