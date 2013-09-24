@@ -65,7 +65,7 @@ model CorrectBalance5
     medium.Xi = Xi;
   end FixedBoundary_pTX;
 
-  extends FixedBoundary_pTX(redeclare package Medium = SimpleAir);
+  extends FixedBoundary_pTX(redeclare package Medium = SimpleAir, p = 1.0, T = 100.0);
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.7"})),

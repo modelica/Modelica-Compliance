@@ -18,9 +18,30 @@ model CorrectBalance1
     C*der(u) = p.i; 
   end Capacitor;
   
-  extends Capacitor(C = 10);
+  model ConstantVoltage
+    parameter Real V;
+    Pin p, n;
+    Real u;
+  equation
+    0 = p.i + n.i;
+    u = p.v - n.v;
+    u = V;
+  end ConstantVoltage;
 
+  model Ground
+    Pin p;
+  equation
+    p.v = 0;
+  end Ground;
+
+  Capacitor c(C = 10);
+  ConstantVoltage v(V = 1);
+  Ground g;
 equation
+  connect(c.n, v.p);
+  connect(c.p, v.n);
+  connect(v.n, g.p);
+
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.7"})),
     experiment(StopTime = 0.01),

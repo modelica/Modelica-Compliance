@@ -15,7 +15,7 @@ model CorrectBalance2
   model Capacitor
     parameter Real C;
     extends TwoPin;
-    Real u;
+    Real u(fixed = true);
   equation 
     0 = p.i + n.i;
     u = p.v - n.v;
@@ -23,7 +23,7 @@ model CorrectBalance2
   end Capacitor;
 
   model Resistor
-    parameter Real R(start=1);
+    parameter Real R(start = 1);
     extends TwoPin;
     Real v;
   equation 
@@ -32,14 +32,22 @@ model CorrectBalance2
     v = R*p.i;
   end Resistor;
 
+  model Ground
+    Pin p;
+  equation
+    p.v = 0;
+  end Ground;
+
   model Circuit
    extends TwoPin;
    replaceable TwoPin t;
-   Capacitor c(C=12);
+   Capacitor c(C = 12);
+   Ground g;
   equation 
    connect(p, t.p);
    connect(t.n, c.p);
    connect(c.n, n);
+   connect(g.p, p);
   end Circuit;
 
   extends Circuit(redeclare Resistor t(R = 1));
