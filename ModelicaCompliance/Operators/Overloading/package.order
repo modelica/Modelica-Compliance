@@ -4,7 +4,6 @@ ConstructorNumberOfOutputs
 ConstructorPriority
 ConstructorSimpleValid
 ConstructorTypeOfOutput
-ElemWiseBinaryOverloadResolution
 ExactMatchArrayOverload
 ImplicitConstructionAndBinaryOp
 NegationSubtractionOverload
