@@ -1,7 +1,7 @@
 within ModelicaCompliance.Operators.Overloading;
 
 model ExactMatchArrayOverload
-  extends Icons.TestCase;
+  //extends Icons.TestCase;
 
   operator record _Complex_
     Integer re;
@@ -58,7 +58,7 @@ model ExactMatchArrayOverload
 equation
   assert(c.re == -6, "Overloaded '*' not matched properly.");
   assert(c.im == 17, "Overloaded '*' not matched properly.");
-  assert(f.im == 34, "Overloaded array '*' not matched properly. This should not have been vectorized");
+  assert(f.im == 35, "Overloaded array '*' not matched properly. This should not have been vectorized");
   assert(f.re == -12, "Overloaded array '*' not matched properly. This should not have been vectorized");
 
   
