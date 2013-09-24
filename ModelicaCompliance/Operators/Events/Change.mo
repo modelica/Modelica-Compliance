@@ -3,13 +3,13 @@ within ModelicaCompliance.Operators.Events;
 model Change
   extends Icons.TestCase;
   
-  discrete Real x, y;
+  discrete Integer x, y;
 initial equation
-  x = 0.0;
-  y = 0.0;
+  x = 0;
+  y = 0;
 equation
   when sample(0, 0.1) then
-    y = time;
+    y = integer(time * 10.0);
   end when;
 
   when change(y) then

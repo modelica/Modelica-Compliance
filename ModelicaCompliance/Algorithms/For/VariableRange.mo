@@ -11,7 +11,7 @@ algorithm
   end for;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"11.2.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.2"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that the range expression is allowed to be a variable
