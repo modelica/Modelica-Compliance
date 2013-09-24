@@ -32,7 +32,7 @@ model ExternalObjectTable
     external "C" y=interpolateMyTable(interpolTable,u) ;
   end interpolateMyTable;
 
-  MyTable myTable = MyTable("testTables.txt", "table1", {1, 2, 3});
+  MyTable myTable = MyTable("modelica://ModelicaCompliance/Resources/Data/Tables/testTables.txt", "table1", {1, 2, 3});
   Real y = interpolateMyTable(myTable, 1.0);
 equation
   assert(Util.compareReal(y, 4.0), "y was not set correctly.");
