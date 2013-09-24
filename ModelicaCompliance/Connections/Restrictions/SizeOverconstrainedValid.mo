@@ -28,7 +28,7 @@ model SizeOverconstrainedValid
 
   Frame f(r = {1, 2, 3}, R = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 equation
-  Connections.root(f.R);
+  .Connections.root(f.R);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.3.1"})),
