@@ -4,7 +4,7 @@ model ArrayDimRedeclare
   extends Icons.TestCase;
 
   model A
-    Real x[3, 4] = ones(size(x, 1), size(x, 2));
+    Real x[:, :] = ones(size(x, 1), size(x, 2));
   end A;
 
   A a(redeclare Real x[2, 3]);
