@@ -7,7 +7,10 @@ model Complicated
     constant Integer y = 10;
   end PartialMedium;
   
-  package M1 = PartialMedium(y = 100);
+  package M1
+    extends PartialMedium(y = 100);
+  end M1;
+
   package M2 = M1(y = 200);
   
   model B
