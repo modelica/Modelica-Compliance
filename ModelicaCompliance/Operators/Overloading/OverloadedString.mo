@@ -3,17 +3,23 @@ within ModelicaCompliance.Operators.Overloading;
 model OverloadedString
   extends Icons.TestCase;
 
-  operator record _Complex_
-    Integer a1;
+  encapsulated package P
+    operator record _Complex_
+      Integer a1;
 
-    operator function 'String'
-      input _Complex_ a;
-      output String s =  " ";
-    algorithm
-      s := String(a.a1);
-    end 'String';
+      encapsulated operator function 'String'
+        import ModelicaCompliance.Operators.Overloading.OverloadedString.P._Complex_;
 
-  end _Complex_;
+        input _Complex_ a;
+        output String s =  " ";
+      algorithm
+        s := String(a.a1);
+      end 'String';
+
+    end _Complex_;
+  end P;
+
+  import ModelicaCompliance.Operators.Overloading.OverloadedString.P._Complex_;
 
   _Complex_ a = _Complex_(1);
   Boolean b = String(a) == "1";

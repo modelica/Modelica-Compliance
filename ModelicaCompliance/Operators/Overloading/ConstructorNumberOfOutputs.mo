@@ -3,23 +3,27 @@ within ModelicaCompliance.Operators.Overloading;
 model ConstructorNumberOfOutputs
   extends Icons.TestCase;
   
-  operator record _Complex_
-    Integer re;
-    Integer im;
-    
-    operator 'constructor'
-    
-      function con1 
-        input Integer i1;
-        output _Complex_ o1;
-        output _Complex_ o2 "This is not allowed. Only one output component per constructor expected.";
-      algorithm
-      end con1;
+  encapsulated package P
+    operator record _Complex_
+      Integer re;
+      Integer im;
       
-    end 'constructor';
-    
-  end _Complex_;
+      encapsulated operator 'constructor'
+        import ModelicaCompliance.Operators.Overloading.ConstructorNumberOfOutputs.P._Complex_;
+      
+        function con1 
+          input Integer i1;
+          output _Complex_ o1;
+          output _Complex_ o2 "This is not allowed. Only one output component per constructor expected.";
+        algorithm
+        end con1;
+        
+      end 'constructor';
+      
+    end _Complex_;
+  end P;
 
+  import ModelicaCompliance.Operators.Overloading.ConstructorNumberOfOutputs.P._Complex_;
   _Complex_ c = _Complex_(1);
   
   annotation (

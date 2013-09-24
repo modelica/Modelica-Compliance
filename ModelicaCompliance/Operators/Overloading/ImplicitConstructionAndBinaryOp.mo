@@ -3,31 +3,39 @@ within ModelicaCompliance.Operators.Overloading;
 model ImplicitConstructionAndBinaryOp
   extends Icons.TestCase;
 
-  operator record _Complex_ 
-    Integer re ;
-    Integer im ;
-    
-    operator 'constructor'  " Constructor"
-      function fromInteger "Construct _Complex_ from Integer"
-        input Integer re ;
-        input Integer im = 1 ;
-        output _Complex_ result;
+  encapsulated package P
+    operator record _Complex_ 
+      Integer re ;
+      Integer im ;
+      
+      encapsulated operator 'constructor'  " Constructor"
+        import ModelicaCompliance.Operators.Overloading.ImplicitConstructionAndBinaryOp.P._Complex_;
+
+        function fromInteger "Construct _Complex_ from Integer"
+          input Integer re ;
+          input Integer im = 1 ;
+          output _Complex_ result;
+        algorithm
+          result.re := re;
+          result.im := im;
+        end fromInteger;
+      end 'constructor';
+
+      encapsulated operator function '+' "Add two _Complex_ numbers"
+        import ModelicaCompliance.Operators.Overloading.ImplicitConstructionAndBinaryOp.P._Complex_;
+
+        input _Complex_ c1 ;
+        input _Complex_ c2 ;
+        output _Complex_ c3 ;
       algorithm
-        result.re := re;
-        result.im := im;
-      end fromInteger;
-    end 'constructor';
+        c3 := _Complex_(c1.re + c2.re, c1.im + c2.im);
+      end '+';
 
-    operator function '+' "Add two _Complex_ numbers"
-      input _Complex_ c1 ;
-      input _Complex_ c2 ;
-      output _Complex_ c3 ;
-    algorithm
-      c3 := _Complex_(c1.re + c2.re, c1.im + c2.im);
-    end '+';
-
-  end _Complex_;
+    end _Complex_;
+  end P;
   
+  import ModelicaCompliance.Operators.Overloading.ImplicitConstructionAndBinaryOp.P._Complex_;
+
   _Complex_ a = _Complex_(2,3);
   _Complex_ b = a + 1;
 equation

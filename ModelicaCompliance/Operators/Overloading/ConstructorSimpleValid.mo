@@ -3,22 +3,27 @@ within ModelicaCompliance.Operators.Overloading;
 model ConstructorSimpleValid
   extends Icons.TestCase;
 
-  operator record _Complex_
-    Integer re;
-    Integer im;
-    
-    operator 'constructor'
-    
-      function con1
-        input Integer i1;
-        output _Complex_ o1(re=1,im=i1);
-      algorithm 
-      end con1;
-   
-    end 'constructor';
+  encapsulated package P
+    operator record _Complex_
+      Integer re;
+      Integer im;
+      
+      encapsulated operator 'constructor'
+        import ModelicaCompliance.Operators.Overloading.ConstructorSimpleValid.P._Complex_;
+      
+        function con1
+          input Integer i1;
+          output _Complex_ o1(re=1,im=i1);
+        algorithm 
+        end con1;
+     
+      end 'constructor';
 
-  end _Complex_;
+    end _Complex_;
+  end P;
 
+  import ModelicaCompliance.Operators.Overloading.ConstructorSimpleValid.P._Complex_;
+      
   _Complex_ a = _Complex_(2);
 
 equation 
