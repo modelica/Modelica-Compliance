@@ -16,8 +16,9 @@ model MultipleSingle
   
   C3 c3;
 equation 
-  assert(not (c3.a.x > 4.5 and c3.a.x < 5.5), "c3.a.x was not modified correctly");
-  assert(not (c3.b.x > 4.5 and c3.b.x < 5.5), "c3.b.x was not modified correctly");
+  assert(Util.compareReal(c3.a.x, 5.0), "c3.a.x was not modified correctly");
+  assert(Util.compareReal(c3.b.x, 5.0), "c3.b.x was not modified correctly");
+
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.2.4"})),
     experiment(StopTime = 0.01),
