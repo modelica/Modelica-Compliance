@@ -16,7 +16,7 @@ equation
   assert(s1 == "111.222", "s1 was not set correctly");
   assert(s2 == "3.142", "s2 was not set correctly");
   assert(s3 == "5.235354", "s3 was not set correctly.");
-  assert(s4 == "7e+03", "s4 was not set correctly.");
+  assert(s4 == "7e+03" or s4 == "7e+003", "s4 was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.1"})),
