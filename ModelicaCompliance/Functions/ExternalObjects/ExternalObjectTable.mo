@@ -7,12 +7,10 @@ model ExternalObjectTable
     extends ExternalObject;
 
     function constructor
-      input String fileName = "";
-      input String tableName = "";
-      input Real[:] vals = {1, 2, 3};
+      input Real[:] vals;
       output MyTable outTable;
 
-      external "C" outTable = initMyTable(fileName, tableName, vals, size(vals, 1));
+      external "C" outTable = initMyTable(vals, size(vals, 1));
       annotation(Include="#include \"ExtObj.c\"");
     end constructor;
 
@@ -30,16 +28,19 @@ model ExternalObjectTable
     output Real y;
 
     external "C" y=interpolateMyTable(interpolTable,u) ;
+    annotation(Include="#include \"ExtObj.c\"");
   end interpolateMyTable;
 
-  MyTable myTable = MyTable("modelica://ModelicaCompliance/Resources/Data/Tables/testTables.txt", "table1", {1, 2, 3});
-  Real y = interpolateMyTable(myTable, 1.0);
+  MyTable myTable = MyTable({5, 3, 1, 9, 6});
+  Real y = interpolateMyTable(myTable, 0.7);
+  Real z = interpolateMyTable(myTable, 3.5);
 equation
-  assert(Util.compareReal(y, 4.0), "y was not set correctly.");
+  assert(Util.compareReal(y, 3.6), "y was not set correctly.");
+  assert(Util.compareReal(z, 7.5), "z was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.9.7"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests the use of an external object to implement a table.</html>"));
+      info = "<html>Tests the use of an external object to implement an interpolation table.</html>"));
 end ExternalObjectTable;

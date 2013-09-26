@@ -1,11 +1,8 @@
-typedef struct { /* User-defined datastructure of the table */
-double* array; /* nrow*ncolumn vector */
-int nrow; /* number of rows */
-int ncol; /* number of columns */
-int type; /* interpolation type */
-int lastIndex; /* last row index for search */
+typedef struct {
+  double* array;
+  unsigned size;
 } MyTable;
 
-void* initMyTable(const char* fileName,const char* tableName,const double*table,size_t size_table);
+void* initMyTable(const double *table_data, size_t table_size);
 void closeMyTable(void* object);
 double interpolateMyTable(void* object, double u);
