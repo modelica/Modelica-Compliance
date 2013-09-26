@@ -54,6 +54,7 @@ double interpolateMyTable(void *object, double u)
 
   if(u < 0.0 || idx >= table->size - 1) {
     printf("%f is outside the table interval.\n", u);
+    exit(-2);
   }
 
   /* Fetch the two values from the table and use the fraction part of u to
