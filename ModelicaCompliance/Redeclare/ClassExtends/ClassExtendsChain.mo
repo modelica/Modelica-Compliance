@@ -30,7 +30,7 @@ equation
   assert(Util.compareReal(m.z, 3.0), "m.z was not correctly set.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that it's possible to have a chain of class extends.</html>"));

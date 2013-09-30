@@ -80,7 +80,7 @@ equation
   assert(Util.compareReal(z, 2.8), "z was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.3.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that class extends can be used with the different
