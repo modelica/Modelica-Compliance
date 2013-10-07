@@ -3,18 +3,21 @@ within ModelicaCompliance.Connections.Expandable;
 model PresentInExp
   extends Icons.TestCase;
 
-  model M
-    expandable connector EC
-      Real x;
-    end EC;
+  expandable connector EC
+    Real x;
+  end EC;
 
-    connector RealOutput = output Real;
-    RealOutput ro;
-    EC ec;
-  equation
-    connect(ro, ec.x);
-    ec.x = 1.0;
+  connector RealOutput = output Real;
+
+  model M
+    RealOutput x = 1.0;
   end M;
+
+  EC ec;
+  M m;
+  Real y = ec.x;
+equation
+  connect(m.x, ec.x);
 
   annotation (
   __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.1.3"})),

@@ -3,19 +3,20 @@ within ModelicaCompliance.Connections.Expandable;
 model AugmentNonEmpty
   extends Icons.TestCase;
 
-  model M
-    expandable connector EC
-      Real x;
-    end EC;
+  expandable connector EC
+    Real x;
+  end EC;
 
-    connector RealOutput = output Real;
+  connector RealOutput = output Real;
+
+  model M
     RealOutput ro = 1.0;
-    EC ec;
-  equation
-    connect(ro, ec.y);
   end M;
 
+  EC ec;
   M m;
+equation
+  connect(m.ro, ec.ro);
 
   annotation (
   __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.1.3"})),
