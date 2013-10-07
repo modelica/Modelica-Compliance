@@ -3,7 +3,7 @@ within ModelicaCompliance.Equations.When;
 model ElseWhen
   extends Icons.TestCase;
 
-  Real r;
+  Real r(fixed = true);
   discrete Real i(fixed=true, start = 0);
 equation
   der(r) = i;

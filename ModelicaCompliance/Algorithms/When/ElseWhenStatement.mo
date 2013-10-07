@@ -3,7 +3,7 @@ within ModelicaCompliance.Algorithms.When;
 model ElseWhenStatement
   extends Icons.TestCase;
 
-  Real r;
+  Real r(fixed = true);
   discrete Real i(fixed=true, start = 0);
 algorithm
   when {time >= 0.1,time >= 0.6} then
