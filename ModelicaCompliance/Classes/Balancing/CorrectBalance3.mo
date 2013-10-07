@@ -9,8 +9,8 @@ model CorrectBalance3
     model BaseProperties 
       "Interface of medium model for all type of media"
       parameter Boolean preferredMediumStates=false;
-      InputAbsolutePressure p;
-      InputSpecificEnthalpy h;
+      InputAbsolutePressure p(start = 1e6);
+      InputSpecificEnthalpy h(start = 4e5);
       InputMassFraction Xi[nXi];
       Real T;
       Real d;

@@ -1,7 +1,7 @@
 within ModelicaCompliance.Classes.Balancing;
 
 model CorrectBalance4
-  //extends Icons.TestCase;
+  extends Icons.TestCase;
 
   partial package BaseMedium
     constant Integer nXi = 0 "Number of independent mass fractions";
@@ -9,10 +9,10 @@ model CorrectBalance4
     replaceable model BaseProperties 
       "Interface of medium model for all type of media"
       parameter Boolean preferredMediumStates=false;
-      InputAbsolutePressure p(fixed = true);
+      InputAbsolutePressure p(fixed = true, start = 1e6);
       InputSpecificEnthalpy h;
       InputMassFraction Xi[nXi];
-      Real T(fixed = true);
+      Real T(fixed = true, start = 298.15);
       Real d;
       Real u;
       connector InputAbsolutePressure = input Real;
