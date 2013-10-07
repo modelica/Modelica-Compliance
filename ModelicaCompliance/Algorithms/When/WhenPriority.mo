@@ -4,8 +4,12 @@ model WhenPriority
   extends Icons.TestCase;
 
   Boolean close;
-  parameter Real x = 5;
+  Real x(start = 4);
 algorithm
+  when not initial() then
+    x := 5;
+  end when;
+
   when x >= 5 then
     close := true;
   elsewhen x <= 5 then
