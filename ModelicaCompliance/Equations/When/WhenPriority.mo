@@ -7,7 +7,7 @@ model WhenPriority
   Real x(start = 4);
 equation
   when not initial() then
-    x := 5;
+    x = 5;
   end when;
 
   when x >= 5 then
