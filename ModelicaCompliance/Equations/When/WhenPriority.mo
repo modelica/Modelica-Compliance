@@ -4,7 +4,7 @@ model WhenPriority
   extends Icons.TestCase;
 
   Boolean close;
-  Real x(start = 4);
+  Real x(start = 3);
 equation
   when not initial() then
     x = 5;
@@ -12,7 +12,7 @@ equation
 
   when x >= 5 then
     close = true;
-  elsewhen x <= 5 then
+  elsewhen x >= 4 then
     close = false;
   end when;
 
