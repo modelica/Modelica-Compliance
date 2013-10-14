@@ -34,10 +34,10 @@ model CorrectBalance3
     constant Real R = 287;
     constant Real cp = 1005.45;
     constant Real T0 = 298.15;
-  equation 
-    d = p/(R*T);
-    h = cp*(T - T0);
-    u = h - p/d;
+  equation
+    d = p / (R*T);
+    u = h - R*T;
+    T = T0 + h/cp;
   end SimpleAir;
 
   extends SimpleAir;
