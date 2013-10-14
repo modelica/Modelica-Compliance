@@ -3,11 +3,11 @@ within ModelicaCompliance.Equations.When;
 model WhenPriority
   extends Icons.TestCase;
 
-  Boolean close;
-  Real x(start = 3);
+  Boolean close(fixed = true);
+  Real x(start = 3, fixed = true);
 equation
   when not initial() then
-    x = 5;
+    x = 6;
   end when;
 
   when x >= 5 then

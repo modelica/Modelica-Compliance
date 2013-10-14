@@ -3,11 +3,11 @@ within ModelicaCompliance.Algorithms.When;
 model WhenPriority
   extends Icons.TestCase;
 
-  Boolean close;
-  Real x(start = 3);
+  Boolean close(fixed = true);
+  Real x(start = 3, fixed = true);
 algorithm
   when not initial() then
-    x := 5;
+    x := 6;
   end when;
 
   when x >= 5 then

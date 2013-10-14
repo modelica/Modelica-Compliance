@@ -3,27 +3,20 @@ within ModelicaCompliance.Equations.When;
 model WhenVectorExpression
   extends Icons.TestCase;
 
-  Real x(start = 1);
-  discrete Real y1;
-  parameter Real y2 = 3;
-  discrete Real y3;
-equation  
-  x = time - y2;
-  when {x > 2, sample(0, 2), x < 5} then
-    y1 = sin(x);      
-    y3 = 2*x + y1 + y2; 
-  end when; 
+  Real x = time * 2.0;
+  Integer n(start = 0, fixed = true);
+equation
+  when {x > 0.1, time > 0.1, x > 0.3} then
+    n = pre(n) + 1;
+  end when;
 
-  if not initial() then
-    assert(Util.compareReal(x, time - y2), "x was not set correctly.");
-    assert(Util.compareReal(y1, 0.0), "y1 was not set correctly.");
-    assert(Util.compareReal(y2, 3.0), "y2 was not set correctly.");
-    assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
+  if terminal() then
+  assert(n == 3, "The when-equation was not activated the correct amount of times.");
   end if;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.5"})),
-    experiment(StopTime = 0.01),
+    experiment(StopTime = 0.2),
     Documentation(
-    info = "<html>Tests When-equation, where the condition is a vector expression.</html>"));
+      info = "<html>Tests when-equation where the condition is a vector expression.</html>"));
 end WhenVectorExpression;

@@ -3,28 +3,20 @@ within ModelicaCompliance.Algorithms.When;
 model WhenVectorExpression
   extends Icons.TestCase;
 
-  Real x(start=1);
-  Real y1;
-  parameter Real y2 = 5;
-  Real y3;
+  Real x = time * 2.0;
+  Integer n(start = 0, fixed = true);
 algorithm
-  when {x > 2, sample(0, 2), x < 5} then
-    y1 := sin(x);
-    y3 := 2*x + y1 + y2;
+  when {x > 0.1, time > 0.1, x > 0.3} then
+    n = pre(n) + 1;
   end when;
-equation
-  x = 2*time;
 
-  if not initial() then
-    assert(Util.compareReal(x, 2 * time), "x was not set correctly.");
-    assert(Util.compareReal(y1, 0.0), "y1 was not set correctly.");
-    assert(Util.compareReal(y2, 5.0), "y2 was not set correctly.");
-    assert(Util.compareReal(y3, 0.0), "y3 was not set correctly.");
+  if terminal() then
+    assert(n == 3, "The when-statement was not activated the correct number of times.");
   end if;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"11.2.7"})),
-    experiment(StopTime = 0.01),
+    experiment(StopTime = 0.2),
     Documentation(
-    info = "<html>Tests When-statment, where the expression is a vector.</html>"));
+    info = "<html>Tests when-statements where the expression is a vector.</html>"));
 end WhenVectorExpression;
