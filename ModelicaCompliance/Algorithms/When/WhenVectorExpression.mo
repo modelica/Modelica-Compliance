@@ -7,7 +7,7 @@ model WhenVectorExpression
   Integer n(start = 0, fixed = true);
 algorithm
   when {x > 0.1, time > 0.1, x > 0.3} then
-    n = pre(n) + 1;
+    n := pre(n) + 1;
   end when;
 
   if terminal() then
