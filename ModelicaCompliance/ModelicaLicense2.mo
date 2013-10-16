@@ -1,241 +1,309 @@
-ModelicaCompliance is distributed under the Modelica License 2 with the
-exceptions of files under ModelicaCompliance/Resources/tools/, which
-are distributed under the BSD 3-clause license.
+within ModelicaCompliance ;
 
-[Modelica License 2]
+class ModelicaLicense2 "Modelica License 2"
 
-All files in this directory and in all subdirectories are released
-under the "Modelica License 2" (if not explicitly noted otherwise).
+  annotation (Documentation(info="<html>
+<head>
+	<title>The Modelica License 2</title>
+<style type=\"text/css\">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+code    { font-size:  9pt; font-family: Courier,monospace;}
+h6      { font-size: 10pt; font-weight: bold; color: green; }
+h5      { font-size: 11pt; font-weight: bold; color: green; }
+h4      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal}
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</head>
+<body lang=\"en-US\">
 
-The Modelica License 2
+<p>
+This package with all of its subpackages is released
+under the &ldquo;Modelica License 2&rdquo; (if not explicitly noted otherwise).</p>
 
-Preamble.
-The goal of this license is that Modelica related model libraries, software,
-images, documents, data files etc. can be used freely in the original or a
-modified form, in open source and in commercial environments (as long as the
-license conditions below are fulfilled, in particular sections 2c) and 2d).
-The Original Work is provided free of charge and the use is completely at your
-own risk. Developers of free Modelica packages are encouraged to utilize this
-license for their work.
+<p>
+<a href=\"#The_Modelica_License_2-outline\">The Modelica License 2</a><br>
+<a href=\"#How_to_Apply_the_Modelica_License_2-outline\">How to Apply the Modelica License 2</a><br>
+<a href=\"#Frequently_Asked_Questions-outline\">Frequently Asked Questions</a><br>
+</p>
 
-The Modelica License applies to any Original Work that contains the following
-licensing notice adjacent to the copyright notice(s) for this Original Work:
+<hr>
 
-Licensed by <name of Licensor> under the Modelica License 2
+<h4><a name=\"The_Modelica_License_2-outline\"></a>The Modelica License 2</h4>
 
-1. Definitions.
+<p>
+<b>Preamble.</b> The goal of this license is that Modelica related
+model libraries, software, images, documents, data files etc. can be
+used freely in the original or a modified form, in open source and in
+commercial environments (as long as the license conditions below are
+fulfilled, in particular sections 2c) and 2d). The Original Work is
+provided free of charge and the use is completely at your own risk.
+Developers of free Modelica packages are encouraged to utilize this
+license for their work.</p>
 
-a.	"License" is this Modelica License.
+<p>
+The Modelica License applies to any Original Work that contains the
+following licensing notice adjacent to the copyright notice(s) for
+this Original Work:</p>
 
-b.	"Original Work" is any work of authorship, including
+<p><b>Licensed by Modelica Association under the Modelica License 2</b></p>
+
+<p><b>1. Definitions.</b></p>
+<ol type=\"a\">
+	<li>&ldquo;License&rdquo; is this Modelica License.</li>
+
+	<li>&ldquo;Original Work&rdquo; is any work of authorship, including
 	software, images, documents, data files, that contains the above
 	licensing notice or that is packed together with a licensing notice
-	referencing it.
+	referencing it.</li>
 
-c.	"Licensor" is the provider of the Original Work who has
+	<li>&ldquo;Licensor&rdquo; is the provider of the Original Work who has
 	placed this licensing notice adjacent to the copyright notice(s) for
 	the Original Work. The Original Work is either directly provided by
-	the owner of the Original Work, or by a licensee of the owner.
+	the owner of the Original Work, or by a licensee of the owner.</li>
 
-d.	"Derivative Work" is any modification of the Original
+	<li>&ldquo;Derivative Work&rdquo; is any modification of the Original
 	Work which represents, as a whole, an original work of authorship.
 	For the matter of clarity and as examples:
 
-	A.	Derivative Work shall not include work that remains separable
-		from the Original Work, as well as merely extracting a part of
-		the Original Work without modifying it.
+	<ol  type=\"A\">
+		<li>Derivative Work shall not include work that remains separable from
+		the Original Work, as well as merely extracting a part of the
+		Original Work without modifying it.</li>
 
-	B.	Derivative Work shall not include (a) fixing of errors and/or (b)
+		<li>Derivative Work shall not include (a) fixing of errors and/or (b)
 		adding vendor specific Modelica annotations and/or (c) using a
 		subset of the classes of a Modelica package, and/or (d) using a
-		different representation, e.g., a binary representation.
+		different representation, e.g., a binary representation.</li>
 
-	C.	Derivative Work shall include classes that are copied from the
+		<li>Derivative Work shall include classes that are copied from the
 		Original Work where declarations, equations or the documentation
-		are modified.
+		are modified.</li>
 
-	D.	Derivative Work shall include executables to simulate the models
-		that are generated by a Modelica translator based on the
-		Original Work (of a Modelica package).
+		<li>Derivative Work shall include executables to simulate the models
+		that are generated by a Modelica translator based on the Original
+		Work (of a Modelica package).</li>
+	</ol>
 
-e.	"Modified Work" is any modification of the Original Work
+	<li>&ldquo;Modified Work&rdquo; is any modification of the Original Work
 	with the following exceptions: (a) fixing of errors and/or (b)
 	adding vendor specific Modelica annotations and/or (c) using a
 	subset of the classes of a Modelica package, and/or (d) using a
-	different representation, e.g., a binary representation.
+	different representation, e.g., a binary representation.</li>
 
-f.	"Source Code" means the preferred form of the Original
+	<li>&quot;Source Code&quot; means the preferred form of the Original
 	Work for making modifications to it and all available documentation
-	describing how to modify the Original Work.
+	describing how to modify the Original Work.</li>
 
-g.	"You" means an individual or a legal entity exercising
-	rights under, and complying with all of the terms of, this License.
+	<li>&ldquo;You&rdquo; means an individual or a legal entity exercising
+	rights under, and complying with all of the terms of, this License.</li>
 
-h.	"Modelica package" means any Modelica library that is
-	defined with the "package <Name> ... end <Name>" Modelica language
-	element.
+	<li>&ldquo;Modelica package&rdquo; means any Modelica library that is
+	defined with the &ldquo;<code><b>package</b>&nbsp;&lt;Name&gt;&nbsp;...&nbsp;<b>end</b>&nbsp;&lt;Name&gt;;</code>&rdquo; Modelica language element.</li>
 
-2. Grant of Copyright License. Licensor grants You a worldwide, royalty-free,
-non-exclusive, sublicensable license, for the duration of the copyright, to do
-the following:
+</ol>
 
-a.	To reproduce the Original Work in copies, either alone or as part of
-	a collection.
-b.	To create Derivative Works according to Section 1d) of this License.
-c.	To distribute or communicate to the public copies of the Original
-	Work or a Derivative Work under this License. No fee, neither as a
-	copyright-license fee, nor as a selling fee for the copy as such may
-	be charged under this License. Furthermore, a verbatim copy of this
-	License must be included in any copy of the Original Work or a
-	Derivative Work under this License.
+<p>
+<b>2. Grant of Copyright License.</b> Licensor grants You a
+worldwide, royalty-free, non-exclusive, sublicensable license, for
+the duration of the copyright, to do the following:</p>
+
+<ol type=\"a\">
+	<li><p>
+	To reproduce the Original Work in copies, either alone or as part of
+	a collection.</p></li>
+	<li><p>
+	To create Derivative Works according to Section 1d) of this License.</p></li>
+	<li><p>
+	To distribute or communicate to the public copies of the <u>Original
+	Work</u> or a <u>Derivative Work</u> under <u>this License</u>. No
+	fee, neither as a copyright-license fee, nor as a selling fee for
+	the copy as such may be charged under this License. Furthermore, a
+	verbatim copy of this License must be included in any copy of the
+	Original Work or a Derivative Work under this License.<br>
 	For the matter of clarity, it is permitted A) to distribute or
 	communicate such copies as part of a (possible commercial)
 	collection where other parts are provided under different licenses
 	and a license fee is charged for the other parts only and B) to
-	charge for mere printing and shipping costs.
-d.	To distribute or communicate to the public copies of a Derivative
-	Work, alternatively to Section 2c), under any other license
+	charge for mere printing and shipping costs.</p></li>
+	<li><p>
+	To distribute or communicate to the public copies of a <u>Derivative
+	Work</u>, alternatively to Section 2c), under <u>any other license</u>
 	of your choice, especially also under a license for
 	commercial/proprietary software, as long as You comply with Sections
-	3, 4 and 8 below.
-	For the matter of clarity, no restrictions regarding fees, either as
-	to a copyright-license fee or as to a selling fee for the copy as
-	such apply.
-e.	To perform the Original Work publicly.
-f.	To display the Original Work publicly.
+	3, 4 and 8 below. <br>      For the matter of clarity, no
+	restrictions regarding fees, either as to a copyright-license fee or
+	as to a selling fee for the copy as such apply.</p></li>
+	<li><p>
+	To perform the Original Work publicly.</p></li>
+	<li><p>
+	To display the Original Work publicly.</p></li>
+</ol>
 
-3. Acceptance. Any use of the Original Work or a Derivative Work, or any
-action according to either Section 2a) to 2f) above constitutes Your
-acceptance of this License.
+<p>
+<b>3. Acceptance.</b> Any use of the Original Work or a
+Derivative Work, or any action according to either Section 2a) to 2f)
+above constitutes Your acceptance of this License.</p>
 
-4. Designation of Derivative Works and of Modified Works.
-The identifying designation of Derivative Work and of Modified
+<p>
+<b>4. Designation of Derivative Works and of Modified Works.
+</b>The identifying designation of Derivative Work and of Modified
 Work must be different to the corresponding identifying designation
 of the Original Work. This means especially that the (root-level)
 name of a Modelica package under this license must be changed if the
 package is modified (besides fixing of errors, adding vendor specific
 Modelica annotations, using a subset of the classes of a Modelica
 package, or using another representation, e.g. a binary
-representation).
+representation).</p>
 
-5. Grant of Patent License. Licensor grants You a worldwide, royalty-free,
-non-exclusive, sublicensable license, under patent claims owned by the Licensor
-or licensed to the Licensor by the owners of the Original Work that are
-embodied in the Original Work as furnished by the Licensor, for the duration
-of the patents, to make, use, sell, offer for sale, have made, and import the
-Original Work and Derivative Works under the conditions as given in Section 2.
+<p>
+<b>5. Grant of Patent License.</b>
+Licensor grants You a worldwide, royalty-free, non-exclusive, sublicensable license,
+under patent claims owned by the Licensor or licensed to the Licensor by
+the owners of the Original Work that are embodied in the Original Work
+as furnished by the Licensor, for the duration of the patents,
+to make, use, sell, offer for sale, have made, and import the Original Work
+and Derivative Works under the conditions as given in Section 2.
 For the matter of clarity, the license regarding Derivative Works covers
-patent claims to the extent as they are embodied in the Original Work only.
+patent claims to the extent as they are embodied in the Original Work only.</p>
 
-6. Provision of Source Code. Licensor agrees to provide You with a copy of the
-Source Code of the Original Work but reserves the right to decide freely on the
-manner of how the Original Work is provided.
-	For the matter of clarity, Licensor might provide only a binary
+<p>
+<b>6. Provision of Source Code.</b> Licensor agrees to provide
+You with a copy of the Source Code of the Original Work but reserves
+the right to decide freely on the manner of how the Original Work is
+provided.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the matter of clarity, Licensor might provide only a binary
 representation of the Original Work. In that case, You may (a) either
 reproduce the Source Code from the binary representation if this is
 possible (e.g., by performing a copy of an encrypted Modelica
 package, if encryption allows the copy operation) or (b) request the
-Source Code from the Licensor who will provide it to You.
+Source Code from the Licensor who will provide it to You.</p>
 
-7. Exclusions from License Grant. Neither the names of Licensor, nor the names
-of any contributors to the Original Work, nor any of their trademarks or
-service marks, may be used to endorse or promote products derived from this
-Original Work without express prior permission of the Licensor. Except as
-otherwise expressly stated in this License and in particular in Sections
-2 and 5, nothing in this License grants any license to Licensor's trademarks,
+<p>
+<b>7. Exclusions from License Grant.</b> Neither the names of
+Licensor, nor the names of any contributors to the Original Work, nor
+any of their trademarks or service marks, may be used to endorse or
+promote products derived from this Original Work without express
+prior permission of the Licensor. Except as otherwise expressly
+stated in this License and in particular in Sections 2 and 5, nothing
+in this License grants any license to Licensor&rsquo;s trademarks,
 copyrights, patents, trade secrets or any other intellectual
 property, and no patent license is granted to make, use, sell, offer
-for sale, have made, or import embodiments of any patent claims.
-	No license is granted to the trademarks of Licensor even if such
-trademarks are included in the Original Work, except as expressly stated in
-this License. Nothing in this License shall be interpreted to prohibit Licensor
-from licensing under terms different from this License any Original Work that
-Licensor otherwise would have a right to license.
+for sale, have made, or import embodiments of any patent claims.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No license is granted to the trademarks of
+Licensor even if such trademarks are included in the Original Work,
+except as expressly stated in this License. Nothing in this License
+shall be interpreted to prohibit Licensor from licensing under terms
+different from this License any Original Work that Licensor otherwise
+would have a right to license.</p>
 
-8. Attribution Rights. You must retain in the Source Code of the Original Work
-and of any Derivative Works that You create, all author, copyright, patent,
-or trademark notices, as well as any descriptive text identified therein as an
-"Attribution Notice". The same applies to the licensing notice of this
-License in the Original Work. For the matter of clarity, "author notice" means
-the notice that identifies the original author(s).
-	You must cause the Source Code for any Derivative Works that You create
-to carry a prominent Attribution Notice reasonably calculated to inform
-recipients that You have modified the Original Work.
-	In case the Original Work or Derivative Work is not provided in
+<p>
+<b>8. Attribution Rights.</b> You must retain in the Source
+Code of the Original Work and of any Derivative Works that You
+create, all author, copyright, patent, or trademark notices, as well
+as any descriptive text identified therein as an &quot;Attribution
+Notice&quot;. The same applies to the licensing notice of this
+License in the Original Work. For the matter of clarity, &ldquo;author
+notice&rdquo; means the notice that identifies the original
+author(s). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You must cause the Source Code for any Derivative
+Works that You create to carry a prominent Attribution Notice
+reasonably calculated to inform recipients that You have modified the
+Original Work. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In case the Original Work or Derivative Work is not provided in
 Source Code, the Attribution Notices shall be appropriately
-displayed, e.g., in the documentation of the Derivative Work.
+displayed, e.g., in the documentation of the Derivative Work.</p>
 
-9. Disclaimer of Warranty.
-The Original Work is provided under this License on an "as is" basis and
-without warranty, either express or implied, including, without limitation,
-the warranties of non-infringement, merchantability or fitness for a particular
+<p><b>9. Disclaimer
+of Warranty. <br></b><u><b>The Original Work is provided under this
+License on an &quot;as is&quot; basis and without warranty, either
+express or implied, including, without limitation, the warranties of
+non-infringement, merchantability or fitness for a particular
 purpose. The entire risk as to the quality of the Original Work is
-with You. This disclaimer of warranty constitutes an essential part of this
-License. No license to the Original Work is granted by this License except
-under this disclaimer.
+with You.</b></u> This disclaimer of warranty constitutes an
+essential part of this License. No license to the Original Work is
+granted by this License except under this disclaimer.</p>
 
-10. Limitation of Liability. Under no circumstances and under no legal theory,
-whether in tort (including negligence), contract, or otherwise, shall the
-Licensor, the owner or a licensee of the Original Work be liable to anyone for
-any direct, indirect, general, special, incidental, or consequential damages
-of any character arising as a result of this License or the use of the
+<p>
+<b>10. Limitation of Liability.</b> Under no circumstances and
+under no legal theory, whether in tort (including negligence),
+contract, or otherwise, shall the Licensor, the owner or a licensee
+of the Original Work be liable to anyone for any direct, indirect,
+general, special, incidental, or consequential damages of any
+character arising as a result of this License or the use of the
 Original Work including, without limitation, damages for loss of
 goodwill, work stoppage, computer failure or malfunction, or any and
 all other commercial damages or losses. This limitation of liability
 shall not apply to the extent applicable law prohibits such
-limitation.
+limitation.</p>
 
-11. Termination. This License conditions your rights to undertake the
-activities listed in Section 2 and 5, including your right to create Derivative
-Works based upon the Original Work, and doing so without observing these terms
-and conditions is prohibited by copyright law and international treaty.
-Nothing in this License is intended to affect copyright exceptions and
-limitations. This License shall terminate immediately and You may no longer
-exercise any of the rights granted to You by this License upon your failure
-to observe the conditions of this license.
+<p>
+<b>11. Termination.</b> This License conditions your rights to
+undertake the activities listed in Section 2 and 5, including your
+right to create Derivative Works based upon the Original Work, and
+doing so without observing these terms and conditions is prohibited
+by copyright law and international treaty. Nothing in this License is
+intended to affect copyright exceptions and limitations. This License
+shall terminate immediately and You may no longer exercise any of the
+rights granted to You by this License upon your failure to observe
+the conditions of this license.</p>
 
-12. Termination for Patent Action. This License shall terminate automatically
-and You may no longer exercise any of the rights granted to You by this License
-as of the date You commence an action, including a cross-claim or counterclaim,
-against Licensor, any owners of the Original Work or any licensee alleging that
-the Original Work infringes a patent. This termination provision shall
+<p>
+<b>12. Termination for Patent Action.</b> This License shall
+terminate automatically and You may no longer exercise any of the
+rights granted to You by this License as of the date You commence an
+action, including a cross-claim or counterclaim, against Licensor,
+any owners of the Original Work or any licensee alleging that the
+Original Work infringes a patent. This termination provision shall
 not apply for an action alleging patent infringement through
 combinations of the Original Work under combination with other
-software or hardware.
+software or hardware.</p>
 
-13. Jurisdiction. Any action or suit relating to this License may be brought
-only in the courts of a jurisdiction wherein the Licensor resides and under
-the laws of that jurisdiction excluding its conflict-of-law provisions.
-The application of the United Nations Convention on Contracts for the
-International Sale of Goods is expressly excluded. Any use of the Original Work
-outside the scope of this License or after its termination shall be subject to
+<p>
+<b>13. Jurisdiction.</b> Any action or suit relating to this
+License may be brought only in the courts of a jurisdiction wherein
+the Licensor resides and under the laws of that jurisdiction
+excluding its conflict-of-law provisions. The application of the
+United Nations Convention on Contracts for the International Sale of
+Goods is expressly excluded. Any use of the Original Work outside the
+scope of this License or after its termination shall be subject to
 the requirements and penalties of copyright or patent law in the
 appropriate jurisdiction. This section shall survive the termination
-of this License.
+of this License.</p>
 
-14. Attorneys' Fees. In any action to enforce the terms of this License or
-seeking damages relating thereto, the prevailing party shall be entitled to
-recover its costs and expenses, including, without limitation, reasonable
-attorneys' fees and costs incurred in connection with such action, including
-any appeal of such action. This section shall survive the termination of this
-License.
+<p>
+<b>14. Attorneys&rsquo; Fees.</b> In any action to enforce the
+terms of this License or seeking damages relating thereto, the
+prevailing party shall be entitled to recover its costs and expenses,
+including, without limitation, reasonable attorneys' fees and costs
+incurred in connection with such action, including any appeal of such
+action. This section shall survive the termination of this License.</p>
 
-15. Miscellaneous.
-a.	If any provision of this License is held to be unenforceable, such
+<p>
+<b>15. Miscellaneous.</b>
+</p>
+<ol type=\"a\">
+	<li>If any
+	provision of this License is held to be unenforceable, such
 	provision shall be reformed only to the extent necessary to make it
-	enforceable.
+	enforceable.</li>
 
-b.	No verbal ancillary agreements have been made. Changes and additions to
-	this License must appear in writing to be valid. This also applies to
-	changing the clause pertaining to written form.
+	<li>No verbal
+	ancillary agreements have been made. Changes and additions to this
+	License must appear in writing to be valid. This also applies to
+	changing the clause pertaining to written form.</li>
 
-c.	You may use the Original Work in all ways not otherwise restricted or
-	conditioned by this License or by law, and Licensor promises not to
-	interfere with or be responsible for such uses by You.
+	<li>You may use the
+	Original Work in all ways not otherwise restricted or conditioned by
+	this License or by law, and Licensor promises not to interfere with
+	or be responsible for such uses by You.</li>
+</ol>
 
-===============================================================================
+<hr>
 
-<h4><a name="How_to_Apply_the_Modelica_License_2-outline"></a>
+<h4><a name=\"How_to_Apply_the_Modelica_License_2-outline\"></a>
 How to Apply the Modelica License 2</h4>
 
 <p>At
@@ -250,13 +318,13 @@ holder(s)&gt;.
 </p>
 
 <p>
-<i>This Modelica package is <u>free</u> software and the use is completely at <u>your own risk</u>; it can be redistributed and/or modified under the terms of the Modelica License 2. For license conditions (including the disclaimer of warranty) see <a href="modelica://Modelica.UsersGuide.ModelicaLicense2">Modelica.UsersGuide.ModelicaLicense2</a> or visit <a href="http://www.modelica.org/licenses/ModelicaLicense2"> http://www.modelica.org/licenses/ModelicaLicense2</a>.</i>
+<i>This Modelica package is <u>free</u> software and the use is completely at <u>your own risk</u>; it can be redistributed and/or modified under the terms of the Modelica License 2. For license conditions (including the disclaimer of warranty) see <a href=\"modelica://Modelica.UsersGuide.ModelicaLicense2\">Modelica.UsersGuide.ModelicaLicense2</a> or visit <a href=\"http://www.modelica.org/licenses/ModelicaLicense2\"> http://www.modelica.org/licenses/ModelicaLicense2</a>.</i>
 </p>
 
 <p>Include
 a copy of the Modelica License 2 under
 <b>&lt;library&gt;.UsersGuide.ModelicaLicense2</b>
-(use <a href="http://www.modelica.org/licenses/ModelicaLicense2.mo">
+(use <a href=\"http://www.modelica.org/licenses/ModelicaLicense2.mo\">
 http://www.modelica.org/licenses/ModelicaLicense2.mo</a>).
 Furthermore, add
 the list of authors and contributors under
@@ -273,7 +341,7 @@ Copyright &copy; 1998-2008, Modelica Association.
 </p>
 
 <p>
-<i>This Modelica package is <u>free</u> software and the use is completely at <u>your own risk</u>; it can be redistributed and/or modified under the terms of the Modelica License 2. For license conditions (including the disclaimer of warranty) see <a href="modelica://Modelica.UsersGuide.ModelicaLicense2">Modelica.UsersGuide.ModelicaLicense2</a> or visit <a href="http://www.modelica.org/licenses/ModelicaLicense2"> http://www.modelica.org/licenses/ModelicaLicense2</a>.</i>
+<i>This Modelica package is <u>free</u> software and the use is completely at <u>your own risk</u>; it can be redistributed and/or modified under the terms of the Modelica License 2. For license conditions (including the disclaimer of warranty) see <a href=\"modelica://Modelica.UsersGuide.ModelicaLicense2\">Modelica.UsersGuide.ModelicaLicense2</a> or visit <a href=\"http://www.modelica.org/licenses/ModelicaLicense2\"> http://www.modelica.org/licenses/ModelicaLicense2</a>.</i>
 </p>
 
 <p>For
@@ -287,14 +355,14 @@ the images are stored and include a similar notice in this file.</p>
 <p>In
 these cases, save a copy of the Modelica License 2 in one directory
 of the distribution, e.g.,
-<a href="http://www.modelica.org/licenses/ModelicaLicense2.html">
+<a href=\"http://www.modelica.org/licenses/ModelicaLicense2.html\">
 http://www.modelica.org/licenses/ModelicaLicense2.html</a>
 in directory <b>&lt;library&gt;/Resources/Documentation/ModelicaLicense2.html</b>.
 </p>
 
 <hr>
 
-<h5><a name="Frequently_Asked_Questions-outline"></a>
+<h5><a name=\"Frequently_Asked_Questions-outline\"></a>
 Frequently Asked Questions</h5>
 <p>This
 section contains questions/answer to users and/or distributors of
@@ -476,7 +544,7 @@ version for such purposes.
 
 <p>This
 section is devoted especially for the following applications:</p>
-<ol type="a">
+<ol type=\"a\">
 	<li><p>
 	A Modelica tool extracts information out of a Modelica package and
 	presents the result in form of a &ldquo;manual&rdquo; for this
@@ -530,33 +598,5 @@ if you are not the copyright-holder, since article 2c) does not allow
 a selling fee for a (in this case physical) copy. However, mere
 printing and shipping costs may be recovered.</p>
 </body>
-</html>
-
-[BSD 3-clause]
-
-Copyright (c) 2013, Modelica Association 
-All rights reserved. 
-
-Redistribution and use in source and binary forms, with or without 
-modification, are permitted provided that the following conditions are met: 
-
- * Redistributions of source code must retain the above copyright notice, 
-   this list of conditions and the following disclaimer. 
- * Redistributions in binary form must reproduce the above copyright 
-   notice, this list of conditions and the following disclaimer in the 
-   documentation and/or other materials provided with the distribution. 
- * Neither the name of Modelica Association nor the names of its 
-   contributors may be used to endorse or promote products derived from 
-   this software without specific prior written permission. 
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGE.
+</html>"));
+end ModelicaLicense2;
