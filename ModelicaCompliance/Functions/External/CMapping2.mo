@@ -8,8 +8,8 @@ model CMapping2
   package M
   
     function enumIncrement
-      input Integer x;
-      output Integer y;
+      input E x;
+      output E y;
       external "C" y = iincr(x) annotation(Include="
 int iincr(int x)
 { 
