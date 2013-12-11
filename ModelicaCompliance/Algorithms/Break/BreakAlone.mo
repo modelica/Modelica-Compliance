@@ -12,4 +12,4 @@ algorithm
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that <pre>break</pre> is not allowed outside for- and while-loops.</html>"));
-end BreakIf;
+end BreakAlone;
