@@ -6,7 +6,7 @@ model CorrectBalance4
   partial package BaseMedium
     constant Integer nXi = 0 "Number of independent mass fractions";
 
-    replaceable model BaseProperties 
+    replaceable partial model BaseProperties 
       "Interface of medium model for all type of media"
       parameter Boolean preferredMediumStates=false;
       InputAbsolutePressure p(fixed = true, start = 1e6);
