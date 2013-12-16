@@ -23,6 +23,8 @@ model ConnectDisjointExpandables
     connect(ec1, ec2);
   end M;
 
+  M m;
+
   annotation (
   __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.1.3"})),
     experiment(StopTime = 0.01),
