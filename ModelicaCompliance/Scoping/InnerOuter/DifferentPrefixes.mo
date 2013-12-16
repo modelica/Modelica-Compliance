@@ -5,7 +5,7 @@ model DifferentPrefixes
 
   class A
     outer parameter Integer T0;
-    constant Integer x = T0;
+    parameter Integer x = T0;
   end A;
 
   class B
