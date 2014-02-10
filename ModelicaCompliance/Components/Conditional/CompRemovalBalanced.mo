@@ -1,6 +1,7 @@
 within ModelicaCompliance.Components.Conditional;
 
 model CompRemovalBalanced
+  extends Icons.TestCase;
 
   connector C
     Real e;

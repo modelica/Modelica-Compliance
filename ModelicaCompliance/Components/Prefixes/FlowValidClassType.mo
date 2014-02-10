@@ -1,7 +1,7 @@
 within ModelicaCompliance.Components.Prefixes;
 
 model FlowValidClassType
-  //extends Icons.TestCase;
+  extends Icons.TestCase;
 
   record R
     Real f;
