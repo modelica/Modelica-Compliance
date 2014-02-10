@@ -10,15 +10,14 @@ model ConnectWholeDim
 
   model M
     C c[2];
+  equation
+    c[1].e = c[1].f;
+    c[2].e = c[2].f;
   end M;
 
   parameter Integer n = 2;
   M m1, m2;
 equation 
-  m1.c[1].e = 1.0;
-  m1.c[1].f = 2.0;
-  m1.c[2].e = 1.0;
-  m1.c[2].f = 2.0;
   connect(m1.c[:], m2.c[1:2]);
 
   annotation (

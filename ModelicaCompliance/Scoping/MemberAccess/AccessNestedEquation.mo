@@ -6,7 +6,7 @@ model AccessNestedEquation
   model A
     model B
       model C
-        Real x;
+        Real x = 1.0;
       end C;
 
       C c;
@@ -16,8 +16,11 @@ model AccessNestedEquation
   end A;
 
   A a;
+  Real y;
 equation
-  a.b.c.x = 1.0;
+  y = a.b.c.x;
+
+  assert(Util.compareReal(y, 1.0), "y was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.6.6"})),

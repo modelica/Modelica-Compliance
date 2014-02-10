@@ -4,12 +4,15 @@ model AccessAlgorithm
   extends Icons.TestCase;
 
   model A
-    Real x;
+    Real x = 1.0;
   end A;
 
   A a;
+  Real y;
 algorithm
-  a.x := 1.0;
+  y := a.x;
+
+  assert(Util.compareReal(y, 1.0), "y was not correctly set.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.6.6"})),

@@ -43,13 +43,14 @@ model OperatorRecordEquations
   model M
     C c1;
     C c2;
+  equation
+    c1.e = Complex(1.0, 2.0);
+    c1.f = Complex(3.0, 4.0);
   end M;
 
   M m;
 equation
   connect(m.c1, m.c2);
-  m.c1.e = Complex(1.0, 2.0);
-  m.c1.f = Complex(3.0, 4.0);
 
   assert(Util.compareReal(m.c1.e.re, 1.0), "m.c1.e.re has incorrect value.");
   assert(Util.compareReal(m.c1.e.im, 2.0), "m.c1.e.im has incorrect value.");

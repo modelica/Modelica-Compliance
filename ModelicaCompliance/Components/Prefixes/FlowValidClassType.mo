@@ -1,7 +1,7 @@
 within ModelicaCompliance.Components.Prefixes;
 
 model FlowValidClassType
-  extends Icons.TestCase;
+  //extends Icons.TestCase;
 
   record R
     Real f;
@@ -22,8 +22,11 @@ model FlowValidClassType
   end CC;
 
   model M
-    CR cr(e = 1.0);
-    CC cc(e = 2.0);
+    CR cr;
+    CC cc;
+  equation
+    cr.e = 1.0;
+    cc.e = 2.0;
   end M;
 
   M m;

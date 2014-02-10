@@ -10,13 +10,14 @@ model ConnectParamSubscript
 
   model M
     C c[2];
+  equation
+    c[1].e = 1.0;
+    c[1].f = 2.0;
   end M;
 
   parameter Integer n = 2;
   M m;
 equation 
-  m.c[1].e = 1.0;
-  m.c[2].f = 2.0;
   connect(m.c[1], m.c[n]);
 
   annotation (

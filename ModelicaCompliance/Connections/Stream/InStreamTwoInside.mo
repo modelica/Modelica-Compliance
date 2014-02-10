@@ -12,21 +12,29 @@ model InStreamTwoInside
   model A
     S s;
     Real instream_s;
-  equation
+  equation 
     instream_s = inStream(s.s);
+    s.r = 1.0;
+    s.s = 3.0;
   end A;
 
-  A a1, a2;
+  model B
+    S s;
+    Real instream_s;
+  equation 
+    instream_s = inStream(s.s);
+    s.f = 2.0;
+    s.s = 4.0;
+  end B;
+
+  A a1;
+  B a2;
   Real instream_s_a1;
   Real instream_s_a2;
-equation
+equation 
   connect(a1.s, a2.s);
   instream_s_a1 = inStream(a1.s.s);
   instream_s_a2 = inStream(a2.s.s);
-  a1.s.r = 1.0;
-  a1.s.f = 2.0;
-  a1.s.s = 3.0;
-  a2.s.s = 4.0;
 
   assert(Util.compareReal(a1.instream_s, a2.s.s), "a1.instream_s was not set correctly.");
   assert(Util.compareReal(a2.instream_s, a1.s.s), "a2.instream_s was not set correctly.");

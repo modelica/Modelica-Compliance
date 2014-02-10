@@ -10,15 +10,23 @@ model CompRemovalUnbalancedParam
 
   model A
     C c;
+  equation 
+    c.e = 2.0;
   end A;
 
+  model B
+    C c;
+  equation 
+    c.f = 1.0;
+  end B;
+
   parameter Boolean b = false;
-  A a1;
-  A a2 if b;
-equation
-  a1.c.e = 2.0;
-  a1.c.f = 4.0;
-  connect(a1.c, a2.c);
+  A a;
+  B b1 if b;
+  B b2;
+equation 
+  connect(a.c, b1.c);
+  connect(b1.c, b2.c);
   
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.5"})),
@@ -26,5 +34,5 @@ equation
     Documentation(
       info = "<html>Tests that a component declared with a condition that is
       a parameter with value false is removed from the DAE. The test should fail
-      since the model becomes unbalanced if a2 is removed.</html>"));
+      since the model becomes structurally singular if b1 is removed.</html>"));
 end CompRemovalUnbalancedParam;

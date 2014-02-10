@@ -11,13 +11,14 @@ model ConnectParameters
 
   model M
     C c1, c2;
+  equation
+    c1.e = 1.0;
+    c1.f = 3.0;
   end M;
 
   M m;
 equation 
   connect(m.c1, m.c2);
-  m.c1.e = 1.0;
-  m.c1.f = 3.0;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.3"})),

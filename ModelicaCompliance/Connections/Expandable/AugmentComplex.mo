@@ -13,13 +13,14 @@ model AugmentComplex
 
   model M
     C c;
+  equation
+    c.e = 1.0;
   end M;
 
   EC ec;
   M m;
 equation
   connect(m.c, ec.c);
-  m.c.e = 1.0;
 
   annotation (
   __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.1.3"})),

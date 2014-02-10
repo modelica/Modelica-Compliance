@@ -4,13 +4,16 @@ model BlockInputOutput
   extends Icons.TestCase;
 
   connector C
-    Real e = 1.0;
+    Real e;
     flow Real f;
   end C;
 
   block B
     input C c1;
     output C c2;
+  equation
+    c2.e = 1.0;
+    c2.f = c1.e;
   end B;
 
   B b;
