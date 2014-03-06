@@ -10,17 +10,19 @@ model InheritanceStream
   end C;
 
   model A
-    C c;
+    C c(e = 3.0, s = 2.0);
   end A;
 
-  A a1, a2;
-  Real x = inStream(a1.c.s);
+  model B
+    C c(f = 5.0, s = 4.0);
+  end B;
+
+  A a;
+  B b;
+
+  Real x = inStream(a.c.s);
 equation
-  a1.c.e = 3.0;
-  a1.c.f = 2.0;
-  a1.c.s = 2.0;
-  a2.c.s = 4.0;
-  connect(a1.c, a2.c);
+  connect(a.c, b.c);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"7.3"})),

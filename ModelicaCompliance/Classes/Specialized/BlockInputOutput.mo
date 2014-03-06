@@ -3,25 +3,29 @@ within ModelicaCompliance.Classes.Specialized;
 model BlockInputOutput
   extends Icons.TestCase;
 
-  connector C
-    Real e;
-    flow Real f;
-  end C;
+  connector C1
+    input Real e1;
+    output Real e2;
+  end C1;
+
+  connector C2
+    output Real e1;
+    input Real e2;
+  end C2;
 
   block B
-    input C c1;
-    output C c2;
+    C1 c1;
+    C2 c2;
   equation
-    c2.e = 1.0;
-    c2.f = c1.e;
+    connect(c1, c2);
   end B;
 
-  B b;
+  B b(c1.e1 = 1.0, c2.e2 = 3.0);
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.6"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Checks that it's legal to have connector variables in a
-        block if they have either input or output prefix.</html>"));
+      info = "<html>Checks that it's valid to have connector components in a
+        block as long as their variables have prefixes input or output.</html>"));
 end BlockInputOutput;

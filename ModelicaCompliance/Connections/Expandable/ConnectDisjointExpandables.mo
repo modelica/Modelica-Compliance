@@ -12,9 +12,9 @@ model ConnectDisjointExpandables
   end EC2;
 
   model M
-    connector RealOutput = output Real;
-    RealOutput x = 1.0;
-    RealOutput y = 2.0;
+    connector RealInput = input Real;
+    RealInput x = 1.0;
+    RealInput y = 2.0;
     EC1 ec1;
     EC2 ec2;
   equation

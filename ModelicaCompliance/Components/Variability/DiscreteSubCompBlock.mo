@@ -3,8 +3,10 @@ within ModelicaCompliance.Components.Variability;
 model DiscreteSubCompBlock
   extends Icons.TestCase;
 
+  connector RealInput = input Real;
+
   block B
-    discrete Real x;
+    discrete RealInput x(fixed = true);
   end B;
 
   B b;
