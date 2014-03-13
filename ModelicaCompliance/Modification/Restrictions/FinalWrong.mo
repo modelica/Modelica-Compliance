@@ -3,16 +3,6 @@ within ModelicaCompliance.Modification.Restrictions;
 model FinalWrong
   extends Icons.TestCase;
 
-  type Angle = Real(final quantity="Angle", final unit ="rad", displayUnit="deg");
-  Angle a1(unit="deg") = 10.0; // error, since unit declared as final!
-
-  record R
-    final parameter Integer i1 = 10;
-    parameter Integer i2 = 20;
-  end R;
-  
-  R r(i1 = 300);
-  
   model TransferFunction
     parameter Real b[:] = {1} "numerator coefficient vector";
     parameter Real a[:] = {1,1} "denominator coefficient vector";
@@ -27,7 +17,7 @@ model FinalWrong
   PI c1(k=2, T=3); // fine
   PI c2(tf(b={1})); // error, b is declared as final
   
-equation 
+equation
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.2.6"})),
     experiment(StopTime = 0.01),
