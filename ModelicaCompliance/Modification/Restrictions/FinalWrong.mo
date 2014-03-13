@@ -1,7 +1,10 @@
 within ModelicaCompliance.Modification.Restrictions;
 
-model FinalWrong2
+model FinalWrong
   extends Icons.TestCase;
+
+  type Angle = Real(final quantity="Angle", final unit ="rad", displayUnit="deg");
+  Angle a1(unit="deg") = 10.0; // error, since unit declared as final!
 
   record R
     final parameter Integer i1 = 10;
@@ -29,4 +32,4 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"7.2.6"})),
     experiment(StopTime = 0.01),
     Documentation(info = "<html>Checks that modification of final gives error.</html>"));
-end FinalWrong2;
+end FinalWrong;
