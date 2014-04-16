@@ -14,7 +14,7 @@ equation
   assert(Util.compareReal(z, 3.0), "arr[z] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.5"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.5", "10.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that it's possible to use enumeration literals to index

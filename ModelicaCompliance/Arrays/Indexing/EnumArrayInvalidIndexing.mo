@@ -8,7 +8,7 @@ model EnumArrayInvalidIndexing
   Real x = arr[1];
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.5"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.8.5", "10.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that it's not legal to index an array dimension given by
