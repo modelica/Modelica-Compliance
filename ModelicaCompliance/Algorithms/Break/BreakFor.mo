@@ -10,7 +10,7 @@ algorithm
   for i in 1:10 loop
     x := x * 2;
 
-    if x > 25 then
+    if noEvent(x > 25) then
       break;
     end if;
   end for;
