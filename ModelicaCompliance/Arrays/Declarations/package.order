@@ -16,5 +16,6 @@ ArrayUnspecifiedDimIncorrect
 ArrayVariablesMultipleDeclarations
 ArrayVariablesSingleDeclaration
 ArrayWithNegativeDims
+BoolArray
 EnumArray
 EnumMixedArray
