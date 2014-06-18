@@ -11,7 +11,7 @@ equation
   assert(Util.compareReal(arr[E.three], 3.0), "arr[E.three] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.5", "10.1.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.5", "10.1.1", "10.5.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that it's possible to declare an array using an

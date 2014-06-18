@@ -13,7 +13,7 @@ equation
   assert(arr2[true] == true, "arr2[true] was not set correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.3", "10.1.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.3", "10.1.1", "10.5.1"})),
     experiment(StopTime = 0.01),
     Documentation(
     info = "<html>Tests that it's possible to declare an array using a

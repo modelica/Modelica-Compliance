@@ -17,5 +17,6 @@ ArrayVariablesMultipleDeclarations
 ArrayVariablesSingleDeclaration
 ArrayWithNegativeDims
 BoolArray
+BoolArrayInvalid
 EnumArray
 EnumMixedArray
