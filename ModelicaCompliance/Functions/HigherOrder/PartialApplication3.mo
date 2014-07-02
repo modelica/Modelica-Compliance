@@ -3,13 +3,13 @@ within ModelicaCompliance.Functions.HigherOrder;
 model PartialApplication3
   extends Icons.TestCase;
 
-  function quadrature 
+  function quadrature
     "Integrate function y = integrand(x) from x1 to x2"
     input Real x1;
     input Real x2;
     input Integrand integrand; // Integrand is a partial function, see below
     output Real integral;
-  algorithm 
+  algorithm
       integral := (x2 - x1) * (integrand(x1) + integrand(x2)) / 2;
   end quadrature;
 
@@ -21,23 +21,23 @@ model PartialApplication3
   function IdentityFunction
     input Real x;
     output Real y;
-  algorithm 
+  algorithm
     y := x;
   end IdentityFunction;
 
   function Parabola
     extends Integrand;
-  algorithm 
+  algorithm
     y := x * x;
   end Parabola;
 
-  function quadrature2 
+  function quadrature2
     "Integrate function y = integrand(x) from x1 to x2"
     input Real x1;
     input Real x2;
     input Integrand integrand; // Integrand is a partial function type
     output Real integral;
-  algorithm 
+  algorithm
     integral := quadrature(x1, (x1 + x2) / 2, integrand) +
                 quadrature((x1 + x2) / 2, x2, integrand);
   end quadrature2;
@@ -46,7 +46,7 @@ model PartialApplication3
     extends Integrand;
     input Real A;
     input Real w;
-  algorithm 
+  algorithm
     y := A * sin(w*x);
   end Sine;
 
@@ -55,7 +55,7 @@ model PartialApplication3
     input Real w;
     input Real x; // Note: x is now last in argument list.
     output Real y;
-  algorithm 
+  algorithm
     y := A * sin(w * x);
   end Sine2;
 
@@ -71,7 +71,7 @@ model PartialApplication3
     input Real y2;
     input SurfaceIntegrand integrand;
     output Real z;
-  algorithm 
+  algorithm
     z := quadrature(y1, y2, function integrand(y=  x));
     // This is according to case (d) and needs to bind the 2nd argument
   end quadratureOnce;
@@ -83,14 +83,14 @@ model PartialApplication3
     input Real y2;
     input SurfaceIntegrand integrand;
     output Real integral;
-  algorithm 
+  algorithm
     integral := quadrature(x1, x2, function quadratureOnce(y1=  y1, y2=  y2, integrand=  integrand));
     // Case (b) and (c)
   end surfaceQuadrature;
 
   function SurfaceIntegrandImpl
     extends SurfaceIntegrand;
-  algorithm 
+  algorithm
     z := x * y;
   end SurfaceIntegrandImpl;
 
