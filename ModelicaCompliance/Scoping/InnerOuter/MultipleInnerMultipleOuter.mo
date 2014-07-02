@@ -25,10 +25,10 @@ model MultipleInnerMultipleOuter
   class C
     inner constant R T1 = R(3, 4);
     A a2;
-    Integer y1 = a1.T0.a;
-    Integer y2 = a1.T0.b;
-    Integer y3 = a1.T1.a;
-    Integer y4 = a1.T1.b;
+    Integer y1 = a2.T0.a;
+    Integer y2 = a2.T0.b;
+    Integer y3 = a2.T1.a;
+    Integer y4 = a2.T1.b;
   end C;
 
   extends B;
