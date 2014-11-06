@@ -4,8 +4,8 @@ model BoolArray
   extends Icons.TestCase;
 
   type B = Boolean;
-  Real arr1[B] = {true,false};
-  Real arr2[Boolean] = {false,true};
+  Boolean arr1[B] = {true,false};
+  Boolean arr2[Boolean] = {false,true};
 equation
   assert(arr1[false] == true, "arr1[false] was not set correctly.");
   assert(arr1[true] == false, "arr1[true] was not set correctly.");
