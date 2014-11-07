@@ -11,6 +11,7 @@ AttributesString
 AttributesStringInvalid
 ReservedBooleanClass
 ReservedBooleanComp
+ReservedClass
 ReservedExternalObjectClass
 ReservedExternalObjectComp
 ReservedIntegerClass
