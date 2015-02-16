@@ -19,5 +19,5 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.6.5"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that if expresssion clauses are only evaluated if the appropriate condition is true.</html>"));
+      info = "<html>Tests that if expression clauses are only evaluated if the appropriate condition is true.</html>"));
 end IfExpression;

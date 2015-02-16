@@ -32,5 +32,5 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = true)),
     experiment(StopTime = 0.01),
     Documentation(
-    info = "<html>Tests using several algorithm sections having when-statment with identical conditions.</html>"));
+    info = "<html>Tests using several algorithm sections having when-statement with identical conditions.</html>"));
 end WhenStatementsIdenticalCondition;
