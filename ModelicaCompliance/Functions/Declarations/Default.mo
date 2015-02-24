@@ -5,15 +5,15 @@ model Default
 
   function EmptyFunction
   end EmptyFunction;
-  
+
   function NonEmptyFunction
     extends EmptyFunction;
-    input Integer x := 10;
+    input Integer x = 10;
     output Integer y;
   algorithm
     y := x;
   end NonEmptyFunction;
-  
+
   Integer i = NonEmptyFunction(100);
   Integer j = NonEmptyFunction(); // call without input, takes the default
 

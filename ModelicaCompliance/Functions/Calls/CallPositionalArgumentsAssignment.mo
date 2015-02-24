@@ -4,25 +4,25 @@ model CallPositionalArgumentsAssignment
   extends Icons.TestCase;
 
   function PolynomialEvaluator
-	input Real A[:]; // Array, size defined at function call time
-	input Real x := 1.0; // Default value 1.0 for x
-	output Real sum;
+  input Real A[:]; // Array, size defined at function call time
+  input Real x = 1.0; // Default value 1.0 for x
+  output Real sum;
   protected
-	Real xpower;
+  Real xpower;
   algorithm
-	sum := 0;
-	xpower := 1;
-	for i in 1:size(A, 1) loop
-	  sum := sum + A[i]*xpower;
-	  xpower := xpower*x;
-	end for;
+  sum := 0;
+  xpower := 1;
+  for i in 1:size(A, 1) loop
+    sum := sum + A[i]*xpower;
+    xpower := xpower*x;
+  end for;
   end PolynomialEvaluator;
 
-	Real p;
+  Real p;
   algorithm
-	p := PolynomialEvaluator({1,2,3,4},21);
+  p := PolynomialEvaluator({1,2,3,4},21);
     assert(Util.compareReal(p, 38410.0), "p was not set correctly.");
-  
+
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.4", "12.4.1"})),
     experiment(StopTime = 0.01),
