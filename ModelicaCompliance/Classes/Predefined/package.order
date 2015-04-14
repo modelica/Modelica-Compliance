@@ -1,4 +1,6 @@
 AttributeStateSelect
+AttributeStateSelectInvalidAlways
+AttributeStateSelectInvalidNever
 AttributesBoolean
 AttributesBooleanInvalid
 AttributesEnum
