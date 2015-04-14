@@ -7,7 +7,9 @@ model AttributeStateSelect
   Real y(stateSelect = StateSelect.avoid) = 2.0;
   Real z(stateSelect = StateSelect.default) = 3.0;
   Real u(stateSelect = StateSelect.prefer) = 4.0;
-  Real v(stateSelect = StateSelect.always) = 5.0;
+  Real v(stateSelect = StateSelect.always);
+  equation
+     der(v)=5;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.8.7.1"})),
