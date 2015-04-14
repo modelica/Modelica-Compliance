@@ -1,10 +1,10 @@
 within ModelicaCompliance.Classes.Predefined;
 
-model AttributeStateSelect
+model AttributeStateSelectInvalidNever
   extends Icons.TestCase;
 
   Real x(stateSelect = StateSelect.never);
-  
+
   equation
       der(x)=time;
 
@@ -13,4 +13,4 @@ model AttributeStateSelect
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that StateSelect.never is not misused.</html>"));
-end AttributeStateSelect;
+end AttributeStateSelectInvalidNever;
