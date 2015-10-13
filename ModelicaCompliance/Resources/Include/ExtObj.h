@@ -6,7 +6,7 @@ typedef struct {
   unsigned size;
 } MyTable;
 
-void* initMyTable(const double *table_data, size_t table_size);
+void* initMyTable(double *table_data, size_t table_size);
 void closeMyTable(void* object);
 double interpolateMyTable(void* object, double u);
 
