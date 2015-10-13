@@ -9,7 +9,7 @@
 #include "ExtObj.h"
 
 /* Constructor for MyTable. */
-void* initMyTable(const double *table_data, size_t table_size)
+void* initMyTable(double *table_data, size_t table_size)
 {
   MyTable *table = (MyTable*)malloc(sizeof(MyTable));
 
