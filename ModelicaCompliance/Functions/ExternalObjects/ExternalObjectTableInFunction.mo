@@ -52,5 +52,5 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.9.7"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests the use of an external object to implement an interpolation table.</html>"));
+      info = "<html>Tests the use of an external object as a local function variable.</html>"));
 end ExternalObjectTableInFunction;
