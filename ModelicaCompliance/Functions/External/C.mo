@@ -17,7 +17,7 @@ double externalSin(double x)
    end mySin;
   end M;
 
-  parameter Real p = M.mySin(0.5);
+  Real p = M.mySin(0.5);
   
 equation
   assert(Util.compareReal(p, 0.479425538604203), "p was not set correctly, " + String(p) + " <> 0.479425538604203.");

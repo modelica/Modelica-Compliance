@@ -16,7 +16,7 @@ double rincr(double x) /* wrong name, should be dincr */
    end realIncrement;
   end M;
 
-  parameter Integer p = integer(M.realIncrement(111));
+  Integer p = integer(M.realIncrement(111));
   
 equation
   annotation (

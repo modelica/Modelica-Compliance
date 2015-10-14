@@ -16,7 +16,7 @@ double rincr(double x)
    end realIncrement;
   end M;
 
-  parameter Integer p = integer(M.realIncrement(111));
+  Integer p = integer(M.realIncrement(111));
   
 equation
   assert(p == 112, "p was not set correctly, " + String(p) + " <> 112.");

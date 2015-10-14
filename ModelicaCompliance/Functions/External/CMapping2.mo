@@ -19,7 +19,7 @@ int iincr(int x)
    end enumIncrement;
   end M;
 
-  parameter E p = M.enumIncrement(E.one);
+  E p = M.enumIncrement(E.one);
   
 equation
   assert(p == E.two, "p was not set correctly, " + String(p) + " <> E.two.");

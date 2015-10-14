@@ -16,7 +16,7 @@ int iincr(int x)
    end intIncrement;
   end M;
 
-  parameter Integer p = M.intIncrement(111);
+  Integer p = M.intIncrement(111);
   
 equation
   assert(p == 112, "p was not set correctly, " + String(p) + " <> 112.");
