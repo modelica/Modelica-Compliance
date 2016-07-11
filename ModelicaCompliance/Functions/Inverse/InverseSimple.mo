@@ -6,9 +6,9 @@ model InverseSimple
   function add3
     input Real x;
     output Real y;
-    annotation(inverse(x = sub3(y)));
   algorithm
     y := x + 3;
+    annotation(inverse(x = sub3(y)));
   end add3;
 
   function sub3

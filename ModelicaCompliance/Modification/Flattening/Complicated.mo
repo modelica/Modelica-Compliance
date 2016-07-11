@@ -23,16 +23,16 @@ model Complicated
     parameter Integer x = 2;
     replaceable package Medium = PartialMedium;
     B b(x = x, redeclare replaceable package Medium = Medium);
-    // The ‘x’ and ‘Medium’ being modified are declared in the model B.
-    // The modifiers ‘=x’ and ‘=Medium’ are found in the model C.
+    // The `x` and `Medium` being modified are declared in the model B.
+    // The modifiers `=x` and `=Medium` are found in the model C.
   end C;
 
   model D
     parameter Integer x = 3;
     replaceable package Medium = PartialMedium;
     C c(b(x = x, redeclare replaceable package Medium = Medium));
-   // The ‘x’ and ‘Medium’ being modified are declared in the model B.
-   // The modifiers ‘=x’ and ‘=Medium’ are found in the model D.
+   // The `x` and `Medium` being modified are declared in the model B.
+   // The modifiers `=x` and `=Medium` are found in the model D.
   end D;
 
   D d1(redeclare package Medium = M1);
