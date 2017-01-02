@@ -11,18 +11,18 @@ equation
     x[i, j, k] = 2 * y[k, i, j];
   end for;
 
-  assert(Util.compareReal(x[1, 1, 1], 2.0),  "x[1, 1, 1] was not set correctly.");
-  assert(Util.compareReal(x[1, 1, 2], 4.0),  "x[1, 1, 2] was not set correctly.");
-  assert(Util.compareReal(x[1, 2, 1], 4.0),  "x[1, 2, 1] was not set correctly.");
-  assert(Util.compareReal(x[1, 2, 2], 8.0),  "x[1, 2, 2] was not set correctly.");
-  assert(Util.compareReal(x[2, 1, 1], 4.0),  "x[2, 1, 1] was not set correctly.");
-  assert(Util.compareReal(x[2, 1, 2], 8.0),  "x[2, 1, 2] was not set correctly.");
-  assert(Util.compareReal(x[2, 2, 1], 8.0),  "x[2, 2, 1] was not set correctly.");
-  assert(Util.compareReal(x[2, 2, 2], 16.0), "x[2, 2, 2] was not set correctly.");
-  assert(Util.compareReal(x[3, 1, 1], 6.0),  "x[3, 1, 1] was not set correctly.");
-  assert(Util.compareReal(x[3, 1, 2], 12.0), "x[3, 1, 2] was not set correctly.");
-  assert(Util.compareReal(x[3, 2, 1], 12.0), "x[3, 2, 1] was not set correctly.");
-  assert(Util.compareReal(x[3, 2, 2], 24.0), "x[3, 2, 2] was not set correctly.");
+  assert(Util.compareReal(x[1, false, E.one], 2.0),  "x[1, false, E.one] was not set correctly.");
+  assert(Util.compareReal(x[1, false, E.two], 4.0),  "x[1, false, E.two] was not set correctly.");
+  assert(Util.compareReal(x[1, true, E.one], 4.0),  "x[1, true, E.one] was not set correctly.");
+  assert(Util.compareReal(x[1, true, E.two], 8.0),  "x[1, true, E.two] was not set correctly.");
+  assert(Util.compareReal(x[2, false, E.one], 4.0),  "x[2, false, E.one] was not set correctly.");
+  assert(Util.compareReal(x[2, false, E.two], 8.0),  "x[2, false, E.two] was not set correctly.");
+  assert(Util.compareReal(x[2, true, E.one], 8.0),  "x[2, true, E.one] was not set correctly.");
+  assert(Util.compareReal(x[2, true, E.two], 16.0), "x[2, true, E.two] was not set correctly.");
+  assert(Util.compareReal(x[3, false, E.one], 6.0),  "x[3, false, E.one] was not set correctly.");
+  assert(Util.compareReal(x[3, false, E.two], 12.0), "x[3, false, E.two] was not set correctly.");
+  assert(Util.compareReal(x[3, true, E.one], 12.0), "x[3, true, E.one] was not set correctly.");
+  assert(Util.compareReal(x[3, true, E.two], 24.0), "x[3, true, E.two] was not set correctly.");
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"8.3.2.1"})),
