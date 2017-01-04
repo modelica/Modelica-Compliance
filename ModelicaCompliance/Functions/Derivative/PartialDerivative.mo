@@ -29,6 +29,5 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.7.2"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests the declaration of derivatives of functions using the
-        derivative annotation.</html>"));
+      info = "<html>Tests the declaration of partial derivatives of functions.</html>"));
 end PartialDerivative;
