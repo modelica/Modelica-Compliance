@@ -6,8 +6,8 @@ model BoolArrayInvalid
   type B = Boolean;
   Real arr1[B];
 equation
-  arr[1] = true;
-  arr[2] = false;
+  arr[1] = 0.0;
+  arr[2] = 1.0;
 
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.8.3", "10.1.1", "10.5.1"})),
