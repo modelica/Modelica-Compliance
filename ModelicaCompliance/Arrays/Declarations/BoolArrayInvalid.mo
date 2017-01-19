@@ -4,7 +4,7 @@ model BoolArrayInvalid
   extends Icons.TestCase;
 
   type B = Boolean;
-  Real arr1[B];
+  Real arr[B];
 equation
   arr[1] = 0.0;
   arr[2] = 1.0;
