@@ -4,7 +4,7 @@ model ConstructorAmbiguous
   extends Icons.TestCase;
 
   encapsulated package P
-    record _Complex_
+    operator record _Complex_
       Integer re;
       Integer im;
       
