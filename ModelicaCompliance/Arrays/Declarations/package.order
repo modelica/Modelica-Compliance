@@ -20,3 +20,4 @@ BoolArray
 BoolArrayInvalid
 EnumArray
 EnumMixedArray
+DeclareArrayFromConcatSecondDimensionIncorrect
