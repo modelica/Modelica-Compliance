@@ -2,6 +2,7 @@ FortranLapack
 Builtin
 C
 CDefault
+CImpure
 CMapping1
 CMapping2
 CMapping3
