@@ -5,6 +5,7 @@
 #include <stdlib.h> /* for Linux malloc and exit */
 #include <string.h>
 #include <math.h>
+#include "ModelicaUtilities.h"
 
 #include "ExtObj.h"
 
@@ -14,15 +15,16 @@ void* initMyTable(double *table_data, size_t table_size)
   MyTable *table = (MyTable*)malloc(sizeof(MyTable));
 
   if (table == NULL) {
-    printf("Not enough memory.\n");
-    exit(-2);
+    ModelicaError("Not enough memory.\n");
+    return 0; /* Not reachable */
   }
 
   table->array = (double*)malloc(table_size * sizeof(double));
 
   if(!table->array) {
-    printf("Error allocating array in MyTable.\n");
-    exit(-2);
+    free(table);
+    ModelicaError("Error allocating array in MyTable.\n");
+    return 0; /* Not reachable */
   } 
 
   memcpy(table->array, table_data, table_size * sizeof(double));
@@ -53,8 +55,8 @@ double interpolateMyTable(void *object, double u)
   idx = (long) (ip + 0.5);
 
   if(u < 0.0 || idx >= table->size - 1) {
-    printf("%f is outside the table interval.\n", u);
-    exit(-2);
+    ModelicaFormatError("%f is outside the table interval.\n", u);
+    return 0; /* Not reachable */
   }
 
   /* Fetch the two values from the table and use the fraction part of u to
