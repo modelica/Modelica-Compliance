@@ -1,14 +1,14 @@
 within ModelicaCompliance.Scoping.NameLookup.Composite;
 
-model FunctionInOperatorLookupViaComp
-  extends Icons.TestCase;
-
-  operator record OR
+package FunctionInOperatorLookupViaComp
+  extends Icons.TestPackage;
+  
+  encapsulated operator record OR
     Real x;
 
     encapsulated operator '+'
       function add
-        import ModelicaCompliance.Scoping.NameLookup.Composite.FunctionLookupViaArrayElement.OR;
+        import ModelicaCompliance.Scoping.NameLookup.Composite.FunctionInOperatorLookupViaComp.OR;
         input OR or1;
         input OR or2;
         output OR result;
@@ -17,15 +17,17 @@ model FunctionInOperatorLookupViaComp
       end add;
     end '+';
   end OR;
+  model FunctionInOperatorLookupViaComp
+    extends Icons.TestCase;
+    OR or1(x = 1.0);
+    OR or2(x = 2.0);
+    OR or3 = or1.'+'.add(or1, or2);
 
-  OR or1(x = 1.0);
-  OR or2(x = 2.0);
-  OR or3 = or1.'+'.add(or1, or2);
-
-  annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.3.2"})),
-    experiment(StopTime = 0.01),
-    Documentation(
-      info = "<html>Checks that it's not allowed to look up a function in an operator
-        via a component.</html>"));
+    annotation (
+      __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.3.2"})),
+      experiment(StopTime = 0.01),
+      Documentation(
+        info = "<html>Checks that it's not allowed to look up a function in an operator
+          via a component.</html>"));
+  end FunctionInOperatorLookupViaComp;
 end FunctionInOperatorLookupViaComp;
