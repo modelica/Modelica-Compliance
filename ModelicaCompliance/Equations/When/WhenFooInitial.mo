@@ -5,7 +5,8 @@ model WhenFooInitial
     output Boolean b2;
   algorithm
     b2:=b;
-   annotation(Inline=false); // Should not be needed
+    // Disabling inlining should not be needed
+   annotation(Inline=false); 
   end foo;
   Real x(start=0, fixed=true);
   Real y(start=0, fixed=true);
