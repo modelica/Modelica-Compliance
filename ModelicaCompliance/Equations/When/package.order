@@ -6,3 +6,4 @@ WhenEquationInvalid
 WhenEquationOrderNoMatter
 WhenPriority
 WhenVectorExpression
+WhenFooInitial
