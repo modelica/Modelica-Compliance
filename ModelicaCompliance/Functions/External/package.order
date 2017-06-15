@@ -3,7 +3,10 @@ Builtin
 C
 CDefault
 CImpure
+CDifferentInclude
 CMapping1
 CMapping2
 CMapping3
 CMappingWrong1
+ModelicaErrorFailing
+ModelicaErrorWorking

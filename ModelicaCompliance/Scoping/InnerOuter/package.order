@@ -18,6 +18,8 @@ Record
 RecordWrong
 MissingInner
 MissingInnerAdded
+MissingInnerMismatch
+MissingInnerMismatch2
 OuterInPackage
 PartialInner
 PartialOuter
