@@ -7,9 +7,9 @@ model WhenFooInitial
     b2:=b;
    annotation(Inline=false); // Should not be needed
   end foo;
-  Real x;
-  Real y;
-  Real z;
+  Real x(start=0, fixed=true);
+  Real y(start=0, fixed=true);
+  Real z(start=0, fixed=true);
   parameter Real p(fixed=false);
   parameter Real q(fixed=false);
   parameter Real r(fixed=false);
