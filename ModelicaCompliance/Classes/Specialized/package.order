@@ -8,8 +8,6 @@ ConnectorInner
 ConnectorOuter
 ConnectorProtected
 OperatorConstant
-OperatorEnclosingExtends
-OperatorFunctionEnclosingExtends
 OperatorModel
 OperatorRecordAlgorithm
 OperatorRecordEnclosingExtends
