@@ -9,7 +9,7 @@ package TypeNameAsComponentName
     x x = 1.0;
 
     annotation (
-      __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.4.2"})),
+      __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.2"})),
       experiment(StopTime = 0.01),
       Documentation(
         info = "<html>Checks that a component is not allowed to have the same
