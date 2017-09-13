@@ -4,7 +4,7 @@ within ModelicaCompliance.Scoping.NameLookup.Imports;
 model Recursive
   extends Icons.TestCase;
   
-  import A = .ModelicaCompliance.Scoping.NameLookup.Imports.Recursive;
+  import A = ModelicaCompliance.Scoping.NameLookup.Imports.Recursive;
   A a;
 
   annotation (
