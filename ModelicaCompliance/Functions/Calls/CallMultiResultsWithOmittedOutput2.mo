@@ -1,4 +1,7 @@
+within ModelicaCompliance.Functions.Calls;
+
 model CallMultiResultsWithOmittedOutput2
+  extends Icons.TestCase;
 
   function multipleResults
     input Integer n;
