@@ -4,7 +4,7 @@ model ModifiedCompFalseCondition
   extends Icons.TestCase;
 
   model A
-    Real x = 2.0 if true;
+    Real x = 2.0 if false;
   end A;
 
   A a(x = 3.0);
