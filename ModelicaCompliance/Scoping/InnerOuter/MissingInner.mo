@@ -17,7 +17,7 @@ model MissingInner
 
 equation 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"5.4"})),
+    __ModelicaAssociation(TestCase(shouldPass = truesection = {"5.4"})),
     experiment(StopTime = 0.01),
-    Documentation(info = "<html>Checks that missing inner generates errors.</html>"));
+    Documentation(info = "<html>Missing inner is now allowed.</html>"));
 end MissingInner;
