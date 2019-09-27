@@ -26,7 +26,7 @@ model SizeOverconstrainedInvalid
     flow Real t[3];
   end Frame;
 
-  Frame f(r = {1, 2, 3}, R = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+  Frame f(r = {1, 2}, R = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 equation
   .Connections.root(f.R);
 
