@@ -3,7 +3,7 @@ within ModelicaCompliance.Inheritance.Restrictions;
 model BaseClassKindConnectorType
   extends Icons.TestCase;
 
-  type Base = constant Real;
+  type Base = output Real;
 
   connector Derived
     extends Base;

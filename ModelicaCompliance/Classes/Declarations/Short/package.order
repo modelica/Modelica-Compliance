@@ -1,6 +1,5 @@
 ArrayType
 ArrayTypeArray
-FlowStreamTypeComp
 InputOutputTypeComp
 ModifierScope
 PartialClass
@@ -9,4 +8,3 @@ ShortFunction
 ShortType
 SpecializedClass
 SpecializedClassIter
-VariabilityTypeComp
