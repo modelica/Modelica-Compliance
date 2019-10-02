@@ -7,7 +7,7 @@ model PrefixedClassWithComp
     Real x = 1.0;
   end A;
 
-  model CA = constant A;
+  model CA = input A;
 
   model B
     Real y = 2.0;
