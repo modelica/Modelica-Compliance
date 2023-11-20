@@ -9,6 +9,7 @@ model C
       output Real y;
       external "C" y = externalSin(x) annotation(Include="
 #include <stdio.h>
+#include <math.h>
 double externalSin(double x) 
 { 
   return sin(x);
