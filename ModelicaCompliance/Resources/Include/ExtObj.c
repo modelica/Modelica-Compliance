@@ -10,6 +10,7 @@
 #include "ExtObj.h"
 
 /* Constructor for MyTable. */
+static
 void* initMyTable(double *table_data, size_t table_size)
 {
   MyTable *table = (MyTable*)malloc(sizeof(MyTable));
@@ -34,6 +35,7 @@ void* initMyTable(double *table_data, size_t table_size)
 }
 
 /* Destructor for MyTable. */
+static
 void closeMyTable(void *object)
 {
   MyTable *table = (MyTable*)object;
@@ -43,6 +45,7 @@ void closeMyTable(void *object)
 }
 
 /* Interpolates between two adjacent values in the table. */
+static
 double interpolateMyTable(void *object, double u)
 {
   MyTable *table = (MyTable*)object;

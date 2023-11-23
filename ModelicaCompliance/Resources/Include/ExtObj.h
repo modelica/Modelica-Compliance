@@ -6,8 +6,8 @@ typedef struct {
   unsigned size;
 } MyTable;
 
-void* initMyTable(double *table_data, size_t table_size);
-void closeMyTable(void* object);
-double interpolateMyTable(void* object, double u);
+static void* initMyTable(double *table_data, size_t table_size);
+static void closeMyTable(void* object);
+static double interpolateMyTable(void* object, double u);
 
 #endif /*EXTOBJ_H*/
