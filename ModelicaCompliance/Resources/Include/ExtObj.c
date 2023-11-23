@@ -25,7 +25,7 @@ void* initMyTable(double *table_data, size_t table_size)
     free(table);
     ModelicaError("Error allocating array in MyTable.\n");
     return 0; /* Not reachable */
-  } 
+  }
 
   memcpy(table->array, table_data, table_size * sizeof(double));
   table->size = table_size;
@@ -40,7 +40,7 @@ void closeMyTable(void *object)
   if (object == NULL) return;
   free(table->array);
   free(table);
-} 
+}
 
 /* Interpolates between two adjacent values in the table. */
 double interpolateMyTable(void *object, double u)
