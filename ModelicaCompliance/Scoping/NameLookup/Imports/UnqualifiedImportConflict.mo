@@ -14,9 +14,9 @@ model UnqualifiedImportConflict
 
   model A
     import
-      ModelicaCompliance.Scoping.NameLookup.Imports.QualifiedImportConflict.P.*;
+      ModelicaCompliance.Scoping.NameLookup.Imports.UnqualifiedImportConflict.P.*;
     import
-      ModelicaCompliance.Scoping.NameLookup.Imports.QualifiedImportConflict.P2
+      ModelicaCompliance.Scoping.NameLookup.Imports.UnqualifiedImportConflict.P2
       .*;
     Real y = x;
   end A;
