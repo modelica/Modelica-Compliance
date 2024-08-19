@@ -6,8 +6,8 @@ model ReservedStateSelectComp
   Real StateSelect = 3.0;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.8"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"4.9"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Checks that it's illegal to declare an element with the name StateSelect.</html>"));
+      info = "<html>Since Modelica 3.4 StateSelect is no longer a reserved class.</html>"));
 end ReservedStateSelectComp;
