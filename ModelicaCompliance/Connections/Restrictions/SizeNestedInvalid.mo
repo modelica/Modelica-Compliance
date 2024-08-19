@@ -17,9 +17,10 @@ model SizeNestedInvalid
   Plug p(p.v = {1.0, 2.0, 3.0}, x= 4.0);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"9.3.1"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"9.3.1"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the number of variables is counted correctly when
-        checking the size restriction on nested connector classes.</html>"));
+        checking the size restriction on nested connector classes.
+        Note that the extra x makes it unbalanced.</html>"));
 end SizeNestedInvalid;
