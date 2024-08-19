@@ -3,15 +3,15 @@ within ModelicaCompliance.Modification.Flattening;
 model Merging2
   extends Icons.TestCase;
 
-  class C1
+  record C1
     parameter Integer a;
   end C1;
 
-  class C2
+  record C2
     parameter Integer b,c;
   end C2;
 
-  class C3
+  record C3
     parameter Integer x1; // No default value
     parameter Integer x2 = 2; // Default value 2
     parameter C1 x3; // No default value for x3.a
@@ -21,7 +21,7 @@ model Merging2
     extends C2(b=6,c=77); // Inherited b has default value 6
   end C3;
 
-  class C4
+  record C4
     extends C3(x2=22, x3(a=33), x4(c=44), x5=x3, a=55, b=66);
   end C4;
 
