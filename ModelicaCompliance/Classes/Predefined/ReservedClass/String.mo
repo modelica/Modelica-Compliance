@@ -3,8 +3,6 @@ within ModelicaCompliance.Classes.Predefined.ReservedClass;
 model String
   extends Icons.TestCase;
 
-  Real x = time;
-
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"4.8"})),
     experiment(StopTime = 0.01),
