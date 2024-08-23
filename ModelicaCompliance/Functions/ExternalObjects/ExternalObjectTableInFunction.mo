@@ -4,6 +4,9 @@ model ExternalObjectTableInFunction
   extends Icons.TestCase;
 
   class MyTable
+    // Note that this is a copy of ModelicaCompliance.Functions.ExternalObjects.ExternalTable
+    // In real code it should just be a common implementation,
+    //  but these tests are designed to be self-contained
     extends ExternalObject;
 
     function constructor
@@ -11,14 +14,14 @@ model ExternalObjectTableInFunction
       output MyTable outTable;
 
       external "C" outTable = initMyTable(vals, size(vals, 1));
-      annotation(Include="#include \"ExtObj.c\"");
+      annotation(Include="#include \"ExtObjInit.c\"");
     end constructor;
 
     function destructor
       input MyTable inTable;
 
       external "C" closeMyTable(inTable) ;
-      annotation(Include="#include \"ExtObj.c\"");
+      annotation(Include="#include \"ExtObjClose.c\"");
     end destructor;
   end MyTable;
 
@@ -28,7 +31,7 @@ model ExternalObjectTableInFunction
     output Real y;
 
     external "C" y=interpolateMyTable(interpolTable,u) ;
-    annotation(Include="#include \"ExtObj.c\"");
+    annotation(Include="#include \"ExtObjInterpolate.c\"");
   end interpolateMyTable;
 
   function interpolateMyTableFunc
