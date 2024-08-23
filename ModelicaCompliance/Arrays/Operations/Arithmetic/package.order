@@ -1,5 +1,7 @@
 ArrayAdditionIncorrect1
 ArrayAdditionIncorrect2
+ArrayEWAdditionIncorrect1
+ArrayEWSubtractionIncorrect1
 ArrayConcatenation1
 ArrayConcatenation2
 ArrayConcatenation3
@@ -25,11 +27,13 @@ ArrayEWAddition3
 ArrayEWAddition4
 ArrayEWAddition5
 ArrayEWAddition6
+ArrayEWAddition7
 ArrayEWDivision1
 ArrayEWDivision2
 ArrayEWDivision3
 ArrayEWDivision4
 ArrayEWDivision5
+ArrayEWDivision6
 ArrayEWExponentiation1
 ArrayEWExponentiation2
 ArrayEWExponentiation3
@@ -41,6 +45,7 @@ ArrayEWMultiplication2
 ArrayEWMultiplication3
 ArrayEWMultiplication4
 ArrayEWMultiplication5
+ArrayEWMultiplication6
 ArrayEWMultiplicationIncorrect1
 ArrayEWSubtraction1
 ArrayEWSubtraction2
@@ -48,6 +53,7 @@ ArrayEWSubtraction3
 ArrayEWSubtraction4
 ArrayEWSubtraction5
 ArrayEWSubtraction6
+ArrayEWSubtraction7
 ArrayExponentiationIncorrect1
 ArrayExponentiationIncorrect2
 ArrayExponentiationIncorrect3
