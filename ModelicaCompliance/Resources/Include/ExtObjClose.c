@@ -12,4 +12,4 @@ void closeMyTable(void *object)
   if (object == NULL) return;
   free(table->array);
   free(table);
-} 
+}
