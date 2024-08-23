@@ -8,5 +8,5 @@ model ArrayEWSubtractionIncorrect1
     __ModelicaAssociation(TestCase(shouldPass = false, section = {"10.6.2", "10.7"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests that it is not allowed to add arrays with different sizes.</html>"));
+      info = "<html>Tests that it is not allowed to subtract arrays with different sizes.</html>"));
 end ArrayEWSubtractionIncorrect1;

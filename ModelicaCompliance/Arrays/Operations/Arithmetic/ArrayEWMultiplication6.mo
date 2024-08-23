@@ -10,5 +10,5 @@ equation
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.6.2", "10.7"})),
     experiment(StopTime = 0.01),
     Documentation(
-      info = "<html>Tests array addition</html>"));
+      info = "<html>Tests array multiplication</html>"));
 end ArrayEWMultiplication6;
