@@ -1,5 +1,4 @@
 within ModelicaCompliance.Arrays.Flexible;
-
 model ArrayFlexibleWithColon2
   extends Icons.TestCase;
 
@@ -14,8 +13,8 @@ model ArrayFlexibleWithColon2
     end for;
   end collectPositive;
 
-  Integer a[:] = {-2,1,0,-1,2};
-  Integer x[:] (start= collectPositive(a));
+  parameter Integer a[:] = {-2,1,0,-1,2} annotation(Evaluate=true);
+  Integer x[:](each fixed=true, start= collectPositive(a));
 equation
   assert(size(x, 1) == 2, "Array should have two elements");
   assert(x[1] == 1, "The element of x[1] must be 1");
