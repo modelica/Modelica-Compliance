@@ -15,15 +15,14 @@ model ArrayFlexibleWithColon1
   end collectPositive;
 
   Integer a[:] = {-2,1,0,-1,2};
-  Integer x[:];
-algorithm
-  x := collectPositive(a);
+  Integer x[:] = collectPositive(a);
 equation
+  assert(size(x, 1)==2, "Array should have two elements");
   assert(x[1] == 1, "The element of x[1] must be 1");
   assert(x[2] == 2, "The element of x[2] must be 2");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.4.5"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"10.1", "12.4.5"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that flexible setting of array dimension sizes of arrays in functions is possible.</html>"));
