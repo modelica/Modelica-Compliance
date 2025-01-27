@@ -73,7 +73,7 @@ Section references does not otherwise include subsections, so section 1.1 means 
   - Logical Logical operators not, and, or (section 3.5).
   - Mathematical Operators in 3.7.1.\*, except Integer and String.
   - Conversion Conversion operators in 3.7.1, Integer and String.
-  - Events Event-related operators in 3.7.2.\*.
+  - Events Event-related operators in 3.7.2, 3.7.5.
   - Special Special purpose operators in 3.7.4.\*.
   - If If-expressions, section 3.3, 3.6.5.
   - Precedence Precedence rules in section 3.2.
