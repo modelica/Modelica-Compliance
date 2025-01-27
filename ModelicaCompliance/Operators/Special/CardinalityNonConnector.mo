@@ -1,5 +1,4 @@
 within ModelicaCompliance.Operators.Special;
-
 model CardinalityNonConnector
   extends Icons.TestCase;
 
@@ -7,7 +6,7 @@ model CardinalityNonConnector
   Integer n = cardinality(x);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Checks that cardinality is only allowed on connectors.</html>"));

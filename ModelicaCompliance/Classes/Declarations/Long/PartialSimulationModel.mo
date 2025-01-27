@@ -1,4 +1,4 @@
-within ModelicaCompliance.Classes.Declarations;
+within ModelicaCompliance.Classes.Declarations.Long;
 
 partial model PartialSimulationModel
   extends Icons.TestCase;

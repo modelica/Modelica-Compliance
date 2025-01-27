@@ -1,8 +1,7 @@
 within ModelicaCompliance.Operators.Events;
-
 model Change
   extends Icons.TestCase;
-  
+
   discrete Integer x, y;
 initial equation
   x = 0;
@@ -17,7 +16,7 @@ equation
   end when;
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.3"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.5"})),
     experiment(StopTime = 1.0),
     Documentation(
       info = "<html>Test the change() operator.</html>"));

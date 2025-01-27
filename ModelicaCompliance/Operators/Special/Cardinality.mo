@@ -1,5 +1,4 @@
 within ModelicaCompliance.Operators.Special;
-
 model Cardinality
   extends Icons.TestCase;
 
@@ -33,7 +32,7 @@ equation
   assert(m.n3 == 2, "cardinality(c4) was incorrectly evaluated.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the cardinality operator.</html>"));

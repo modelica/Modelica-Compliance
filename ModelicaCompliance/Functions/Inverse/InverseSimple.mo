@@ -1,5 +1,4 @@
 within ModelicaCompliance.Functions.Inverse;
-
 model InverseSimple
   extends Icons.TestCase;
 
@@ -22,7 +21,7 @@ model InverseSimple
   Real x = add3(3);
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.8"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"12.7.3"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Simple test of declaring an inverse of a function.</html>"));

@@ -1,13 +1,12 @@
 within ModelicaCompliance.Operators.Special;
-
 model DerConstantIncorrect1
   extends Icons.TestCase;
 
-  constant Integer pa = 1; 
+  constant Integer pa = 1;
   Real a = der(pa);
-  
+
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = false, section = {"3.7.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that Operator der cannot be applied to Integer expressions. It shall be a subtype of Real expression.</html>"));

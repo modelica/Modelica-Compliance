@@ -1,8 +1,7 @@
 within ModelicaCompliance.Operators.Special;
-
 model SemiLinear
   extends Icons.TestCase;
-  
+
   Real x = 3.0;
   Real y = -2.5;
   Real z, w;
@@ -15,7 +14,7 @@ equation
 
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.2"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.4"})),
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests the semiLinear operator.</html>"));
