@@ -40,7 +40,7 @@ end DoubleDeclaration;
 ## Library Structure
 
 The compliance library uses a package hierarchy to divide the test cases into suitable categories, as defined by the table below.
-References are for the Modelica 3.6 specification.
+References are for the [Modelica 3.6 specification](https://specification.modelica.org/maint/3.6/MLS.html).
 Section references in the table uses intervals and wildcards, where 1.2-1.4 means from section 1.2 to 1.4 and 1.1.\* means section 1.1 and its subsections.
 Section references does not otherwise include subsections, so section 1.1 means only 1.1.
 
