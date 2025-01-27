@@ -7,7 +7,7 @@ The test case model does not need to be the top-level class in the file, so a fi
 package with multiple classes defined in it, but each file should only contain one test case model.
 Models are marked as test cases by the test case annotation:
 ```Modelica
-  annotation(__ModelicaAssociation(TestCase(shouldPass=true|false)))
+  annotation(__ModelicaAssociation(TestCase(shouldPass=true|false)));
 ```
 The shouldPass property defines whether the test case is expected to succeed or fail. 
 Each test case should also extend the Icons.TestCase model which supplies a graphical icon annotation, a Documentation annotation with HTML documentation, and an experiment annotation for simulation properties.
@@ -40,7 +40,7 @@ end DoubleDeclaration;
 ## Library Structure
 
 The compliance library uses a package hierarchy to divide the test cases into suitable categories, as defined by the table below.
-References are for the Modelica 3.3 specification (since I haven’tseen the mythical 3.2rev2).
+References are for the Modelica 3.6 specification.
 Section references in the table uses intervals and wildcards, where 1.2-1.4 means from section 1.2 to 1.4 and 1.1.\* means section 1.1 and its subsections.
 Section references does not otherwise include subsections, so section 1.1 means only 1.1.
 
