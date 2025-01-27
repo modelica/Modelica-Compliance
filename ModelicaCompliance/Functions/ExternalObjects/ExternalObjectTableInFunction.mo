@@ -4,7 +4,7 @@ model ExternalObjectTableInFunction
   extends Icons.TestCase;
 
   class MyTable
-    // Note that this is a copy of ModelicaCompliance.Functions.ExternalObjects.ExternalTable
+    // Note that this is a copy of ModelicaCompliance.Functions.ExternalObjects.ExternalObjectTable
     // In real code it should just be a common implementation,
     //  but these tests are designed to be self-contained
     extends ExternalObject;
