@@ -1,5 +1,4 @@
 within ModelicaCompliance.Components.Prefixes;
-
 model StreamValidClassType
   extends Icons.TestCase;
 
@@ -8,7 +7,7 @@ model StreamValidClassType
   end R;
 
   connector C
-    input Real s = 3.0;
+    Real s;
   end C;
 
   connector CR
@@ -16,11 +15,11 @@ model StreamValidClassType
     flow Real f;
     stream R r;
   end CR;
-  
+
   connector CC
     Real e = 1.0;
     flow Real f;
-    stream C c;
+    stream C c(s=3.0);
   end CC;
 
   connector CV
