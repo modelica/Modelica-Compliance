@@ -1,18 +1,25 @@
 within ModelicaCompliance.Scoping.InnerOuter;
-
 model MissingInnerAdded
   extends Icons.TestCase;
 
-  record R
-    Integer i;
+  type Angle=Real(final quantity="Angle", final unit="rad");
+  type Torque=Real(final quantity="Torque", final unit="N.m");
+  connector RotationalConnector
+    Angle phi;
+    flow Torque tau;
+  end RotationalConnector;
+
+  model World
+    parameter Angle phiPos=0;
+    RotationalConnector flange_a(phi=phiPos);
     annotation (
-      defaultComponentName = "T0",
+      defaultComponentName = "world",
       defaultComponentPrefixes = "inner",
-      missingInnerMessage = "The T0 inner variable is missing");
-  end R;
+      missingInnerMessage = "The world inner variable is missing");
+  end World;
 
   class A
-    outer R T0;
+    outer World world;
   end A;
 
   class B
@@ -21,8 +28,6 @@ model MissingInnerAdded
 
   B b;
 
-equation 
-  T0.i = 1;
   annotation (
     __ModelicaAssociation(TestCase(shouldPass = true, section = {"5.4", "17.6"})),
     experiment(StopTime = 0.01),
