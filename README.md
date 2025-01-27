@@ -55,7 +55,6 @@ Section references does not otherwise include subsections, so section 1.1 means 
     - Long "Long" declarations, section 4.5, 4.5.2, 4.5.3.
     - Short "Short" declarations, section 4.5.1.
   - Specialized Restrictions on specialized classes, section 4.6.
-  - Prefixes Class prefixes, section 4.4.2.2.
   - Balancing Balance checking, section 4.7.
   - Predefined The predefined types, section 4.8-4.8.4, 4.8.8.1.
   - Enumeration Enumerations, section 4.8.5.
@@ -67,7 +66,7 @@ Section references does not otherwise include subsections, so section 1.1 means 
     - Composite Section 5.3.2.
     - Global Section 5.3.3.
     - Imports Section 13.2.1.\*.
-    - InnerOuter Section 5.4-5.5.
+  - InnerOuter Section 5.4-5.5.
 - Operators
   - Arithmetic Arithmetic operators ∧ ∗ / + −, section 3.4 and 3.6.1.
   - Relational Relational operators ==, <>, etc. Section 3.5 and 10.6.10.
@@ -114,7 +113,6 @@ Section references does not otherwise include subsections, so section 1.1 means 
   - Terminate Section 11.2.8.3.
 - Connections
   - Declarations Basic connect equations, section 9.1.
-  - Operators Section 3.7.2, 15.2-15.3
   - Expandable Expandable connectors, section 9.1.3.
   - Stream Stream connectors, chapter 15.
   - Restrictions The restrictions in section 9.3.*, 15.1.
@@ -139,10 +137,11 @@ Section references does not otherwise include subsections, so section 1.1 means 
   - Declarations Function declarations, section 12.1-12.1.1, 12.1.3.
   - Restrictions Function restrictions, section 12.2.
   - Calls Function calls, section 12.4.1, 12.4.3-12.4.4, 12.4.7.
-  - Vectorization Vectorization of scalar functions, section 12.4.6.
+    - Vectorization Vectorization of scalar functions, section 12.4.6.
   - HigherOrder Higher order functions, 12.4.2.\*.
   - Records Record constructor functions, section 12.6.
   - External External functions, section 12.9.\*.
+  - ExternalObjects External objects, 12.9.7
   - Derivative Function derivatives, section 12.7.\*
   - Inverse Function inverses, section 12.8.
 - Packages Chapter 13, except imports.
