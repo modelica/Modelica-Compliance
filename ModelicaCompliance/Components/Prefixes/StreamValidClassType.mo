@@ -1,5 +1,4 @@
 within ModelicaCompliance.Components.Prefixes;
-
 model StreamValidClassType
   extends Icons.TestCase;
 
@@ -7,21 +6,11 @@ model StreamValidClassType
     Real s = 2.0;
   end R;
 
-  connector C
-    input Real s = 3.0;
-  end C;
-
   connector CR
     Real e = 1.0;
     flow Real f;
     stream R r;
   end CR;
-  
-  connector CC
-    Real e = 1.0;
-    flow Real f;
-    stream C c;
-  end CC;
 
   connector CV
     Real e = 1.0;
@@ -30,7 +19,6 @@ model StreamValidClassType
   end CV;
 
   CR cr;
-  CC cc;
   CV cv;
 
   annotation (
@@ -38,5 +26,5 @@ model StreamValidClassType
     experiment(StopTime = 0.01),
     Documentation(
       info = "<html>Tests that the type prefix <pre>stream</pre> can be applied to
-        the allowed specialized classes type, record and connector.</html>"));
+      the allowed specialized classes type and record.</html>"));
 end StreamValidClassType;
