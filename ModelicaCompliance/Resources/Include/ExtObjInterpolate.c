@@ -1,8 +1,6 @@
 #include "ExtObj.h"
 
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
+#include <math.h> /* for modf */
 #include "ModelicaUtilities.h"
 
 /* Interpolates between two adjacent values in the table. */
