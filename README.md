@@ -83,14 +83,14 @@ Section references does not otherwise include subsections, so section 1.1 means 
 - Inheritance
   - Flattening Flattening of extends, section 5.6.1, 7.1-7.1.2.
   - Restrictions Base class restrictions, section 7.1.3-7.1.4.
-  - Modification
-    - Flattening Flattening of modifications, section 7.2-7.2.3, 7.2.5.
-    - Restrictions Restrictions on modifications, section 7.2.4, 7.2.6.
-  - Redeclare
-    - Flattening Flattening of redeclares, section 7.3, 7.3.4.
-    - ConstrainingType Constraining types, section 7.3.2.
-    - ClassExtends Class extends, section 7.3.1.
-    - Restrictions Restrictions on redeclares, 7.3.3.
+- Modification
+  - Flattening Flattening of modifications, section 7.2-7.2.3, 7.2.5.
+  - Restrictions Restrictions on modifications, section 7.2.4, 7.2.6.
+- Redeclare
+  - Flattening Flattening of redeclares, section 7.3, 7.3.4.
+  - ConstrainingType Constraining types, section 7.3.2.
+  - ClassExtends Class extends, section 7.3.1.
+  - Restrictions Restrictions on redeclares, 7.3.3.
 - Equations
   - Equality Section 8.3.1.
   - For Section 8.3.2.\*.
