@@ -165,11 +165,11 @@ Control statements should be written as in the specification with the beginning 
 ```Modelica
 for i in 1:3 loop
   if i == 1 then
-    x [i] = 1;
+    x[i] = 1;
   elseif i == 2 then
-    x [i] = 2;
+    x[i] = 2;
   else
-    x [i] = 3;
+    x[i] = 3;
   end if;
 end loop;
 ```
