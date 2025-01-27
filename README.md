@@ -56,7 +56,7 @@ Section references does not otherwise include subsections, so section 1.1 means 
     - Short "Short" declarations, section 4.5.1.
   - Specialized Restrictions on specialized classes, section 4.6.
   - Balancing Balance checking, section 4.7.
-  - Predefined The predefined types, section 4.8-4.8.4, 4.8.8.1.
+  - Predefined The predefined types, section 4.8-4.8.4, 4.8.7.
   - Enumeration Enumerations, section 4.8.5.
 - Scoping
   - MemberAccess The member access operator, section 3.6.6.
@@ -65,7 +65,7 @@ Section references does not otherwise include subsections, so section 1.1 means 
     - Simple Section 5.3.1.
     - Composite Section 5.3.2.
     - Global Section 5.3.3.
-    - Imports Section 13.2.1.\*.
+    - Imports Section 13.2.\*.
   - InnerOuter Section 5.4-5.5.
 - Operators
   - Arithmetic Arithmetic operators ∧ ∗ / + −, section 3.4 and 3.6.1.
@@ -73,14 +73,14 @@ Section references does not otherwise include subsections, so section 1.1 means 
   - Logical Logical operators not, and, or (section 3.5).
   - Mathematical Operators in 3.7.1.\*, except Integer and String.
   - Conversion Conversion operators in 3.7.1, Integer and String.
-  - Events Event-related operators in 3.7.3.\*.
-  - Special Special purpose operators in 3.7.2.\*, except connection operators.
+  - Events Event-related operators in 3.7.2.\*.
+  - Special Special purpose operators in 3.7.4.\*.
   - If If-expressions, section 3.3, 3.6.5.
   - Precedence Precedence rules in section 3.2.
   - Associativity Associativity rules in in section 3.2.
   - Overloading Overloaded operators, chapter 14.
 - Inheritance
-  - Flattening Flattening of extends, section 5.6.1, 7.1-7.1.2.
+  - Flattening Flattening of extends, section 5.6.\*, 7.1-7.1.2.
   - Restrictions Base class restrictions, section 7.1.3-7.1.4.
 - Modification
   - Flattening Flattening of modifications, section 7.2-7.2.3, 7.2.5.
@@ -108,15 +108,14 @@ Section references does not otherwise include subsections, so section 1.1 means 
   - While Section 11.2.3.
   - Break Section 11.2.4.
   - Return Section 12.1.2.
-  - Reinit Section 11.2.8.1.
   - Assert Section 11.2.8.2.
   - Terminate Section 11.2.8.3.
 - Connections
-  - Declarations Basic connect equations, section 9.1.
+  - Declarations Basic connect equations, section 9.1-9.1.2, 9.2
   - Expandable Expandable connectors, section 9.1.3.
   - Stream Stream connectors, chapter 15.
   - Restrictions The restrictions in section 9.3.*, 15.1.
-  - Overconstrained Section 9.4
+  - Overconstrained Section 9.4.\*
 - Arrays
   - Declarations Array declarations, section 4.4.2, 10.1.\*, 10.7.
   - Flexible Flexible arrays, section 12.4.5.
@@ -142,8 +141,8 @@ Section references does not otherwise include subsections, so section 1.1 means 
   - Records Record constructor functions, section 12.6.
   - External External functions, section 12.9.\*.
   - ExternalObjects External objects, 12.9.7
-  - Derivative Function derivatives, section 12.7.\*
-  - Inverse Function inverses, section 12.8.
+  - Derivative Function derivatives, section 12.7.1, 12.7.2.
+  - Inverse Function inverses, section 12.7.3.
 - Packages Chapter 13, except imports.
 - Annotations Chapter 18.
 
