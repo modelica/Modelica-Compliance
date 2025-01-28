@@ -3,8 +3,8 @@ model CImpure
   extends Icons.TestCase;
   function impureFunction "The impure annotation should not be needed."
      output Real y;
-    external "C" annotation(Include="double impureFunction() {static double x=0;x+=1;return x;});
-   annotation( __ModelicaAssociation_Impure=true");
+    external "C" annotation(Include="double impureFunction() {static double x=0;x+=1;return x;}");
+   annotation( __ModelicaAssociation_Impure=true);
   end impureFunction;
   Real x(start=0, fixed=true),y(start=1, fixed=true);
 equation
