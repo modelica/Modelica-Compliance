@@ -1,8 +1,7 @@
 within ModelicaCompliance.Operators.Events;
-
 model Edge
   extends Icons.TestCase;
-  
+
   Boolean b(fixed = true);
   discrete Real x;
 initial equation
@@ -18,7 +17,7 @@ equation
   assert(time < 0.51 or Util.compareReal(x, 2.0), "edge(b) was not triggered correctly.");
 
   annotation (
-    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.3"})),
+    __ModelicaAssociation(TestCase(shouldPass = true, section = {"3.7.5"})),
     experiment(StopTime = 1.0),
     Documentation(
       info = "<html>Tests the edge() operator.</html>"));
