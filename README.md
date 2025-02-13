@@ -1,5 +1,11 @@
 # Modelica Compliance Library Guide
 
+This library is intended to provide test-cases for the semantics of the Modelica Specification.
+
+It has two purposes:
+- Tool developers can use it to verify that they have correctly implemented the semantics of the specification.
+- Make discussions on differing interpretations more concrete, to make the specification clearer.
+
 ## Test case structure
 
 Each test case should consist of a separate file that contains one model marked as a test case.
