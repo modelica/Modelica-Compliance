@@ -1,6 +1,7 @@
 #include "ExtObj.h"
 
 #include <stdlib.h> /* for Linux malloc, free and exit */
+#include <string.h> /* for memcpy */
 #include "ModelicaUtilities.h"
 
 /* Constructor for MyTable. */
@@ -15,11 +16,11 @@ void* initMyTable(double *table_data, size_t table_size)
 
   table->array = (double*)malloc(table_size * sizeof(double));
 
-  if(!table->array) {
+  if (!table->array) {
     free(table);
     ModelicaError("Error allocating array in MyTable.\n");
     return 0; /* Not reachable */
-  } 
+  }
 
   memcpy(table->array, table_data, table_size * sizeof(double));
   table->size = table_size;
