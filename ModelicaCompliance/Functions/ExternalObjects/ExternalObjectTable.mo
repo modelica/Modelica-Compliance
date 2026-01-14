@@ -10,8 +10,7 @@ model ExternalObjectTable
       input Real[:] vals;
       output MyTable outTable;
     external "C"
-      outTable = initMyTable(vals, size(vals, 1))
-        annotation(
+      outTable = initMyTable(vals, size(vals, 1)) annotation(
           Include = "#include \"ExtObjInit.c\""
         );
     end constructor;
@@ -19,8 +18,7 @@ model ExternalObjectTable
     function destructor
       input MyTable inTable;
     external "C"
-      closeMyTable(inTable)
-        annotation(
+      closeMyTable(inTable) annotation(
           Include = "#include \"ExtObjClose.c\""
         );
     end destructor;
@@ -31,8 +29,7 @@ model ExternalObjectTable
     input Real u;
     output Real y;
   external "C"
-    y = interpolateMyTable(interpolTable, u)
-      annotation(
+    y = interpolateMyTable(interpolTable, u) annotation(
         Include = "#include \"ExtObjInterpolate.c\""
       );
   end interpolateMyTable;
