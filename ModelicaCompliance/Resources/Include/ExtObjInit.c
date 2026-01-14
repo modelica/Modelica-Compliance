@@ -1,6 +1,7 @@
 #include "ExtObj.h"
 
 #include <stdlib.h> /* for Linux malloc, free and exit */
+#include <string.h> /* for memcpy */
 #include "ModelicaUtilities.h"
 
 /* Constructor for MyTable. */
